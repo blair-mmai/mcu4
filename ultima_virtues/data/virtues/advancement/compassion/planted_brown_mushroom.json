@@ -1,13 +1,13 @@
 {
   "display": {
-    "icon": { "id": "minecraft:brown_mushroom" },
-    "title": { "text": "A farmer might value that." },
-    "description": { "text": "" },
+    "icon": {"id": "minecraft:brown_mushroom"},
+    "title": {"text": "A farmer might value that."},
+    "description": {"text": ""},
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": false,
-    "hidden": true
+    "announce_to_chat": false
   },
+  "parent": "virtues:compassion/c2",
   "criteria": {
     "planted_brown_mushroom": {
       "trigger": "minecraft:placed_block",

@@ -86,7 +86,9 @@ So, the 3 virtues in mcu4 will be:
 - **Toasts**: fire on certain triggers and most advancements (eg "Getting an Upgrade", "Mushy Chef").
 - **Effects**: both positive and negative effects exist and help keep you on the path.
 - **Offering Fire**: a soul campfire placed once at world init (~18 blocks from spawn). Items dropped on it are permanently destroyed. Used for Humility (burning gear), Spirituality (offerings), and Sacrifice (burning food while hungry). No interaction required — just drop items onto it.
-- **talk** and **talkraw**: Ability to talk out loud and to be spoken to privately by the game.
+- **Messages**: the game communicates with players in two ways:
+    - **tellraw** (yellow): a private message visible only to you. Used for personal feedback — circle entry, virtue scores, hints. `tellraw @s`
+    - **say** (white): a public broadcast visible to all players in the session. Used for world events or shared announcements. MC command: `say`
 
 
 

@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:mushroom_stew"},
+    "title": {"text": "Soup Kitchen"},
+    "description": {"text": "Feed the village. Trade mushroom soups to the farmer, one bowl at a time."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:compassion/c2",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

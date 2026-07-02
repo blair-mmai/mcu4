@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:oak_log"},
+    "title": {"text": "Valor"},
+    "description": {"text": "Staying cool despite danger or death."},
+    "background": "minecraft:textures/block/oak_log.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

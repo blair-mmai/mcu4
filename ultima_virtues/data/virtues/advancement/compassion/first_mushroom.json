@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:brown_mushroom"},
+    "title": {"text": "A Farmer may want that."},
+    "description": {"text": "Desc-Root"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:compassion/root",
+  "criteria": {
+    "pickup_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:brown_mushroom"]}]}
+    }
+  },
+  "rewards": {
+    "function": "virtues:player/picked_up_mushroom"
+  }
+}

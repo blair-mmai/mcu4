@@ -6,7 +6,7 @@ Add new tests as mechanics are implemented.
 
 | ID | Setup | Action | Expected |
 |----|-------|--------|----------|
-| G_01 | Fresh world, datapack enabled, cheats on | Enter world for first time | Subtitles sequence: *"You open your eyes."* → *"You find yourself in a field."* → *"You are a stranger here."* → silence → *"...you feel an urge to punch a tree."* |
+| G_01 | Fresh world, datapack enabled, cheats on | Enter world for first time | Subtitles sequence: *"You open your eyes."* → *"You find yourself in a field."* → *"You are a Stranger here."* → silence → *"...you feel an urge to punch a tree."* |
 | G_02 | Complete G_01. Find a tree | Break a log | Chest appears 2 blocks to right, named after your username, containing 1 brown mushroom |
 | G_03 | Complete G_02 | Open chest, read name | Chest shows your Minecraft username (not raw JSON) |
 | G_04 | Complete G_02 | Open chest | Contains exactly 1 brown mushroom, nothing else |

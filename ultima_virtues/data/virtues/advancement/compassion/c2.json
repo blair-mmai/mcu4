@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:brown_mushroom"},
+    "title": {"text": "A Plea for Help?"},
+    "description": {"text": "Trade 10 red mushrooms for an empty bowl."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:compassion/c1",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

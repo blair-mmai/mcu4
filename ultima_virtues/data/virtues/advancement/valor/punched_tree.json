@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:oak_log"},
+    "title": {"text": "Tree Bruiser"},
+    "description": {"text": "You punched a tree. It hurt a little."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:valor/root",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

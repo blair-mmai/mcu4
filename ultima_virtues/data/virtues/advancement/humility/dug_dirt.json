@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:dirt"},
+    "title": {"text": "Grounded"},
+    "description": {"text": "Somehow, this feels cathartic."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:humility/root",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

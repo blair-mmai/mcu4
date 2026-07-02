@@ -27,9 +27,18 @@ In *Ultima IV*, each virtue is represented by a rune the player must discover. I
 
 Compassion's rune color is **brown glazed terracotta**.
 
-**Obtaining the Compassion rune:**
-- At **Expert** level, trade mushroom soups with a farmer villager repeatedly (demonstrating compassion through feeding others)
-- At **Master** level, the farmer will offer a **brown glazed terracotta** as a trade — this is your Compassion rune
+**Obtaining the Compassion rune — farmer villager trade progression:**
+
+| Level | Trade | Notes |
+|-------|-------|-------|
+| L1 Novice | 10 brown mushrooms → 1 red mushroom | Levels up after 1 trade |
+| L1 Novice | Composter → Mycelium | Bonus trade at same level |
+| L2 Apprentice | 10 red mushrooms → 1 wooden bowl | Levels up after 1 trade |
+| L3 Journeyman | 1 mushroom soup → 1 wooden bowl | 1/10 XP per trade; needs 10 trades to reach Expert |
+| L4 Expert | 1 mushroom soup → brown glazed terracotta (rune) | Once only |
+| L5 Master | 1 wooden bowl → 1 mushroom soup | Farmer becomes a renewable food source |
+
+The player places the rune block somewhere meaningful (altar, home, etc.) as a physical token of virtue earned.
 
 The player places the rune block somewhere meaningful (altar, home, etc.) as a physical token of virtue earned.
 

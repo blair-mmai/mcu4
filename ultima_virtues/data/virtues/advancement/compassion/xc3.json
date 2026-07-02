@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:skeleton_skull"},
+    "title": {"text": "Cruel by Nature"},
+    "description": {"text": "You're worse than Hilter."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:compassion/xc2",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

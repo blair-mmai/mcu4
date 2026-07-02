@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:skeleton_skull"},
+    "title": {"text": "Repeat Offender"},
+    "description": {"text": "Again?"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:compassion/xc1",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

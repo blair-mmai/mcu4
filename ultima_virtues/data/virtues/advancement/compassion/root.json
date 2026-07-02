@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:brown_mushroom"},
+    "title": {"text": "Compassion"},
+    "description": {"text": "To care for others without expectation of return."},
+    "background": "minecraft:block/brown_mushroom_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"id": "minecraft:barrier"}]}
+    }
+  }
+}

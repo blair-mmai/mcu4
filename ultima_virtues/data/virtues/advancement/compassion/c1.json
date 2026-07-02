@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:brown_mushroom"},
+    "title": {"text": "Fungal Exchange"},
+    "description": {"text": "Trade 10 brown mushrooms to a farmer for a red mushroom."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:compassion/first_mushroom",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}
