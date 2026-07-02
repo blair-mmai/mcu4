@@ -7,7 +7,7 @@ There's no explicit tutorial.  No boss.  Advancements and toasts will help guide
 
 You blink your eyes and all of a sudden you're a stranger in a field that you've never seen...and here lies a chest within a mysterious stone circle and somehow it all knows your name...
 
-[Watch the circle in action](mysterious-stone-circle-approached.mp4)
+[You approach a mysterious stone circle](mysterious-stone-circle-approached.mp4)
 
 ---
 
