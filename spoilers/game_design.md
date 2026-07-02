@@ -53,21 +53,39 @@ So, the 3 virtues in mcu4 will be:
 | Spirituality | All three | To live for a purpose that's bigger than yourself.  |
 | Humility | None (it can't be derived) | To meet a new day's dawn in the humblest way. |
 
+## The 8 anti-virtues
+
+| Virtue | Anti-Virtue | Expression in MC |
+|--------|-----------|-----------------|
+| Compassion | Callousness | Punch an animal. |
+| Insight | Ignorance | Never craft anything beyond basic tools. |
+| Valor | Cowardice | Flee from or avoid all combat. |
+| Guidance | Corruption | Trade with villagers purely to exploit them. |
+| Sacrifice | Selfishness | Hoard food while others starve. |
+| Fortitude | Weakness | Die repeatedly without learning from it. |
+| Spirituality | Materialism | Accumulate wealth and resources beyond any need. |
+| Humility | Pride | Equip weapons and armor before tools and food. |
+
 
 ## In-game mechanics
 
 - **Triggers**: implemented by datapack and mcfunction within Minecraft framework.
 - **Custom trades**: custom trades with villagers and traders specific to this non-vanilla version of minecraft.
-- **Starting chest**: spawns when player punches their first tree or digs dirt. The chest contains:
+- **Starting chest**: spawns when player punches their first tree or digs dirt. The chest is named and tagged to the receiving player (e.g. *"Blair's Pack"*). The chest contains:
     - a brown mushroom (an ambiguous hint.)
     - a lore book with clues (TBD)
     - a bucket of pufferfish, a bucket of water, a bucket of milk, and a bucket of lava ("You'll only need 3.")
+- **Chest ownership (multiplayer)**: each starting chest belongs to the player it was spawned for. In multiplayer:
+    - Adding items to *another player's* chest is **allowed** (a gift — scores Sacrifice or Compassion)
+    - Removing items from *another player's* chest is **not allowed** — triggers a negative effect and score penalty, even if you put the item there yourself
+    - Your own chest: no restrictions
 - **Scoreboard tracking**: per-player virtue scores tracked via mcfunction code variables (e.g. virtues.compassion = 30)
 - **First join sequence**: title sequence establishes the tone and a new narrative ("You are a stranger, here.")
 - **Sub-titles**: appear early in game to direct the player onto the path of enlightement.
 - **Advancements**: fire on  virtue-related actions.  A tree of advancements moves them towards higher enlightenment.
 - **Toasts**: fire on certain triggers and most advancements (eg "Getting an Upgrade", "Mushy Chef").
 - **Effects**: both positive and negative effects exist and help keep you on the path.
+- **Offering Fire**: a soul campfire placed once at world init (~18 blocks from spawn). Items dropped on it are permanently destroyed. Used for Humility (burning gear), Spirituality (offerings), and Sacrifice (burning food while hungry). No interaction required — just drop items onto it.
 - **talk** and **talkraw**: Ability to talk out loud and to be spoken to privately by the game.
 
 

@@ -1,20 +1,22 @@
 # virtues:player/intro_sequence
 # Called every tick from the main tick function. Drives the multi-line
 # title intro for any player whose virtues.intro_timer is active (>0),
-# then spawns the starting chests once the sequence finishes.
+# then spawns the starting chest and circle once the sequence finishes.
 #
 # Timer values (ticks, 20 ticks = 1 second):
-#   1        -> line 1 already shown by first_join.mcfunction
-#   60       -> line 2
-#   120      -> line 3
-#   180      -> line 4
-#   220      -> spawn chests, end sequence (timer set to 0)
+#   1        -> "You open your eyes." (shown by first_join.mcfunction)
+#   60       -> "You find yourself in a field."
+#   120      -> "You are a stranger here."
+#   200      -> (pause)
+#   260      -> "...you feel an urge to punch a tree."
+#   320      -> spawn chest + circle, end sequence
 
-execute as @a[scores={virtues.intro_timer=60}] run title @s subtitle {"text":"Eight ways to be.","color":"gray","italic":true}
-execute as @a[scores={virtues.intro_timer=120}] run title @s subtitle {"text":"The world is watching.","color":"gray","italic":true}
-execute as @a[scores={virtues.intro_timer=180}] run title @s subtitle {"text":"Begin.","color":"gray","italic":true}
-execute as @a[scores={virtues.intro_timer=220}] at @s run function virtues:player/spawn_chests
-execute as @a[scores={virtues.intro_timer=220}] run scoreboard players set @s virtues.intro_timer 0
+execute as @a[scores={virtues.intro_timer=60}] run title @s subtitle {"text":"You find yourself in a field.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=120}] run title @s subtitle {"text":"You are a stranger here.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=200}] run title @s subtitle {"text":"","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=260}] run title @s subtitle {"text":"...you feel an urge to punch a tree.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=320}] at @s run function virtues:player/spawn_starting_chest
+execute as @a[scores={virtues.intro_timer=320}] run scoreboard players set @s virtues.intro_timer 0
 
-# Advance the timer for anyone currently mid-sequence (1 through 219)
-execute as @a[scores={virtues.intro_timer=1..219}] run scoreboard players add @s virtues.intro_timer 1
+# Advance the timer for anyone currently mid-sequence (1 through 319)
+execute as @a[scores={virtues.intro_timer=1..319}] run scoreboard players add @s virtues.intro_timer 1

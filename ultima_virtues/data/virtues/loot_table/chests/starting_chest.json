@@ -6,6 +6,18 @@
       "entries": [
         { "type": "minecraft:item", "name": "minecraft:brown_mushroom" }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:name_tag" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:anvil" }
+      ]
     }
   ]
 }

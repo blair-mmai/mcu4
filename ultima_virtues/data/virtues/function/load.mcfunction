@@ -16,5 +16,15 @@ scoreboard objectives add virtues.mined_dark_oak minecraft.mined:minecraft.dark_
 # Tracks whether this player has already had a chest spawned from punching
 # a tree, so it only happens once.
 scoreboard objectives add virtues.tree_chest_given dummy
+scoreboard objectives add virtues.oak_baseline dummy
+scoreboard objectives add virtues.birch_baseline dummy
+scoreboard objectives add virtues.spruce_baseline dummy
+scoreboard objectives add virtues.jungle_baseline dummy
+scoreboard objectives add virtues.acacia_baseline dummy
+scoreboard objectives add virtues.dark_oak_baseline dummy
+scoreboard objectives add virtues.log_delta dummy
+scoreboard objectives add virtues.world_init dummy
+scoreboard objectives add virtues.reset_timer dummy
+scoreboard objectives add virtues.in_circle dummy
 
 tellraw @a [{"text":"Ultima Virtues datapack loaded.","color":"gray","italic":true}]
