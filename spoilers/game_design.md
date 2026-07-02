@@ -13,29 +13,62 @@ The player starts in a world that looks completely normal. There is no obvious i
 Some approaches being explored:
 - Environmental storytelling (a starting chest with a single brown mushroom — what does that mean?)
 - NPC dialogue and trades that reward virtuous behavior
-- Advancements that fire on morally-loaded actions (punching an animal, planting food)
-- No punishment for "wrong" behavior — only rewards for right behavior
+- Advancements and positive effects that fire on morally-loaded actions (planting food)
+- Punishments exist for some "wrong" behaviors - akin to a poison effect or nausea effect (punching an animal).
 
-## The virtues (Ultima IV originals)
+## The 8 original virtues (Ultima IV originals)
+
+The 8 virtues in U4 were the 2^3 combinations derived from 3 principles of love, truth, and courage.
 
 | Virtue | Principle | Expression in MC |
 |--------|-----------|-----------------|
-| Compassion | Love | Feeding/healing others, not harming animals unnecessarily |
+| Compassion | Love | Help a village grow. |
 | Honesty | Truth | TBD |
-| Valor | Courage | TBD |
+| Valor | Courage | Fighting a boss |
 | Justice | Love + Truth | TBD |
-| Sacrifice | Love + Courage | TBD |
+| Sacrifice | Love + Courage | Putting other's needs before your own: giving food to someone while you starve. |
 | Honor | Truth + Courage | TBD |
-| Spirituality | All three | TBD |
-| Humility | None (it can't be derived) | TBD |
+| Spirituality | All three | Being centered and holistically minded. |
+| Humility | None (it can't be derived) | Reject symbols of pride and vanity. |
 
-## Current implementation
+## The 8 amended virtues (Minecraft-orientation)
 
-- **Starting chest**: spawns when player punches their first tree, contains a brown mushroom (a quiet nudge toward cultivation/compassion)
-- **Scoreboard tracking**: per-player virtue scores tracked via dummy objectives
-- **First join sequence**: title sequence establishes the tone ("You are a stranger here.")
-- **Advancements**: fire on compassion-related actions
+Rather than over-modifying Minecraft to align with the 8 original virtues, the
+principles and virtues will pivot a bit to align with vanilla minecraft.  Truth and
+honesty are hard to test in a world where lying isnt really a thing, for example.
 
-## The unsolved problem
+So, the 3 virtues in mcu4 will be:
+ - Love     (doing nice things for others)
+ - Courage  (staying cool when facing danger and death)
+ - Wisdom   (showing knowledge of the world and learning)
 
-How do you teach a player the rules without telling them the rules? This is the active design question.
+| Virtue | Principle | Expression in MC |
+|--------|-----------|-----------------|
+| Compassion | Love | Help a village grow. |
+| Insight | Wisdom | Figuring things out.  Crafting more difficult things.  Puzzle solving. |
+| Valor | Courage | Staying cool despite danger or death. |
+| Guidance | Love + Wisdom | Ability to teach and to grow others. Leveling-up villagers. |
+| Sacrifice | Love + Courage | To put other's needs above your own.  Feed others while you starve. |
+| Fortitude | Wisdom + Courage | Endure difficulties with clear-eyed awareness.  |
+| Spirituality | All three | To live for a purpose that's bigger than yourself.  |
+| Humility | None (it can't be derived) | To meet a new day's dawn in the humblest way. |
+
+
+## In-game mechanics
+
+- **Triggers**: implemented by datapack and mcfunction within Minecraft framework.
+- **Custom trades**: custom trades with villagers and traders specific to this non-vanilla version of minecraft.
+- **Starting chest**: spawns when player punches their first tree or digs dirt. The chest contains:
+    - a brown mushroom (an ambiguous hint.)
+    - a lore book with clues (TBD)
+    - a bucket of pufferfish, a bucket of water, a bucket of milk, and a bucket of lava ("You'll only need 3.")
+- **Scoreboard tracking**: per-player virtue scores tracked via mcfunction code variables (e.g. virtues.compassion = 30)
+- **First join sequence**: title sequence establishes the tone and a new narrative ("You are a stranger, here.")
+- **Sub-titles**: appear early in game to direct the player onto the path of enlightement.
+- **Advancements**: fire on  virtue-related actions.  A tree of advancements moves them towards higher enlightenment.
+- **Toasts**: fire on certain triggers and most advancements (eg "Getting an Upgrade", "Mushy Chef").
+- **Effects**: both positive and negative effects exist and help keep you on the path.
+- **talk** and **talkraw**: Ability to talk out loud and to be spoken to privately by the game.
+
+
+

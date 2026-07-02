@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "{\"text\":\"Someone Else's Notes\",\"italic\":false}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{author:\"Unknown\",title:\"Someone Else's Notes\",pages:['\"{\\\"text\\\":\\\"This was not yours to read. But now that you have, you may as well know: eight ways to be, three paths between them, one destination. The world will show you the rest, in its own time.\\\"}\"']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

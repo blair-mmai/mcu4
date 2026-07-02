@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:writable_book" },
+    "title": { "text": "You opened it." },
+    "description": { "text": "Some things are not yours." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "took_private_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:written_book"],
+            "nbt": "{display:{Name:'{\"text\":\"Someone Else's Notes\",\"italic\":false}'}}"
+          }
+        ]
+      }
+    }
+  }
+}
