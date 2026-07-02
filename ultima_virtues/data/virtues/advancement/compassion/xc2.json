@@ -2,7 +2,7 @@
   "display": {
     "icon": {"id": "minecraft:skeleton_skull"},
     "title": {"text": "Repeat Offender"},
-    "description": {"text": "Again?"},
+    "description": {"text": "Really? Again?"},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false
