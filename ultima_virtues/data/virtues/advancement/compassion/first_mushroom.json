@@ -2,7 +2,7 @@
   "display": {
     "icon": {"id": "minecraft:brown_mushroom"},
     "title": {"text": "A Farmer may want that."},
-    "description": {"text": "Desc-Root"},
+    "description": {"text": ""},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false
