@@ -1,5 +1,16 @@
 {
+  "display": {
+    "icon": {"id": "minecraft:red_nether_bricks"},
+    "title": {"text": ""},
+    "description": {"text": ""},
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
   "criteria": {
-    "never": {"trigger": "minecraft:impossible"}
+    "entered_nether": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {"to": "minecraft:the_nether"}
+    }
   }
 }

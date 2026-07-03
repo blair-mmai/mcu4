@@ -1,5 +1,15 @@
 {
+  "display": {
+    "icon": {"id": "minecraft:map"},
+    "title": {"text": ""},
+    "description": {"text": ""},
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
   "criteria": {
-    "never": {"trigger": "minecraft:impossible"}
+    "killed_something": {
+      "trigger": "minecraft:entity_killed_player"
+    }
   }
 }

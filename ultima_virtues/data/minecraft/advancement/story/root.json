@@ -1,5 +1,18 @@
 {
+  "display": {
+    "icon": {"id": "minecraft:grass_block"},
+    "title": {"text": ""},
+    "description": {"text": ""},
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
   "criteria": {
-    "never": {"trigger": "minecraft:impossible"}
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": ["#minecraft:logs"]}]
+      }
+    }
   }
 }
