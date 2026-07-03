@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:dirt"},
+    "title": {"text": "xH2"},
+    "description": {"text": ""},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:humility/xh1",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

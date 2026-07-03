@@ -8,9 +8,6 @@
     "announce_to_chat": false
   },
   "criteria": {
-    "never": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {"items": [{"id": "minecraft:barrier"}]}
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

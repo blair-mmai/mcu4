@@ -27,8 +27,12 @@ scoreboard objectives add virtues.world_init dummy
 scoreboard objectives add virtues.reset_timer dummy
 scoreboard objectives add virtues.in_circle dummy
 scoreboard objectives add virtues.mined_dirt minecraft.mined:minecraft.dirt
+scoreboard objectives add virtues.mined_grass minecraft.mined:minecraft.grass_block
+scoreboard objectives add virtues.dirt_baseline dummy
+scoreboard objectives add virtues.grass_baseline dummy
 scoreboard objectives add virtues.hum_tab_done dummy
 scoreboard objectives add virtues.val_tab_done dummy
 scoreboard objectives add virtues.animal_punches dummy
+scoreboard objectives add virtues.total_logs_base dummy
 
 tellraw @a [{"text":"Ultima Virtues datapack loaded.","color":"gray","italic":true}]

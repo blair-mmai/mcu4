@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:oak_log"},
+    "title": {"text": "xV2"},
+    "description": {"text": ""},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:valor/xv1",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

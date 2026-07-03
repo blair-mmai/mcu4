@@ -35,7 +35,7 @@ Add new tests as mechanics are implemented.
 
 | ID | Setup | Action | Expected |
 |----|-------|--------|----------|
-| V_HUM_01 | In any area with dirt | Dig dirt | Humility tab opens silently. "Grounded" toast: *"Somehow, this feels cathartic."* |
+| V_HUM_01 | In any area with dirt or grass | Dig dirt or grass block | Humility tab opens. "Grounded" toast: *"Somehow, this feels cathartic."* |
 
 ## Valor
 

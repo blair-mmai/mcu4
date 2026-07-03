@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_sword"},
+    "title": {"text": "Valiant"},
+    "description": {"text": ""},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:valor/v3",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}
