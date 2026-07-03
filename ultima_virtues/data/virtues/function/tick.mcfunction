@@ -2,6 +2,18 @@
 # Runs every tick. Checks for players who haven't been given their starting
 # chest yet, and fires the first-join sequence for them exactly once.
 
+# Re-apply custom trades every tick to all farmers (vanilla regenerates trades on profession re-link)
+execute as @e[type=minecraft:villager] run function virtues:player/setup_farmer_trade
+
+# Clear vanilla advancement tabs for any player who hasn't been cleaned yet this session
+scoreboard players add @a virtues.vanilla_cleared 0
+execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:story
+execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:nether
+execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:end
+execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:adventure
+execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:husbandry
+scoreboard players set @a[scores={virtues.vanilla_cleared=0}] virtues.vanilla_cleared 1
+
 # Run world init exactly once
 scoreboard players add $world virtues.world_init 0
 execute if score $world virtues.world_init matches 0 run function virtues:world_init

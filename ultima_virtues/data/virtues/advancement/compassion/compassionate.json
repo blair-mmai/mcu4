@@ -7,8 +7,11 @@
     "show_toast": true,
     "announce_to_chat": true
   },
-  "parent": "virtues:compassion/c4",
+  "parent": "virtues:compassion/rune_of_compassion",
   "criteria": {
-    "never": {"trigger": "minecraft:impossible"}
+    "got_stew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:mushroom_stew"]}]}
+    }
   }
 }

@@ -8,9 +8,6 @@
     "hidden": true
   },
   "criteria": {
-    "entered_nether": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {"to": "minecraft:the_nether"}
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

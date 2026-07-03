@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:hay_block"},
+    "icon": {"id": "minecraft:wheat"},
     "title": {"text": ""},
     "description": {"text": ""},
     "show_toast": false,
@@ -8,8 +8,6 @@
     "hidden": true
   },
   "criteria": {
-    "consumed_item": {
-      "trigger": "minecraft:consume_item"
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

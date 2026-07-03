@@ -1,14 +1,23 @@
+advancement revoke @s from minecraft:story
+advancement revoke @s from minecraft:nether
+advancement revoke @s from minecraft:end
+advancement revoke @s from minecraft:adventure
+advancement revoke @s from minecraft:husbandry
+scoreboard players set @s virtues.vanilla_cleared 1
 advancement revoke @s only virtues:compassion/root
 advancement revoke @s only virtues:compassion/first_mushroom
 advancement revoke @s only virtues:compassion/xc_detector
+advancement revoke @s only virtues:compassion/hay_thief_detector
+advancement revoke @s only virtues:compassion/thief
 advancement revoke @s only virtues:compassion/xc1
 advancement revoke @s only virtues:compassion/xc2
 advancement revoke @s only virtues:compassion/xc3
 advancement revoke @s only virtues:compassion/callous_brute
-advancement revoke @s only virtues:compassion/c1
-advancement revoke @s only virtues:compassion/c2
-advancement revoke @s only virtues:compassion/c3
-advancement revoke @s only virtues:compassion/c4
+advancement revoke @s only virtues:compassion/fungal_exchange
+advancement revoke @s only virtues:compassion/plea_for_help
+advancement revoke @s only virtues:compassion/bowl_detector
+advancement revoke @s only virtues:compassion/soup_kitchen
+advancement revoke @s only virtues:compassion/rune_of_compassion
 advancement revoke @s only virtues:compassion/compassionate
 advancement revoke @s only virtues:valor/root
 advancement revoke @s only virtues:valor/punched_tree
@@ -39,4 +48,6 @@ scoreboard players operation @s virtues.jungle_baseline = @s virtues.mined_jungl
 scoreboard players operation @s virtues.acacia_baseline = @s virtues.mined_acacia
 scoreboard players operation @s virtues.dark_oak_baseline = @s virtues.mined_dark_oak
 scoreboard players set @s virtues.animal_punches 0
+scoreboard players set @s virtues.hay_stolen 0
+scoreboard players set @s virtues.bowls_traded 0
 tellraw @s {"text":"Advancements reset. Use virtues:dev/trigger_dirt, trigger_tree, or trigger_animal to test each.","color":"yellow"}

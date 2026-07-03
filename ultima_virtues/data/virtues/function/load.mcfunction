@@ -34,5 +34,15 @@ scoreboard objectives add virtues.hum_tab_done dummy
 scoreboard objectives add virtues.val_tab_done dummy
 scoreboard objectives add virtues.animal_punches dummy
 scoreboard objectives add virtues.total_logs_base dummy
+scoreboard objectives add virtues.bowls_traded dummy
+scoreboard objectives add virtues.hay_stolen dummy
+scoreboard objectives add virtues.vanilla_cleared dummy
+
+# Wipe all vanilla advancement tabs so they never show
+advancement revoke @a from minecraft:story
+advancement revoke @a from minecraft:nether
+advancement revoke @a from minecraft:end
+advancement revoke @a from minecraft:adventure
+advancement revoke @a from minecraft:husbandry
 
 tellraw @a [{"text":"Ultima Virtues datapack loaded.","color":"gray","italic":true}]

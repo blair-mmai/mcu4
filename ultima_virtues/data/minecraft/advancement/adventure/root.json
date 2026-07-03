@@ -8,8 +8,6 @@
     "hidden": true
   },
   "criteria": {
-    "killed_something": {
-      "trigger": "minecraft:entity_killed_player"
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

@@ -7,8 +7,11 @@
     "show_toast": true,
     "announce_to_chat": false
   },
-  "parent": "virtues:compassion/c1",
+  "parent": "virtues:compassion/fungal_exchange",
   "criteria": {
-    "never": {"trigger": "minecraft:impossible"}
+    "got_bowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:bowl"]}]}
+    }
   }
 }

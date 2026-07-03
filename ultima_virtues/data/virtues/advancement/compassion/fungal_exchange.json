@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:red_mushroom"},
+    "title": {"text": "Fungal Exchange"},
+    "description": {"text": ""},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:compassion/first_mushroom",
+  "criteria": {
+    "got_red_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:red_mushroom"]}]}
+    }
+  }
+}

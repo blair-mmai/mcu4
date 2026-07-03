@@ -1,22 +1,5 @@
-# virtues:player/setup_farmer_trade
-# Run this targeting a specific farmer villager entity (e.g.
-# execute as @e[type=minecraft:villager,...] run function virtues:player/setup_farmer_trade)
-# to give them the brown -> red mushroom trade.
-#
-# This is a novice-level trade: 16 brown mushroom in, 1 red mushroom out.
-# Completing it also grants this villager XP so they level up normally.
-
-data merge entity @s {
-  VillagerData: { profession: "minecraft:farmer", level: 1 },
-  Offers: {
-    Recipes: [
-      {
-        buy: { id: "minecraft:brown_mushroom", Count: 16 },
-        sell: { id: "minecraft:red_mushroom", Count: 1 },
-        maxUses: 999999,
-        xp: 5,
-        rewardExp: 1b
-      }
-    ]
-  }
-}
+execute if data entity @s Offers if data entity @s VillagerData{level:1} run data modify entity @s Offers.Recipes set value [{buy:{id:"minecraft:brown_mushroom",count:10},sell:{id:"minecraft:red_mushroom",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:composter",count:1},sell:{id:"minecraft:mycelium",count:1},maxUses:999999,xp:5}]
+execute if data entity @s Offers if data entity @s VillagerData{level:2} run data modify entity @s Offers.Recipes set value [{buy:{id:"minecraft:brown_mushroom",count:10},sell:{id:"minecraft:red_mushroom",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:composter",count:1},sell:{id:"minecraft:mycelium",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:red_mushroom",count:10},sell:{id:"minecraft:bowl",count:1},maxUses:999999,xp:60},{buy:{id:"minecraft:wheat",count:1},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10},{buy:{id:"minecraft:wheat",count:3},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10}]
+execute if data entity @s Offers if data entity @s VillagerData{level:3} run data modify entity @s Offers.Recipes set value [{buy:{id:"minecraft:brown_mushroom",count:10},sell:{id:"minecraft:red_mushroom",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:composter",count:1},sell:{id:"minecraft:mycelium",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:red_mushroom",count:10},sell:{id:"minecraft:bowl",count:1},maxUses:999999,xp:60},{buy:{id:"minecraft:wheat",count:1},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10},{buy:{id:"minecraft:wheat",count:3},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10},{buy:{id:"minecraft:mushroom_stew",count:1},sell:{id:"minecraft:bowl",count:1},maxUses:999999,xp:8}]
+execute if data entity @s Offers if data entity @s VillagerData{level:4} run data modify entity @s Offers.Recipes set value [{buy:{id:"minecraft:brown_mushroom",count:10},sell:{id:"minecraft:red_mushroom",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:composter",count:1},sell:{id:"minecraft:mycelium",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:red_mushroom",count:10},sell:{id:"minecraft:bowl",count:1},maxUses:999999,xp:60},{buy:{id:"minecraft:wheat",count:1},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10},{buy:{id:"minecraft:wheat",count:3},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10},{buy:{id:"minecraft:mushroom_stew",count:1},sell:{id:"minecraft:bowl",count:1},maxUses:999999,xp:8},{buy:{id:"minecraft:mushroom_stew",count:1},sell:{id:"minecraft:brown_glazed_terracotta",count:1},maxUses:1,xp:100}]
+execute if data entity @s Offers if data entity @s VillagerData{level:5} run data modify entity @s Offers.Recipes set value [{buy:{id:"minecraft:brown_mushroom",count:10},sell:{id:"minecraft:red_mushroom",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:composter",count:1},sell:{id:"minecraft:mycelium",count:1},maxUses:999999,xp:5},{buy:{id:"minecraft:red_mushroom",count:10},sell:{id:"minecraft:bowl",count:1},maxUses:999999,xp:60},{buy:{id:"minecraft:wheat",count:1},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10},{buy:{id:"minecraft:wheat",count:3},sell:{id:"minecraft:bread",count:1},maxUses:999999,xp:10},{buy:{id:"minecraft:mushroom_stew",count:1},sell:{id:"minecraft:bowl",count:1},maxUses:999999,xp:8},{buy:{id:"minecraft:mushroom_stew",count:1},sell:{id:"minecraft:brown_glazed_terracotta",count:1},maxUses:1,xp:100},{buy:{id:"minecraft:bowl",count:1},sell:{id:"minecraft:mushroom_stew",count:1},maxUses:999999,xp:0}]

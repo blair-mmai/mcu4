@@ -7,8 +7,11 @@
     "show_toast": true,
     "announce_to_chat": true
   },
-  "parent": "virtues:compassion/c3",
+  "parent": "virtues:compassion/soup_kitchen",
   "criteria": {
-    "never": {"trigger": "minecraft:impossible"}
+    "got_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:brown_glazed_terracotta"]}]}
+    }
   }
 }
