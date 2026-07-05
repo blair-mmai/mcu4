@@ -2,7 +2,7 @@
 
 > To help others grow.
 
-**Anti-virtue: Corruption**
+**Anti-virtue: Corruption/Dis-honesty**
 
 ## Virtue actions
 
