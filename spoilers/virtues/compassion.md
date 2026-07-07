@@ -85,6 +85,17 @@ Holding the rune and earning the `Compassionate` advancement is not enough on it
 
 *Implementation note: detect dawn via time-of-day scoreboard check (~23000–24000 ticks), facing direction via `execute rotated`, rune in hand via `items` NBT check on the player. Check blocking advancements via `execute if entity @s[advancements={virtues:compassion/xc3=true}]` etc. Enlightenment toast via `tellraw @a` with the player's name component.*
 
+## Master Farmer Lore Book
+
+At L5 Master, the farmer offers a book of lore on virtues, professions, and their stations. Contents include:
+- *"The cleric tells of sins and their names."*
+- *"The cartographer tells of the stone circle and the lore of its pillars."*
+- *"The librarian tells of the enlightenment mechanic."*
+
+## Anti-Virtue: Sin of Jolting
+
+Waking a sleeping villager = **Sin of Jolting** (anti-Compassion).
+
 ## Puzzles
 
 - **The Hungry Villager**: a villager stands near an empty farm. Planting and harvesting for them scores Compassion. Taking from their farm scores Callousness. Breaking the hay bale nearby to get seeds scores Callousness too — it's stealing.

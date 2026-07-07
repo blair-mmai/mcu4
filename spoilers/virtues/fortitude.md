@@ -1,6 +1,6 @@
 # Fortitude (Wisdom + Courage)
 
-> To endure difficulty with clear-eyed awareness.
+> To endure difficulty with clear-eyed awareness.  To appreciate the line between life and death.
 
 **Anti-virtue: Weakness**
 
@@ -18,6 +18,25 @@
 |--------|-----------|--------|
 | Die 3+ times without changing approach | `minecraft.custom:minecraft.deaths` threshold | Weakness effect |
 | Quit and rejoin within 30s of dying | session tracking via scoreboard timer | Score penalty |
+
+## Fisherman Trade Path
+
+Profession: **Fisherman**. Virtue: **Fortitude**. *"...to touch the face of god..."*
+
+| Trade | Receive | Notes |
+|-------|---------|-------|
+| 1 bucket | 1 bucket of pufferfish | Advancement: "Eat the fish." → "Sashi-me!" |
+| 1 totem of undying | 1 totem of undying | Gating — tellraw: *"Try using it!"* |
+
+
+| Trigger | Advancement | Anti |
+|---------|-------------|------|
+| Nearly drown (survive at 0.5 hearts underwater) | ✓ | Die drowning |
+| Nearly die in lava (survive at 0.5 hearts) | ✓ | Die in lava |
+| Nearly die from fall damage (survive at 0.5 hearts) | ✓ | Die from falling |
+| Use a totem of undying and get hit by lightning| ✓ | Die from lightning (anti) |
+| Deflect a ghast fireball | ✓ | Kill a ghast (anti) |
+
 
 ## Puzzles
 

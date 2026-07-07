@@ -1,24 +1,75 @@
 # Guidance (Love + Wisdom)
 
-> To help others grow.
+> To accept counsel, to learn, to grow others.
 
-**Anti-virtue: Corruption**
+**Anti-virtue:** Withholding
+**Symbol:** Soul Lantern
 
-## Virtue actions
+---
 
-| Action | MC Trigger | Conflicts With | Result |
-|--------|-----------|----------------|--------|
-| Cure a zombie villager | `advancement: story/cure_zombie_villager` | Sacrifice (costs golden apple + potion) | Score |
-| Level up a villager through fair trades | villager XP scoreboard via `minecraft.traded_with_villager` | — | Score |
-| Give a written book to another player | `minecraft.dropped:minecraft.written_book` near another player | Sacrifice (costs your item) | Score |
+## Virtue Actions
 
-## Anti-virtue actions
+| Action | Trigger |
+|--------|---------|
+| Complete the Antosh circuit | L5 trade fires |
+| Put a written book in another player's chest | book placed in chest near player |
+| Level up any villager through fair trades | villager XP scoreboard |
 
-| Action | MC Trigger | Result |
-|--------|-----------|--------|
-| Take the exploitative villager trade (1 wheat → 1 bread) | custom tagged `hollow_bread` item enters inventory | Nausea effect + score penalty |
-| Kill a villager | `minecraft.killed:minecraft.villager` | Score penalty + Blindness effect |
+## Anti-virtue Actions
 
-## Puzzles
+| Action | Trigger | Signal |
+|--------|---------|--------|
+| Carry 2+ smithing tables | inventory count check | *"That's not yours to keep."* |
 
-- **The Two Trades**: a villager offers bread for 3 wheat (fair) or bread for 1 wheat (corrupt). The cheap bread looks identical in the trade UI but once in inventory shows lore: *"tastes hollow."* Eating it restores 0 hunger and triggers a Nausea effect.
+**Smithing table hoarding:** encourages player to place it, ideally in a village where others can use it.
+
+---
+
+## The Antosh Circuit
+
+Toolsmith family spread across three biomes. Each holds one piece of the netherite pickaxe. Finding all three earns the Rune of Guidance.
+
+**Symbol:** soul lantern as family coat of arms. Hung on Guidance pillar on completion.
+
+| Biome | Name | L4 Gives |
+|-------|------|----------|
+| Plains | Brother Antosh | Netherite upgrade smithing template |
+| Savanna | Sister Antosh | Diamond pickaxe |
+| Taiga | Father Antosh | Netherite ingot |
+
+### Trade Progression (same for all three)
+
+**L1**
+
+| Give | Receive | Villager XP | Rawtell |
+|------|---------|-------------|---------|
+| 1 iron nugget | 1 iron nugget | Negligible | *"Sorry, I'll need an iron ingot."* |
+| 3 smooth stone | 1 blast furnace | Negligible | *"See the armorer about metallurgy."* |
+| 1 iron ingot | 1 iron ingot | Instant level up | *"Ah, you know the art of metallurgy!"* |
+
+**L2**
+
+| Give | Receive | Villager XP | Rawtell |
+|------|---------|-------------|---------|
+| 1 iron ingot | 1 smithing table | Instant level up | *"My family are toolsmiths across 3 biomes. Our coat of arms is the soul lantern. Have thou one?"* |
+
+**L3**
+
+| Give | Receive | Villager XP | Rawtell |
+|------|---------|-------------|---------|
+| 1 soul lantern | 1 soul lantern | Instant level up | *"My family guards the Rune of Guidance."* |
+
+**L4 — instant level up**
+
+| Give | Receive | Villager XP | Rawtell |
+|------|---------|-------------|---------|
+| 1 block of iron | Unique piece* | Instant level up | *"Seek my relatives!"* |
+
+*Unique piece per Antosh: Brother (Plains) → netherite upgrade smithing template, Sister (Savanna) → netherite ingot, Father (Taiga) → diamond pickaxe. Taiga hardest to find, so Father yields the easiest piece.
+
+**L5**
+
+| Give | Receive | Villager XP | Rawtell |
+|------|---------|-------------|---------|
+| 1 netherite pickaxe | Rune of Guidance | Negligible | *"The lantern guided you true."* |
+
