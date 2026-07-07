@@ -120,16 +120,16 @@ All crafted tools start with **low durability**. Professions offer two forms of 
 | Farmer           | Hoe         | Compassion    | Ohm        |      L     | Rune path; named villgrs  | Mushroom               |
 | Fisherman        | Shovel      | Fortitude     |            |    W + C   | Near-death triggers       | Totem, Lightning Rod   |
 | Toolsmith        | Pickaxe     | Guidance      |            |    L + W   | The Family Antosh         | Soul Lantern -> Pillar |
-| Wandering Trader | --          | Humility      | 2 equitones|  0 + 0 + 0 | 2 diff tones breaks peace | Bell                   |
-| Cartographer     | --          | Insight       |            |      W     | Maps to get Quest Items   |                        |
+| Wandering Trader | --          | Humility      |            |  0 + 0 + 0 | 2 diff tones breaks peace | Moss Block, Mat of Moss|
+| Armorer          | Metallurgy* | Insight       | 2 equitones|      W     | Metalurgy unlocks ingots  | Bell                   |
 | Butcher**        | Axe         | Sacrifice     | Paneer     |    L + C   | Spawn eggs of monsters    |                        |
-| Weaponsmith      | Sword       | Valor         |            |      C     | Drops from spawn monsters | Dragon Head -> Pillar  |
-| Librarian        | --          | Spirituality  |            |  L + W + C |                           | Ladder up pillar       |
-| Armorer          | Metallurgy* | --            |            |            | Metalurgy unlocks ingots  |                        |
-| Fletcher         | Bows        | --            |            |     ---    |                           |                        |
+| Weaponsmith      | Sword       | Valor         |            |      C     | Drops from spawn monsters | Captains Banner        |
+| Librarian        | --          | Spirituality  | "O"        |  L + W + C |                           | Ladder up pillar       |
+| Cartographer     | --          |               |            |     --     | Maps to get Quest Items   |                        |
+| Fletcher         | Bows        | --            |            |     ---    | Explains about _____      |                        |
 | Leatherworker    |             |               |            |            | Explains about ______     |                        |
 | Mason            |             |               |            |            | Explains about runes      | Glazed Terracotta      |
-| Shepherd         |             |               |            |            | Explains about ______     |                        |
+| Shepherd         |             |               |            |            | Explains about ______     |                  |
 | Cleric           |             |               |            |            | Explains mantras          |                        |
 
 
