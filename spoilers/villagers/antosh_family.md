@@ -6,9 +6,9 @@ A single villager type (Toolsmith) with biome-specific variants sharing a family
 
 | Biome | Name | Role |
 |-------|------|------|
-| Plains | Brother Antosh | Holds smithing template and can give rune. |
-| Savanna | Sister Antosh | Holds netherite ingot and can give rune. |
-| Taiga | Elder Antosh    | Holds diamond pickaxe and can give rune. |
+| Plains | Brother Antosh | Holds smithing template and can give Rune of Guidance. |
+| Savanna | Sister Antosh | Holds netherite ingot and can give Rune of Guidance. |
+| Taiga | Elder Antosh    | Holds diamond pickaxe and can give Rune of Guidance. |
 
 ### The Mechanic
 

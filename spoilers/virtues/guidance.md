@@ -3,7 +3,21 @@
 > To accept counsel, to learn, to grow others.
 
 **Anti-virtue:** Withholding
+
 **Symbol:** Soul Lantern
+**Tool/Weapon:** Netherite Pickaxe
+
+**Rune:** <someColor>-glazed terracotta
+**Mantra:** SHH  (see riddle)
+**Pillar adornment:** Pink carpet
+**Pillar direction:** North ("We are guided by the NORTH star")
+
+The mantra riddle: 
+- Each person gives their part of the clue.   
+  - Start with me ("ANTOSH").  Wrap me in "H"ugs!  
+  - Start with me ("ANTOSH").  Stomp on the ANT! 
+  - Start with me ("ANTOSH").  And, heave' me HO!  
+  - Solution: "ANTOSH" -> HANTOSHH -> HOSHH -> SHH.
 
 ---
 
@@ -19,7 +33,7 @@
 
 | Action | Trigger | Signal |
 |--------|---------|--------|
-| Carry 2+ smithing tables | inventory count check | *"That's not yours to keep."* |
+| Carry 2+ smithing tables | inventory count check | *"Never hoard villager job stations."* |
 
 **Smithing table hoarding:** encourages player to place it, ideally in a village where others can use it.
 
@@ -63,13 +77,20 @@ Toolsmith family spread across three biomes. Each holds one piece of the netheri
 
 | Give | Receive | Villager XP | Rawtell |
 |------|---------|-------------|---------|
-| 1 block of iron | Unique piece* | Instant level up | *"Seek my relatives!"* |
+| 1 block of iron | Unique piece* | Instant level up | *"Seek ye all my relatives! Be guided by the star of the NORTH."* |
 
-*Unique piece per Antosh: Brother (Plains) → netherite upgrade smithing template, Sister (Savanna) → netherite ingot, Father (Taiga) → diamond pickaxe. Taiga hardest to find, so Father yields the easiest piece.
+*Unique piece per Antosh: Brother (Plains) → netherite upgrade smithing template, Sister (Savanna) → netherite ingot, Father (Taiga) → diamond pickaxe. Taiga hardest to find, so Father yields the "easiest" piece to obtain if we were in vanilla.
 
 **L5**
 
 | Give | Receive | Villager XP | Rawtell |
 |------|---------|-------------|---------|
-| 1 netherite pickaxe | Rune of Guidance | Negligible | *"The lantern guided you true."* |
+| 1 netherite pickaxe | Rune of Guidance | Negligible | *"The lantern and North Star guided you true."* |
 
+
+## Future versions, possible changes
+
+- Each Santosh requires an item showing proof of travel to each of the other 2 biomes.
+  Savannah: Armadillo scutes
+  Plains: Pink carpet (wool + red dye + white dye)  -- must adorn the Pillar of Guidance with pink carpet...? Or adorn with iron block or iron pressure plate...? 
+  Taiga: Berries.
