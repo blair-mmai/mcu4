@@ -60,14 +60,17 @@ with any farmer at any level, if not already earned. Toast is "Mushy Chef".
 | L2 | 1 pumpkin seed → 1 melon seed | Instant level up | *"The mantra is now in one of our names."* | Honesty bait — fair, gates L3 |
 | L3 | 1 mushroom soup → book and quill | Instant level up | *"Read it carefully."* | Book — once only, gates L4 |
 | L4 | 1 mushroom soup → 1 empty bowl | Negligible | *"I'll share this with the others."* | Renewable soup source |
+| L5 | 1 mushroom soup → 1 empty bowl | Negligible | TBD | |
+| L5 | 1 empty bowl → 1 mushroom soup | Negligible | TBD | Renewable soup source |
 
 ---
 
 ## Ginnie Mae's Book
 
-> "Day unknown. Found the circle. Eight pillars. The arrow pointed the
-> way. I replaced the top stone with mycelium, crouched at dawn, and
-> held firm the rune, while I was at peace in compassion."
+> "Day unknown. Found the circle. Eight pillars. The weathervane of
+> Compassion always points to the SW. I replaced the top stone with
+> mycelium, crouched at dawn, and held firm the rune, while I was at
+> peace in compassion."
 
 ---
 

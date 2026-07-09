@@ -6,6 +6,25 @@
 execute as @e[type=minecraft:villager,tag=!virtues.named] run function virtues:player/assign_farmer_name
 execute as @e[type=minecraft:villager,tag=virtues.named] if data entity @s {VillagerData:{profession:"minecraft:none"}} run function virtues:player/reset_farmer_name
 
+# Music state machine
+scoreboard players add @a virtues.music_state 0
+scoreboard players add @a virtues.music_timer 0
+scoreboard players remove @a[scores={virtues.music_timer=1..}] virtues.music_timer 1
+scoreboard players set @a virtues.music_desired 1
+execute as @a at @s if entity @e[type=minecraft:villager,distance=..48] run scoreboard players set @s virtues.music_desired 2
+execute as @a if items entity @s weapon.mainhand #virtues:weapons run scoreboard players set @s virtues.music_desired 3
+execute as @a[scores={virtues.in_circle=1}] run scoreboard players set @s virtues.music_desired 4
+execute as @a unless score @s virtues.music_desired = @s virtues.music_state run scoreboard players set @s virtues.music_timer 0
+execute as @a[scores={virtues.music_desired=4,virtues.music_state=1..3}] run scoreboard players set @s virtues.music_timer 0
+execute as @a[scores={virtues.music_desired=1,virtues.music_timer=0}] at @s unless score @s virtues.music_state matches 1 run function virtues:music/play_wanderer
+execute as @a[scores={virtues.music_desired=1,virtues.music_timer=0,virtues.music_state=1}] at @s run function virtues:music/play_wanderer
+execute as @a[scores={virtues.music_desired=2,virtues.music_timer=0}] at @s unless score @s virtues.music_state matches 2 run function virtues:music/play_towns
+execute as @a[scores={virtues.music_desired=2,virtues.music_timer=0,virtues.music_state=2}] at @s run function virtues:music/play_towns
+execute as @a[scores={virtues.music_desired=3,virtues.music_timer=0}] at @s unless score @s virtues.music_state matches 3 run function virtues:music/play_combat
+execute as @a[scores={virtues.music_desired=3,virtues.music_timer=0,virtues.music_state=3}] at @s run function virtues:music/play_combat
+execute as @a[scores={virtues.music_desired=4,virtues.music_timer=0}] at @s unless score @s virtues.music_state matches 4 run function virtues:music/play_shrines
+execute as @a[scores={virtues.music_desired=4,virtues.music_timer=0,virtues.music_state=4}] at @s run function virtues:music/play_shrines
+
 # Named farmer greetings — fire once when player first walks within 4 blocks
 scoreboard players add @a virtues.greeted_fannie 0
 scoreboard players add @a virtues.greeted_freddie 0
@@ -14,9 +33,10 @@ execute as @a[scores={virtues.greeted_fannie=0}] at @s if entity @e[type=minecra
 execute as @a[scores={virtues.greeted_freddie=0}] at @s if entity @e[type=minecraft:villager,name="Freddie Mac Moo",distance=..4] run function virtues:player/greet_freddie
 execute as @a[scores={virtues.greeted_ginnie=0}] at @s if entity @e[type=minecraft:villager,name="Ginnie Mae",distance=..4] run function virtues:player/greet_ginnie
 
-# Re-apply custom trades every tick (vanilla regenerates trades on profession re-link)
-execute as @e[type=minecraft:villager] run function virtues:player/setup_farmer_trade
-execute as @e[type=minecraft:wandering_trader] run function virtues:player/setup_wandering_trader_trade
+# Re-apply custom trades every 40 ticks (vanilla regenerates on profession re-link, not every tick)
+scoreboard players add $world virtues.trade_timer 1
+execute if score $world virtues.trade_timer matches 40.. run function virtues:player/run_trade_setup
+execute if score $world virtues.trade_timer matches 40.. run scoreboard players set $world virtues.trade_timer 0
 
 # Detect /trigger RELAXABIT
 scoreboard players enable @a RELAXABIT

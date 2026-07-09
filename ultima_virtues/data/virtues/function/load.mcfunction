@@ -39,6 +39,10 @@ scoreboard objectives add virtues.hay_stolen dummy
 scoreboard objectives add virtues.vanilla_cleared dummy
 scoreboard objectives add RELAXABIT trigger
 scoreboard objectives add virtues.name_roll dummy
+scoreboard objectives add virtues.trade_timer dummy
+scoreboard objectives add virtues.music_state dummy
+scoreboard objectives add virtues.music_desired dummy
+scoreboard objectives add virtues.music_timer dummy
 scoreboard objectives add virtues.greeted_fannie dummy
 scoreboard objectives add virtues.greeted_freddie dummy
 scoreboard objectives add virtues.greeted_ginnie dummy

@@ -1,0 +1,22 @@
+{
+  "music.wanderer": {
+    "sounds": [
+      {"name": "virtues:music/wanderer", "stream": true}
+    ]
+  },
+  "music.towns": {
+    "sounds": [
+      {"name": "virtues:music/towns", "stream": true}
+    ]
+  },
+  "music.combat": {
+    "sounds": [
+      {"name": "virtues:music/combat", "stream": true}
+    ]
+  },
+  "music.shrines": {
+    "sounds": [
+      {"name": "virtues:music/shrines", "stream": true}
+    ]
+  }
+}
