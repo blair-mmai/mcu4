@@ -2,8 +2,26 @@
 # Runs every tick. Checks for players who haven't been given their starting
 # chest yet, and fires the first-join sequence for them exactly once.
 
-# Re-apply custom trades every tick to all farmers (vanilla regenerates trades on profession re-link)
+# Assign random name to any farmer villager that hasn't been named yet
+execute as @e[type=minecraft:villager,tag=!virtues.named] run function virtues:player/assign_farmer_name
+execute as @e[type=minecraft:villager,tag=virtues.named] if data entity @s {VillagerData:{profession:"minecraft:none"}} run function virtues:player/reset_farmer_name
+
+# Named farmer greetings — fire once when player first walks within 4 blocks
+scoreboard players add @a virtues.greeted_fannie 0
+scoreboard players add @a virtues.greeted_freddie 0
+scoreboard players add @a virtues.greeted_ginnie 0
+execute as @a[scores={virtues.greeted_fannie=0}] at @s if entity @e[type=minecraft:villager,name="Fannie Mae",distance=..4] run function virtues:player/greet_fannie
+execute as @a[scores={virtues.greeted_freddie=0}] at @s if entity @e[type=minecraft:villager,name="Freddie Mac Moo",distance=..4] run function virtues:player/greet_freddie
+execute as @a[scores={virtues.greeted_ginnie=0}] at @s if entity @e[type=minecraft:villager,name="Ginnie Mae",distance=..4] run function virtues:player/greet_ginnie
+
+# Re-apply custom trades every tick (vanilla regenerates trades on profession re-link)
 execute as @e[type=minecraft:villager] run function virtues:player/setup_farmer_trade
+execute as @e[type=minecraft:wandering_trader] run function virtues:player/setup_wandering_trader_trade
+
+# Detect /trigger RELAXABIT
+scoreboard players enable @a RELAXABIT
+execute as @a[scores={RELAXABIT=1..}] at @s if entity @e[type=minecraft:enderman,name=BELAATRIX,distance=..10] run function virtues:dev/relax_test
+scoreboard players set @a[scores={RELAXABIT=1..}] RELAXABIT 0
 
 # Clear vanilla advancement tabs for any player who hasn't been cleaned yet this session
 scoreboard players add @a virtues.vanilla_cleared 0

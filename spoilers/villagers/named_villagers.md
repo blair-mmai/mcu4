@@ -35,9 +35,9 @@ A phantom trade was considered but is unnecessary — the XP grant achieves the 
 Each virtue-aligned villager type draws from its own name pool on assignment. Names are randomly selected at the moment of profession claim.
 
 ### Farmer (Compassion)
-- Farmer Fannie
-- Farmer Frank
-- Farmer Flo
+- Farmer Fannie Mae
+- Farmer Freddie Mac (Moo)  
+- Farmer Ginnie Mae
 - *(expand as needed)*
 
 ### Librarian (all 8 virtues)

@@ -1,0 +1,1 @@
+function virtues:player/ending_sequence

@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:pale_oak_boat"},
+    "title": {"text": "Yer Hysterical!"},
+    "description": {"text": "Calm an angry enderman."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:ending/root",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

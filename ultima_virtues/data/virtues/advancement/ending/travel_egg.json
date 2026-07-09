@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:enderman_spawn_egg"},
+    "title": {"text": "Bellatrix's Travel Egg!"},
+    "description": {"text": ""},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:ending/root",
+  "criteria": {
+    "get_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": "minecraft:enderman_spawn_egg"}]
+      }
+    }
+  }
+}

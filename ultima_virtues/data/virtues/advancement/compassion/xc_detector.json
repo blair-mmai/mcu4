@@ -10,7 +10,19 @@
   "parent": "virtues:compassion/root",
   "criteria": {
     "hit_animal": {
-      "trigger": "minecraft:player_hurt_entity"
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {"type": "#virtues:hostile"}
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

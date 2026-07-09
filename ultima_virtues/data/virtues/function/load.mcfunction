@@ -37,6 +37,11 @@ scoreboard objectives add virtues.total_logs_base dummy
 scoreboard objectives add virtues.bowls_traded dummy
 scoreboard objectives add virtues.hay_stolen dummy
 scoreboard objectives add virtues.vanilla_cleared dummy
+scoreboard objectives add RELAXABIT trigger
+scoreboard objectives add virtues.name_roll dummy
+scoreboard objectives add virtues.greeted_fannie dummy
+scoreboard objectives add virtues.greeted_freddie dummy
+scoreboard objectives add virtues.greeted_ginnie dummy
 
 # Wipe all vanilla advancement tabs so they never show
 advancement revoke @a from minecraft:story

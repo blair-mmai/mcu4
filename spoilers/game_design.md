@@ -72,10 +72,10 @@ So, the 3 virtues in mcu4 will be:
 - **Triggers**: implemented by datapack and mcfunction within Minecraft framework.
 - **Custom trades**: custom trades with villagers and traders specific to this non-vanilla version of minecraft.
 - **Starting chest**: spawns when player punches their first tree or digs dirt. The chest is named and tagged to the receiving player (e.g. *"Blair's Pack"*). The chest contains:
-    - a brown mushroom (an ambiguous hint.)
-    - a soul lantern   (an ambiguous hint.)
+    - a brown mushroom (and reveals a hint for early game.)
+    - a soul lantern           (a mystery, at this point - used in middle game)
+    - a tag with no name yet.  (a mystery, at this point - used in endgame)
     - a lore book with some early game clues (TBD)
-    - a bucket of pufferfish, a bucket of water, a bucket of milk, and a bucket of lava ("You'll only need 3.")
 - **Chest ownership (multiplayer)**: each starting chest belongs to the player it was spawned for. In multiplayer:
     - Adding items to *another player's* chest is **allowed** (a gift — scores Sacrifice or Compassion)
     - Removing items from *another player's* chest is **not allowed** — triggers a negative effect and score penalty, even if you put the item there yourself

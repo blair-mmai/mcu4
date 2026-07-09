@@ -1,5 +1,8 @@
 # Compassion Farmers — Trade Tables
 
+> **Status:** Design document only. Per-trade dialogue (tellraw lines) is not yet implemented. Once the full farmer system is working correctly, this file will replace `compassion.md`.
+>
+
 ## Overview
 Three farmers per village, each holding one piece of the Compassion thread.
 Player must visit all three to obtain rune, item frame, and book.
@@ -23,7 +26,7 @@ with any farmer at any level, if not already earned. Toast is "Mushy Chef".
 
 | Level | Trade | Villager XP | Tellraw | Notes |
 |-------|-------|-------------|---------|-------|
-| L1 | 10 brown mushroom → 1 red mushroom | Instant level up | *"I am Fannie Mae. We are the farmers three. A composter each, you'll see."* | |
+| L1 | 2 brown mushroom → 1 red mushroom | Instant level up | *"I am Fannie Mae. We are the farmers three. A composter each, you'll see."* | |
 | L2 | 1 wheat → 1 bread | Negligible | *"A fine deal, don't you think?"* | Honesty bait — unfair, anti-advancement |
 | L2 | 3 wheat → 1 bread | Instant level up | *"Freddie changed his name recently."* | Honesty bait — fair, gates L3 |
 | L3 | 1 mushroom soup → item frame + arrow | Instant level up | *"Freddie changed his name because he takes his role as Keeper of the Rune very seriously."* | Gift — once only, gates L4 |
@@ -37,10 +40,10 @@ with any farmer at any level, if not already earned. Toast is "Mushy Chef".
 
 | Level | Trade | Villager XP | Tellraw | Notes |
 |-------|-------|-------------|---------|-------|
-| L1 | 10 dirt → 1 mycelium | Instant level up | *"I am Freddie Mac Moo. We are the farmers three. A composter each, you'll see."* | Mycelium needed for pillar AND mushroom growing |
+| L1 | 2 dirt → 1 mycelium | Instant level up | *"I am Freddie Mac Moo. We are the farmers three. A composter each, you'll see."* | Mycelium needed for pillar AND mushroom growing |
 | L2 | 1 brown mushroom → 2 brown mushrooms | Negligible | *"A gift from the earth."* | Honesty bait — unfair, anti-advancement |
 | L2 | 1 mushroom soup → 1 mushroom soup | Instant level up | *"I love Fannie's framed picture. It reminds me of the pillar of compassion."* | Honesty bait — fair, gates L3 |
-| L3 | 1 mushroom soup → 1 empty bowl | Grind | *"The rune is not given lightly."* | Grind gate — 10 trades to reach L4 |
+| L3 | 1 mushroom soup → 1 empty bowl | Grind | *"The rune is not given lightly."* | Grind gate — 5 trades to reach L4 |
 | L4 | 1 mushroom soup → brown glazed terracotta | Instant level up | *"Keep it well."* | Rune — once only, gates L5 |
 | L5 | 1 wooden bowl → 1 mushroom soup | Negligible | *"Come back when you're hungry."* | Renewable soup source |
 

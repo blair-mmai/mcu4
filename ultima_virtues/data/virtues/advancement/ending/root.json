@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:enderman_spawn_egg"},
+    "title": {"text": "The End Game"},
+    "description": {"text": ""},
+    "background": "minecraft:textures/block/obsidian.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}
