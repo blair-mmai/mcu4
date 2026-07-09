@@ -46,6 +46,7 @@ scoreboard objectives add virtues.music_timer dummy
 scoreboard objectives add virtues.greeted_fannie dummy
 scoreboard objectives add virtues.greeted_freddie dummy
 scoreboard objectives add virtues.greeted_ginnie dummy
+scoreboard objectives add virtues.bowl_prev dummy
 
 # Wipe all vanilla advancement tabs so they never show
 advancement revoke @a from minecraft:story

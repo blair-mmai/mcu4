@@ -25,6 +25,12 @@ execute as @a[scores={virtues.music_desired=3,virtues.music_timer=0,virtues.musi
 execute as @a[scores={virtues.music_desired=4,virtues.music_timer=0}] at @s unless score @s virtues.music_state matches 4 run function virtues:music/play_shrines
 execute as @a[scores={virtues.music_desired=4,virtues.music_timer=0,virtues.music_state=4}] at @s run function virtues:music/play_shrines
 
+# Soup redemption — detect when bowl enters inventory
+scoreboard players add @a virtues.bowl_prev 0
+execute as @a store result score @s virtues.bowl_count if items entity @s * minecraft:bowl
+execute as @a if score @s virtues.bowl_count > @s virtues.bowl_prev run function virtues:player/soup_redemption
+execute as @a store result score @s virtues.bowl_prev if items entity @s * minecraft:bowl
+
 # Named farmer greetings — fire once when player first walks within 4 blocks
 scoreboard players add @a virtues.greeted_fannie 0
 scoreboard players add @a virtues.greeted_freddie 0

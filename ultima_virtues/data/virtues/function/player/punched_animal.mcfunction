@@ -8,8 +8,10 @@ execute if score @s virtues.animal_punches matches 3 run advancement grant @s on
 execute if score @s virtues.animal_punches matches 4.. run advancement grant @s only virtues:compassion/callous_brute
 
 execute if score @s virtues.animal_punches matches 1 run effect give @s nausea 3 1
-execute if score @s virtues.animal_punches matches 2 run effect give @s nausea 6 1
-execute if score @s virtues.animal_punches matches 3 run effect give @s nausea 9 1
+execute if score @s virtues.animal_punches matches 2 run effect give @s nausea 3 1
+execute if score @s virtues.animal_punches matches 2 run effect give @s poison 3 1
+execute if score @s virtues.animal_punches matches 3 run effect give @s nausea 6 1
+execute if score @s virtues.animal_punches matches 3 run effect give @s poison 6 1
 execute if score @s virtues.animal_punches matches 4.. run effect give @s nausea 15 1
 execute if score @s virtues.animal_punches matches 4.. run effect give @s poison 15 1
 
