@@ -4,6 +4,20 @@ Ideas deferred from the current implementation. Pick these up in a later iterati
 
 ---
 
+## Compassion — Village Thief anti-virtue
+
+| Advancement | Trigger | Tier | Punishment |
+|-------------|---------|------|------------|
+| `thief` — Village Thief | Pick up a hay bale | Blocking | Nausea II + Poison II (15s each) |
+
+Additional triggers to refine:
+- Break a hay bale **in a village** (`inventory_changed` hay_block near village — currently fires anywhere)
+- Open a chest in a village (`minecraft.custom:minecraft.open_chest` near village) → score penalty
+
+Note: village proximity detection is needed before these can be scoped correctly. Abandoned for now.
+
+---
+
 ## Runes
 
 ### Randomize terracotta colors per world

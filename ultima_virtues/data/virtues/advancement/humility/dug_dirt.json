@@ -2,7 +2,7 @@
   "display": {
     "icon": {"id": "minecraft:dirt"},
     "title": {"text": "Grounded"},
-    "description": {"text": "Somehow, this feels cathartic."},
+    "description": {"text": "Somehow, digging feels cathartic."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false

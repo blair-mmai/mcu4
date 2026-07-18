@@ -26,18 +26,8 @@ Escalating punishment for punching animals. `xc1` and `xc2` are warnings; `xc3` 
 | `xc3` — 3rd offence | Punch any animal again | Blocking | Nausea II (9s) |
 | `callous_brute` — 4th+ offence | Punch any animal again | Blocking | Nausea II + Poison II (15s each) |
 
-### Village thief chain
+**Detection:** xc_detector fires on any entity hit (entity type conditions are broken in 26.2). `punched_animal.mcfunction` checks for hostile mobs within 4 blocks and returns early if any are present. Covered hostiles: zombie, husk, drowned, skeleton, stray, wither_skeleton, creeper, spider, cave_spider, witch, pillager, vindicator, evoker, ravager, phantom, warden, breeze, blaze, piglin_brute, slime, magma_cube, endermite, silverfish.
 
-| Advancement | Trigger | Tier | Punishment |
-|-------------|---------|------|------------|
-| `thief` — Village Thief | Pick up a hay bale | Blocking | Nausea II + Poison II (15s each) |
-
-### Other anti-virtue actions (not yet implemented as advancements)
-
-| Action | MC Trigger | Result |
-|--------|-----------|--------|
-| Break a hay bale in a village | `inventory_changed` hay_block near village | Upgrade to `thief` (currently fires anywhere) |
-| Open a chest in a village | `minecraft.custom:minecraft.open_chest` near village | Score penalty (TBD) |
 
 ## Rune
 
