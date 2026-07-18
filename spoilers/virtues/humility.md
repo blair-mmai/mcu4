@@ -4,6 +4,8 @@
 
 **Anti-virtue: Pride**
 
+**Prerequisite:** [Vegan](vegan.md) L3 ("From Seed") must be achieved before Humility enlightenment is possible.
+
 ## Virtue actions
 
 | Action | MC Trigger | Conflicts With | Result |

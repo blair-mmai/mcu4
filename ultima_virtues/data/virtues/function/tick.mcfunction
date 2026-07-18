@@ -46,14 +46,12 @@ scoreboard players enable @a RELAXABIT
 execute as @a[scores={RELAXABIT=1..}] at @s if entity @e[type=minecraft:enderman,name=BELAATRIX,distance=..10] run function virtues:dev/relax_test
 scoreboard players set @a[scores={RELAXABIT=1..}] RELAXABIT 0
 
-# Clear vanilla advancement tabs for any player who hasn't been cleaned yet this session
-scoreboard players add @a virtues.vanilla_cleared 0
-execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:story
-execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:nether
-execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:end
-execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:adventure
-execute as @a[scores={virtues.vanilla_cleared=0}] run advancement revoke @s from minecraft:husbandry
-scoreboard players set @a[scores={virtues.vanilla_cleared=0}] virtues.vanilla_cleared 1
+# Clear vanilla advancement tabs every 40 ticks to catch any newly granted ones
+execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:story
+execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:nether
+execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:end
+execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:adventure
+execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:husbandry
 
 # Run world init exactly once
 scoreboard players add $world virtues.world_init 0

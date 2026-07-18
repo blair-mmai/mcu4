@@ -36,7 +36,6 @@ scoreboard objectives add virtues.animal_punches dummy
 scoreboard objectives add virtues.total_logs_base dummy
 scoreboard objectives add virtues.bowls_traded dummy
 scoreboard objectives add virtues.hay_stolen dummy
-scoreboard objectives add virtues.vanilla_cleared dummy
 scoreboard objectives add RELAXABIT trigger
 scoreboard objectives add virtues.name_roll dummy
 scoreboard objectives add virtues.player_id dummy
@@ -61,5 +60,8 @@ advancement revoke @a from minecraft:nether
 advancement revoke @a from minecraft:end
 advancement revoke @a from minecraft:adventure
 advancement revoke @a from minecraft:husbandry
+advancement revoke @a only minecraft:adventure/kill_a_mob
+advancement revoke @a only minecraft:adventure/bow_and_arrow
+advancement revoke @a only minecraft:adventure/shoot_arrow
 
 tellraw @a [{"text":"Ultima Virtues datapack loaded.","color":"gray","italic":true}]
