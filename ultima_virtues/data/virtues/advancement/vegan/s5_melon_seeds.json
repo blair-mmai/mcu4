@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:melon_seeds"},
+    "title": {"text": "Green Thumb"},
+    "description": {"text": "You've planted it all. The land knows your name."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/s4_pumpkin_seeds",
+  "criteria": {
+    "planted_melon": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {"block": {"blocks": ["minecraft:melon_stem"]}}
+    }
+  }
+}

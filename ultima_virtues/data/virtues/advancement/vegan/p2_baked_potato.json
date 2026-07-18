@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:baked_potato"},
+    "title": {"text": "Hot Potato"},
+    "description": {"text": "Roasted over an open flame. No animals involved."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/p1_bread",
+  "criteria": {
+    "ate_baked_potato": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {"item": {"items": ["minecraft:baked_potato"]}}
+    }
+  }
+}

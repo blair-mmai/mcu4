@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:carrot"},
+    "title": {"text": "Enlightened Vegan"},
+    "description": {"text": "You live it. You give it."},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:vegan/p5_golden_carrot",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:wheat_seeds"},
+    "title": {"text": "Sower"},
+    "description": {"text": "You planted something and walked away."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/root",
+  "criteria": {
+    "planted_wheat": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {"block": {"blocks": ["minecraft:wheat"]}}
+    }
+  }
+}

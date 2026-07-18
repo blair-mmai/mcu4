@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:golden_carrot"},
+    "title": {"text": "Gilded Garden"},
+    "description": {"text": "You spent gold on a carrot. And ate it yourself."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/p4_cookie",
+  "criteria": {
+    "ate_golden_carrot": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {"item": {"items": ["minecraft:golden_carrot"]}}
+    }
+  }
+}

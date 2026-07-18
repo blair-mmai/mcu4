@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:pumpkin_seeds"},
+    "title": {"text": "Patch Work"},
+    "description": {"text": "A pumpkin patch in progress."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/s3_beetroot_seeds",
+  "criteria": {
+    "planted_pumpkin": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {"block": {"blocks": ["minecraft:pumpkin_stem"]}}
+    }
+  }
+}

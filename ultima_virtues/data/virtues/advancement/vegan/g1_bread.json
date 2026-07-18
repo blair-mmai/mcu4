@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:bread"},
+    "title": {"text": "Breaking Bread"},
+    "description": {"text": "You baked bread and gave it away."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/root",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

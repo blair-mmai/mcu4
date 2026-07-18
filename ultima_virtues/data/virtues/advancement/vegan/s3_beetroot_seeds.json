@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:beetroot_seeds"},
+    "title": {"text": "Root Cause"},
+    "description": {"text": "Beetroot takes patience. You have it."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/s2_sapling",
+  "criteria": {
+    "planted_beetroot": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {"block": {"blocks": ["minecraft:beetroots"]}}
+    }
+  }
+}

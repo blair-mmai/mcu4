@@ -18,6 +18,15 @@ Note: village proximity detection is needed before these can be scoped correctly
 
 ---
 
+## Vegan tab — Chest theft detection
+
+Taking from another player's named chest should trigger insta-death + a Spirituality anti-advancement. Detection mechanism not yet designed — needs chest ownership tag system (similar to circle marker ownership) so the game knows whose chest it is. Three open questions:
+1. Does chest detection use proximity to a player's marker, or an explicit named/tagged chest?
+2. Does L6 Enlightened Vegan require both tracks independently completed?
+3. Should generosity track items need to be crafted by the giver (not just picked up and deposited)?
+
+---
+
 ## Vegan tab — L5 Suspicious Stew
 
 The intended L5 Vegan item is suspicious stew crafted with an oxeye daisy (grants Regeneration), given to another player's chest. Deferred because L5 is placeholder beetroot soup for now.

@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:brown_mushroom"},
+    "title": {"text": "Vegan"},
+    "description": {"text": "To live without taking from others."},
+    "background": "minecraft:textures/block/farmland_moist.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

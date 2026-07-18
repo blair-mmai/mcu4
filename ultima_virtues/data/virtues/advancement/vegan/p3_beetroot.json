@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:beetroot_soup"},
+    "title": {"text": "Beet It"},
+    "description": {"text": "An acquired taste. You acquired it."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/p2_baked_potato",
+  "criteria": {
+    "ate_beetroot_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {"item": {"items": ["minecraft:beetroot_soup"]}}
+    }
+  }
+}

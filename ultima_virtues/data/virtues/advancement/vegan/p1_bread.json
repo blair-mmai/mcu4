@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:bread"},
+    "title": {"text": "Staff of Life"},
+    "description": {"text": "Bread. Simple. Honest."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/root",
+  "criteria": {
+    "ate_bread": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {"item": {"items": ["minecraft:bread"]}}
+    }
+  }
+}

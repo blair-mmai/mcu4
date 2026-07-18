@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:oak_sapling"},
+    "title": {"text": "Forester"},
+    "description": {"text": "You gave a tree its start."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/s1_wheat_seeds",
+  "criteria": {
+    "planted_sapling": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {"block": {"tag": "minecraft:saplings"}}
+    }
+  }
+}

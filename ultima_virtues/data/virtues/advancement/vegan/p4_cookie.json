@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:cookie"},
+    "title": {"text": "Sweet Conviction"},
+    "description": {"text": "You tracked down cocoa beans and baked them into something wonderful."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/p3_beetroot",
+  "criteria": {
+    "crafted_cookie": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {"recipe": "minecraft:cookie"}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:cookie"},
+    "title": {"text": "Cookie Monster (Reformed)"},
+    "description": {"text": "You made cookies and gave them away instead."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/g3_beetroot",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

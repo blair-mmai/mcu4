@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:baked_potato"},
+    "title": {"text": "Warm Hands"},
+    "description": {"text": "You roasted a potato and left it for someone else."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/g1_bread",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

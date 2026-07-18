@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:golden_carrot"},
+    "title": {"text": "Level 5 Vegan"},
+    "description": {"text": "I don't eat anything that casts a shadow."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/g4_cookie",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

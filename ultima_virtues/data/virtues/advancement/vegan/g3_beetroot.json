@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:beetroot_soup"},
+    "title": {"text": "From the Earth"},
+    "description": {"text": "You grew it, you made it, you gave it away."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "virtues:vegan/g2_baked_potato",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}
