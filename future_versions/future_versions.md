@@ -18,6 +18,30 @@ Note: village proximity detection is needed before these can be scoped correctly
 
 ---
 
+## Vegan tab — L5 Suspicious Stew
+
+The intended L5 Vegan item is suspicious stew crafted with an oxeye daisy (grants Regeneration), given to another player's chest. Deferred because L5 is placeholder beetroot soup for now.
+
+Suspicious stew effects by flower:
+
+| Flower | Effect | Duration |
+|--------|--------|----------|
+| Poppy | Night Vision | 5s |
+| Dandelion / Blue Orchid | Saturation | 0.35s |
+| Allium | Fire Resistance | 4s |
+| Azure Bluet | Blindness | 8s |
+| Red/White/Pink Tulip | Weakness | 9s |
+| Oxeye Daisy | Regeneration | 8s |
+| Cornflower | Jump Boost | 6s |
+| Lily of the Valley | Poison | 12s |
+| Wither Rose | Wither | 8s |
+| Torchflower | Night Vision | 5s |
+| Closed/Open Eyeblossom | Blindness / Nausea | 6–7s |
+
+Oxeye Daisy (Regeneration) chosen for L5 — the most intentionally caring gift. Knowing which flower heals is itself a form of wisdom.
+
+---
+
 ## Runes
 
 ### Randomize terracotta colors per world
