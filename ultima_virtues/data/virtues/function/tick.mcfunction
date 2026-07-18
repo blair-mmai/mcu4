@@ -2,6 +2,9 @@
 # Runs every tick. Checks for players who haven't been given their starting
 # chest yet, and fires the first-join sequence for them exactly once.
 
+# Assign player ID to any player who hasn't been assigned one yet
+execute as @a[scores={virtues.player_id=0}] run function virtues:player/assign_player_id
+
 # Assign random name to any farmer villager that hasn't been named yet
 execute as @e[type=minecraft:villager,tag=!virtues.named] run function virtues:player/assign_farmer_name
 execute as @e[type=minecraft:villager,tag=virtues.named] if data entity @s {VillagerData:{profession:"minecraft:none"}} run function virtues:player/reset_farmer_name
@@ -13,7 +16,7 @@ scoreboard players remove @a[scores={virtues.music_timer=1..}] virtues.music_tim
 scoreboard players set @a virtues.music_desired 1
 execute as @a at @s if entity @e[type=minecraft:villager,distance=..48] run scoreboard players set @s virtues.music_desired 2
 execute as @a if items entity @s weapon.mainhand #virtues:weapons run scoreboard players set @s virtues.music_desired 3
-execute as @a[scores={virtues.in_circle=1}] run scoreboard players set @s virtues.music_desired 4
+execute as @a[scores={virtues.in_circle=1..}] run scoreboard players set @s virtues.music_desired 4
 execute as @a unless score @s virtues.music_desired = @s virtues.music_state run scoreboard players set @s virtues.music_timer 0
 execute as @a[scores={virtues.music_desired=4,virtues.music_state=1..3}] run scoreboard players set @s virtues.music_timer 0
 execute as @a[scores={virtues.music_desired=1,virtues.music_timer=0}] at @s unless score @s virtues.music_state matches 1 run function virtues:music/play_wanderer
@@ -24,12 +27,6 @@ execute as @a[scores={virtues.music_desired=3,virtues.music_timer=0}] at @s unle
 execute as @a[scores={virtues.music_desired=3,virtues.music_timer=0,virtues.music_state=3}] at @s run function virtues:music/play_combat
 execute as @a[scores={virtues.music_desired=4,virtues.music_timer=0}] at @s unless score @s virtues.music_state matches 4 run function virtues:music/play_shrines
 execute as @a[scores={virtues.music_desired=4,virtues.music_timer=0,virtues.music_state=4}] at @s run function virtues:music/play_shrines
-
-# Soup redemption — detect when bowl enters inventory
-scoreboard players add @a virtues.bowl_prev 0
-execute as @a store result score @s virtues.bowl_count if items entity @s * minecraft:bowl
-execute as @a if score @s virtues.bowl_count > @s virtues.bowl_prev run function virtues:player/soup_redemption
-execute as @a store result score @s virtues.bowl_prev if items entity @s * minecraft:bowl
 
 # Named farmer greetings — fire once when player first walks within 4 blocks
 scoreboard players add @a virtues.greeted_fannie 0
@@ -81,7 +78,8 @@ execute as @a run function virtues:player/check_tree_damage
 
 # Circle entry detection — fires "This is X's circle" on the tick they cross from 6 to 5 blocks away
 scoreboard players add @a virtues.in_circle 0
-execute as @a[scores={virtues.in_circle=0}] at @s if entity @e[type=minecraft:marker,tag=virtues.owner,distance=..5] run function virtues:player/enter_circle
-execute as @a[scores={virtues.in_circle=1}] at @s unless entity @e[type=minecraft:marker,tag=virtues.owner,distance=..5] run scoreboard players set @s virtues.in_circle 0
+execute as @a[scores={virtues.in_circle=0}] at @s if entity @e[type=minecraft:marker,tag=virtues.owner,distance=..5] run function virtues:player/check_circle_ownership
+execute as @a[scores={virtues.in_circle=0}] at @s if entity @e[type=minecraft:marker,tag=virtues.owner,distance=..5] run function virtues:player/enter_other_circle
+execute as @a[scores={virtues.in_circle=1..}] at @s unless entity @e[type=minecraft:marker,tag=virtues.owner,distance=..5] run scoreboard players set @s virtues.in_circle 0
 
 

@@ -3,6 +3,8 @@ execute positioned ~2 ~ ~ run loot insert ~ ~ ~ loot virtues:chests/starting_che
 summon minecraft:marker ~2 ~ ~
 tag @e[type=minecraft:marker,distance=..4,limit=1,sort=nearest] add virtues.area
 tag @e[type=minecraft:marker,distance=..4,limit=1,sort=nearest,tag=virtues.area] add virtues.owner
+execute as @e[type=minecraft:marker,distance=..4,limit=1,sort=nearest,tag=virtues.owner] run scoreboard players operation @s virtues.player_id = @p[distance=..5,limit=1] virtues.player_id
+scoreboard players set @s virtues.chest_spawned 1
 # North — Humility — White terracotta
 setblock ~2 ~1 ~-4 minecraft:mossy_cobblestone
 setblock ~2 ~ ~-4 minecraft:mossy_cobblestone

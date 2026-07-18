@@ -12,10 +12,13 @@
 #   320      -> spawn chest + circle, end sequence
 
 execute as @a[scores={virtues.intro_timer=60}] run title @s subtitle {"text":"You find yourself in a field.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=60}] run tellraw @s {"text":"You find yourself in a field.","color":"gray","italic":true}
 execute as @a[scores={virtues.intro_timer=120}] run title @s subtitle {"text":"You are a stranger here.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=120}] run tellraw @s {"text":"You are a stranger here.","color":"gray","italic":true}
 execute as @a[scores={virtues.intro_timer=200}] run title @s subtitle {"text":"","color":"gray","italic":true}
 execute as @a[scores={virtues.intro_timer=260}] run title @s subtitle {"text":"...you feel an urge to punch a tree.","color":"gray","italic":true}
-execute as @a[scores={virtues.intro_timer=320}] at @s run function virtues:player/spawn_starting_chest
+execute as @a[scores={virtues.intro_timer=260}] run tellraw @s {"text":"...you feel an urge to punch a tree.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=320,virtues.chest_spawned=0}] at @s run function virtues:player/spawn_starting_chest
 execute as @a[scores={virtues.intro_timer=320}] run scoreboard players set @s virtues.intro_timer 0
 
 # Advance the timer for anyone currently mid-sequence (1 through 319)

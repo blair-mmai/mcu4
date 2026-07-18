@@ -39,6 +39,12 @@ scoreboard objectives add virtues.hay_stolen dummy
 scoreboard objectives add virtues.vanilla_cleared dummy
 scoreboard objectives add RELAXABIT trigger
 scoreboard objectives add virtues.name_roll dummy
+scoreboard objectives add virtues.player_id dummy
+scoreboard objectives add virtues.next_player_id dummy
+scoreboard objectives add virtues.chest_spawned dummy
+scoreboard objectives add virtues.circle_check dummy
+scoreboard objectives add virtues.circle_owner_id dummy
+scoreboard players add $world virtues.next_player_id 0
 scoreboard objectives add virtues.trade_timer dummy
 scoreboard objectives add virtues.music_state dummy
 scoreboard objectives add virtues.music_desired dummy

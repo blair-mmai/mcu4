@@ -17,36 +17,43 @@ See [spoilers/](spoilers/) if you want to know how to win before playing.
 
 ---
 
-## Installing the datapack
+## Installing
 
-### Step 1 — Download the datapack
+### Step 1 — Download the files
 
-On this GitHub page, click the green **Code** button → **Download ZIP**. Unzip it. Inside you'll find a folder called `ultima_virtues` — that's the datapack.
+On this GitHub page, click the green **Code** button → **Download ZIP**. Unzip it. Inside you'll find two folders:
 
-### Step 2 — Find your Minecraft saves folder
+- `ultima_virtues` — the datapack
+- `virtues_resourcepack` — the resource pack (custom music)
 
-**Java Edition (most common on PC/Mac):**
+### Step 2 — Install the resource pack
 
-- **Windows**: Press `Win + R`, type `%appdata%\.minecraft\saves` and hit Enter
-- **Mac**: Open Finder → Go → Go to Folder → type `~/Library/Application Support/minecraft/saves`
-- **Linux**: `~/.minecraft/saves`
+Copy the `virtues_resourcepack` folder into your Minecraft resource packs folder:
 
-**Using PrismLauncher or MultiMC:**
-Right-click your instance → **Folder** → open the `minecraft/saves` folder from there.
+- **Windows (vanilla)**: `%appdata%\.minecraft\resourcepacks\`
+- **Windows (PrismLauncher)**: `%appdata%\PrismLauncher\instances\<instance>\minecraft\resourcepacks\`
+- **Mac**: `~/Library/Application Support/minecraft/resourcepacks/`
 
 ### Step 3 — Create a new world with the datapack
 
 1. Open Minecraft and click **Singleplayer → Create New World**
-2. Before hitting Create, click **More** → **Data Packs**
-3. Click **Open Pack Folder** — this opens the datapacks folder for your new world
-4. Copy the `ultima_virtues` folder into that folder
-5. Back in Minecraft, click the datapack to move it from **Available** to **Selected**
-6. Make sure to check **Bonus Chest** on the world creation screen
-7. Click **Create New World**
+2. Set the world name and game mode as desired
+3. Turn on **Allow Cheats** — some early game guidance uses commands
+4. Click **More** → **Data Packs**
+5. Click **Open Pack Folder** — this opens the datapacks folder for your new world
+6. Copy the `ultima_virtues` folder into that folder
+7. Back in Minecraft, click the datapack to move it from **Available** to **Selected**
+8. Click **Create New World**
 
-### Step 4 — Enable cheats (recommended)
+### Step 4 — Enable the resource pack
 
-Some early game guidance uses commands. On the world creation screen, turn on **Allow Cheats** so you can run `/datapack list` and `/reload` if needed.
+1. From the title screen or in-game, go to **Options → Resource Packs**
+2. Verify `virtues_resourcepack` appears under **Selected** — if not, move it there
+3. If you had to move it, click **Done** and re-enter the world
+
+### Step 5 — What to expect on first entry
+
+Once the world loads, do nothing — an intro sequence will begin. After roughly 16 seconds a stone circle with a chest will appear around you. That chest is your starting point.
 
 ---
 
