@@ -7,6 +7,9 @@ scoreboard players add $world virtues.next_player_id 1
 scoreboard players operation @s virtues.player_id = $world virtues.next_player_id
 
 recipe give @s *
+effect clear @s
+attribute @s minecraft:max_health base set 20
+function virtues:player/spawn_starting_chest
 effect give @s minecraft:blindness 22 1
 stopsound @s music
 title @s title {"text":"","color":"white"}

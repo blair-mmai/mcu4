@@ -10,13 +10,33 @@
     {
       "rolls": 1,
       "entries": [
-        { "type": "minecraft:item", "name": "minecraft:name_tag" }
+        { "type": "minecraft:item", "name": "minecraft:writable_book" }
       ]
     },
     {
       "rolls": 1,
       "entries": [
-        { "type": "minecraft:item", "name": "minecraft:anvil" }
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:written_book_content": {
+                  "title": "Notes on This Place",
+                  "author": "B.",
+                  "pages": [
+                    {"raw": {"text": "You are not the first to wake here without memory.\n\nThe fields do not ask your name. The trees do not know your past.\n\nBut something here is watching.", "color": "black"}},
+                    {"raw": {"text": "There are eight virtues. Not rules — more like\nshapes that a life can take.\n\nYou will not be told what they are.\n\nYou will find them by living, or you will not find them at all.", "color": "black"}},
+                    {"raw": {"text": "There is one who has watched this place longer than most.\n\nShe does not speak in words you will understand at first.\n\nHer name is Bellatrix.\n\nShe is very old.\n\nDo not be afraid.", "color": "black"}},
+                    {"raw": {"text": "Begin with what is in front of you.\n\n— B.", "color": "black"}}
+                  ]
+                }
+              }
+            }
+          ]
+        }
       ]
     },
     {

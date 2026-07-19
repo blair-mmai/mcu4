@@ -6,8 +6,7 @@ scoreboard players operation @s virtues.log_delta += @s virtues.mined_jungle
 scoreboard players operation @s virtues.log_delta += @s virtues.mined_acacia
 scoreboard players operation @s virtues.log_delta += @s virtues.mined_dark_oak
 scoreboard players operation @s virtues.log_delta -= @s virtues.total_logs_base
-execute if score @s virtues.log_delta matches 1.. run effect give @s minecraft:wither 3 1 true
-execute if score @s virtues.log_delta matches 1.. run item damage entity @s weapon.mainhand 9 minecraft:player
+execute if score @s virtues.log_delta matches 1.. run damage @s 2
 execute if score @s virtues.log_delta matches 1.. run function virtues:player/open_vegan_tab
 execute if score @s virtues.log_delta matches 1.. run advancement grant @s only virtues:vegan/tree_abuser
 execute if score @s virtues.log_delta matches 1.. run scoreboard players operation @s virtues.total_logs_base += @s virtues.log_delta

@@ -1,4 +1,6 @@
 advancement revoke @s everything
+effect clear @s
+attribute @s minecraft:max_health base set 20
 scoreboard players set @s virtues.hum_tab_done 0
 scoreboard players set @s virtues.val_tab_done 0
 scoreboard players set @s virtues.announced_compassion 0
