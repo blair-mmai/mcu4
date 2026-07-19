@@ -35,6 +35,8 @@ scoreboard players operation @s virtues.sapling_baseline += @s virtues.used_mang
 scoreboard players operation @s virtues.beetroot_baseline = @s virtues.used_beetroot_seeds
 scoreboard players operation @s virtues.pumpkin_baseline = @s virtues.used_pumpkin_seeds
 scoreboard players operation @s virtues.melon_baseline = @s virtues.used_melon_seeds
+scoreboard players operation @s virtues.wheat_feed_baseline = @s virtues.used_wheat
+scoreboard players operation @s virtues.animals_bred_baseline = @s virtues.animals_bred
 recipe give @s *
 advancement revoke @s only virtues:compassion/xc_detector
 execute at @s as @e[type=minecraft:marker,tag=virtues.owner,distance=..500,limit=1,sort=nearest] run scoreboard players operation @s virtues.player_id = @p[distance=..500,limit=1,sort=nearest] virtues.player_id

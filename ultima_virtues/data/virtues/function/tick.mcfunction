@@ -88,6 +88,10 @@ scoreboard players set @a[scores={virtues.firstjoin=0}] virtues.firstjoin 1
 # Drive any in-progress intro title sequences
 function virtues:player/intro_sequence
 
+# Track whether each player has a hostile mob nearby (used to filter animal-punch detection)
+scoreboard players set @a virtues.near_hostile 0
+execute as @a at @s if entity @e[type=#virtues:hostile_mobs,distance=..10] run scoreboard players set @s virtues.near_hostile 1
+
 # First-action milestone checks (dirt, tree) — opens Humility and Valor tabs
 execute as @a run function virtues:player/check_first_actions
 
@@ -96,6 +100,7 @@ execute as @a run function virtues:player/check_tree_damage
 execute as @a run function virtues:player/check_stone_damage
 execute as @a run function virtues:player/check_iron_ingots
 execute as @a run function virtues:player/check_vegan_planting
+execute as @a run function virtues:player/check_compassion_acts
 
 # Circle entry detection — fires "This is X's circle" on the tick they cross from 6 to 5 blocks away
 scoreboard players add @a virtues.in_circle 0

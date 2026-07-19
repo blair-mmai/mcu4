@@ -63,6 +63,7 @@ scoreboard objectives add virtues.announced_vegan dummy
 scoreboard objectives add virtues.mined_stone minecraft.mined:minecraft.stone
 scoreboard objectives add virtues.stone_baseline dummy
 scoreboard objectives add virtues.hit_hostile dummy
+scoreboard objectives add virtues.near_hostile dummy
 scoreboard objectives add virtues.ingot_count dummy
 scoreboard objectives add virtues.used_wheat_seeds minecraft.used:minecraft.wheat_seeds
 scoreboard objectives add virtues.used_oak_sap minecraft.used:minecraft.oak_sapling
@@ -86,6 +87,12 @@ scoreboard objectives add virtues.ingot_blocks dummy
 scoreboard objectives add virtues.ingot_remainder dummy
 scoreboard objectives add virtues.ingot_nuggets dummy
 scoreboard objectives add virtues.is_metallurgist dummy
+scoreboard objectives add virtues.used_wheat minecraft.used:minecraft.wheat
+scoreboard objectives add virtues.wheat_feed_baseline dummy
+scoreboard objectives add virtues.wheat_feed_delta dummy
+scoreboard objectives add virtues.animals_bred minecraft.custom:minecraft.animals_bred
+scoreboard objectives add virtues.animals_bred_baseline dummy
+scoreboard objectives add virtues.animals_bred_delta dummy
 scoreboard objectives add virtues.const dummy
 scoreboard players set $nine virtues.const 9
 

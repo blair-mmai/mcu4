@@ -1,9 +1,7 @@
 advancement revoke @s only virtues:compassion/xc_detector
 
-# Bail out if a hostile mob is within range — covers melee, knockback, and bow range
-scoreboard players set @s virtues.hit_hostile 0
-execute at @s if entity @e[type=#virtues:hostile_mobs,distance=..20] run scoreboard players set @s virtues.hit_hostile 1
-execute if score @s virtues.hit_hostile matches 1 run return 0
+# Bail out if a hostile mob was nearby this tick (set before advancements fire, persists even if mob just died)
+execute if score @s virtues.near_hostile matches 1 run return 0
 
 advancement grant @s only virtues:compassion/root
 scoreboard players add @s virtues.announced_compassion 0
