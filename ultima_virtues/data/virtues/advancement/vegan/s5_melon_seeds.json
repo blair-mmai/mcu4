@@ -9,9 +9,6 @@
   },
   "parent": "virtues:vegan/s4_pumpkin_seeds",
   "criteria": {
-    "planted_melon": {
-      "trigger": "minecraft:placed_block",
-      "conditions": {"block": {"blocks": ["minecraft:melon_stem"]}}
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

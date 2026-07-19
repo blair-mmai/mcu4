@@ -2,7 +2,7 @@
   "display": {
     "icon": {"id": "minecraft:cookie"},
     "title": {"text": "Cookie Monster (Reformed)"},
-    "description": {"text": "You made cookies and gave them away instead."},
+    "description": {"text": "You baked cookies from scratch and put them in someone else's chest."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false

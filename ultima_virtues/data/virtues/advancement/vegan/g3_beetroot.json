@@ -2,7 +2,7 @@
   "display": {
     "icon": {"id": "minecraft:beetroot_soup"},
     "title": {"text": "From the Earth"},
-    "description": {"text": "You grew it, you made it, you gave it away."},
+    "description": {"text": "You brewed beetroot soup from scratch and put it in someone else's chest."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false

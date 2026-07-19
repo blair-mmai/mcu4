@@ -1,8 +1,8 @@
 {
   "display": {
     "icon": {"id": "minecraft:beetroot_soup"},
-    "title": {"text": "Beet It"},
-    "description": {"text": "An acquired taste. You acquired it."},
+    "title": {"text": "Bowl for One"},
+    "description": {"text": "You brewed beetroot soup from scratch and drank it yourself."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false

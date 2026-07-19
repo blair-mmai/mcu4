@@ -2,7 +2,7 @@
   "display": {
     "icon": {"id": "minecraft:bread"},
     "title": {"text": "Breaking Bread"},
-    "description": {"text": "You baked bread and gave it away."},
+    "description": {"text": "You baked bread and left it in someone else's chest."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false

@@ -10,7 +10,12 @@
   "parent": "virtues:compassion/root",
   "criteria": {
     "hit_animal": {
-      "trigger": "minecraft:player_hurt_entity"
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "#virtues:passive_animals"
+        }
+      }
     }
   },
   "rewards": {

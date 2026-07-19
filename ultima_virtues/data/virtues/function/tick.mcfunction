@@ -2,6 +2,8 @@
 # Runs every tick. Checks for players who haven't been given their starting
 # chest yet, and fires the first-join sequence for them exactly once.
 
+scoreboard players add $world virtues.tick_count 1
+
 # Assign player ID to any player who hasn't been assigned one yet
 execute as @a[scores={virtues.player_id=0}] run function virtues:player/assign_player_id
 
@@ -36,6 +38,9 @@ execute as @a[scores={virtues.greeted_fannie=0}] at @s if entity @e[type=minecra
 execute as @a[scores={virtues.greeted_freddie=0}] at @s if entity @e[type=minecraft:villager,name="Freddie Mac Moo",distance=..4] run function virtues:player/greet_freddie
 execute as @a[scores={virtues.greeted_ginnie=0}] at @s if entity @e[type=minecraft:villager,name="Ginnie Mae",distance=..4] run function virtues:player/greet_ginnie
 
+# Double health of hostile mobs that haven't been buffed yet
+execute if score $world virtues.trade_timer matches 40.. as @e[type=#virtues:hostile_mobs,tag=!virtues.buffed] run function virtues:mob/buff_health
+
 # Re-apply custom trades every 40 ticks (vanilla regenerates on profession re-link, not every tick)
 scoreboard players add $world virtues.trade_timer 1
 execute if score $world virtues.trade_timer matches 40.. run function virtues:player/run_trade_setup
@@ -46,12 +51,22 @@ scoreboard players enable @a RELAXABIT
 execute as @a[scores={RELAXABIT=1..}] at @s if entity @e[type=minecraft:enderman,name=BELAATRIX,distance=..10] run function virtues:dev/relax_test
 scoreboard players set @a[scores={RELAXABIT=1..}] RELAXABIT 0
 
-# Clear vanilla advancement tabs every 40 ticks to catch any newly granted ones
-execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:story
-execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:nether
-execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:end
-execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:adventure
-execute if score $world virtues.trade_timer matches 40.. as @a run advancement revoke @s from minecraft:husbandry
+# Detect /trigger GIVECHEST set <1-5> (1=bread 2=baked_potato 3=beetroot_soup 4=cookie 5=golden_carrot)
+scoreboard players enable @a GIVECHEST
+execute as @a[scores={GIVECHEST=1..}] run function virtues:player/give_chest_resolve
+scoreboard players set @a[scores={GIVECHEST=1..}] GIVECHEST 0
+
+# Detect /trigger TAKECHEST set <1-5> (same item mapping)
+scoreboard players enable @a TAKECHEST
+execute as @a[scores={TAKECHEST=1..}] run function virtues:player/take_chest_resolve
+scoreboard players set @a[scores={TAKECHEST=1..}] TAKECHEST 0
+
+# Clear vanilla advancement tabs every tick — they reappear faster than a 40-tick window catches
+advancement revoke @a from minecraft:story
+advancement revoke @a from minecraft:nether
+advancement revoke @a from minecraft:end
+advancement revoke @a from minecraft:adventure
+advancement revoke @a from minecraft:husbandry
 
 # Run world init exactly once
 scoreboard players add $world virtues.world_init 0
@@ -73,6 +88,9 @@ execute as @a run function virtues:player/check_first_actions
 
 # Deal 0.5 heart damage every time a log is punched
 execute as @a run function virtues:player/check_tree_damage
+execute as @a run function virtues:player/check_stone_damage
+execute as @a run function virtues:player/check_iron_ingots
+execute as @a run function virtues:player/check_vegan_planting
 
 # Circle entry detection — fires "This is X's circle" on the tick they cross from 6 to 5 blocks away
 scoreboard players add @a virtues.in_circle 0

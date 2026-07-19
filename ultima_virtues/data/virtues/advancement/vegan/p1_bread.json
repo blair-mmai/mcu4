@@ -1,8 +1,8 @@
 {
   "display": {
     "icon": {"id": "minecraft:bread"},
-    "title": {"text": "Staff of Life"},
-    "description": {"text": "Bread. Simple. Honest."},
+    "title": {"text": "A Loaf for Myself"},
+    "description": {"text": "You baked bread and ate every bite yourself."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false

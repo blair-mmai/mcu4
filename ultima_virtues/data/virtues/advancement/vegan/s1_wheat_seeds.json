@@ -9,9 +9,6 @@
   },
   "parent": "virtues:vegan/root",
   "criteria": {
-    "planted_wheat": {
-      "trigger": "minecraft:placed_block",
-      "conditions": {"block": {"blocks": ["minecraft:wheat"]}}
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

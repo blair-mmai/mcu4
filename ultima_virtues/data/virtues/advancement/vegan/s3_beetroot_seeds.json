@@ -9,9 +9,6 @@
   },
   "parent": "virtues:vegan/s2_sapling",
   "criteria": {
-    "planted_beetroot": {
-      "trigger": "minecraft:placed_block",
-      "conditions": {"block": {"blocks": ["minecraft:beetroots"]}}
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

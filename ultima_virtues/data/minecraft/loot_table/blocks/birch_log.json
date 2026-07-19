@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:birch_log",
+              "conditions": [
+                {"condition": "minecraft:match_tool", "predicate": {"tag": "virtues:iron_plus_axes"}}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:birch_log",
+              "conditions": [
+                {"condition": "minecraft:match_tool", "predicate": {"tag": "virtues:stone_axes"}},
+                {"condition": "minecraft:random_chance", "chance": 0.333}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:birch_planks",
+              "conditions": [
+                {"condition": "minecraft:match_tool", "predicate": {"tag": "virtues:stone_axes"}}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:birch_log",
+              "conditions": [
+                {"condition": "minecraft:match_tool", "predicate": {"tag": "virtues:wood_axes"}},
+                {"condition": "minecraft:random_chance", "chance": 0.167}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:birch_planks",
+              "conditions": [
+                {"condition": "minecraft:match_tool", "predicate": {"tag": "virtues:wood_axes"}}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:birch_planks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

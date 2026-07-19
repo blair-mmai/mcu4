@@ -2,7 +2,7 @@
   "display": {
     "icon": {"id": "minecraft:baked_potato"},
     "title": {"text": "Warm Hands"},
-    "description": {"text": "You roasted a potato and left it for someone else."},
+    "description": {"text": "You roasted a potato and put it in someone else's chest, still warm."},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false
