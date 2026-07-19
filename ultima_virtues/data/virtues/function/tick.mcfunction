@@ -46,6 +46,11 @@ scoreboard players add $world virtues.trade_timer 1
 execute if score $world virtues.trade_timer matches 40.. run function virtues:player/run_trade_setup
 execute if score $world virtues.trade_timer matches 40.. run scoreboard players set $world virtues.trade_timer 0
 
+# Detect /trigger SHOWDEBUG
+scoreboard players enable @a SHOWDEBUG
+execute as @a[scores={SHOWDEBUG=1..}] run function virtues:dev/show_debug
+scoreboard players set @a[scores={SHOWDEBUG=1..}] SHOWDEBUG 0
+
 # Detect /trigger RELAXABIT
 scoreboard players enable @a RELAXABIT
 execute as @a[scores={RELAXABIT=1..}] at @s if entity @e[type=minecraft:enderman,name=BELAATRIX,distance=..10] run function virtues:dev/relax_test

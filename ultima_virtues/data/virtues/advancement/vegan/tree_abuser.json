@@ -1,7 +1,7 @@
-{
+﻿{
   "display": {
     "icon": {"id": "minecraft:oak_log"},
-    "title": {"text": "Tree Abuser"},
+    "title": {"text": "(Anti): Tree Abuser"},
     "description": {"text": "That tree was minding its own business."},
     "frame": "task",
     "show_toast": true,

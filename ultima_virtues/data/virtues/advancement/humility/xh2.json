@@ -1,7 +1,7 @@
-{
+﻿{
   "display": {
     "icon": {"id": "minecraft:dirt"},
-    "title": {"text": "xH2"},
+    "title": {"text": "(Anti): xH2"},
     "description": {"text": ""},
     "frame": "task",
     "show_toast": true,

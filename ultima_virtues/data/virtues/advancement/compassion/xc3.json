@@ -1,7 +1,7 @@
-{
+﻿{
   "display": {
     "icon": {"id": "minecraft:skeleton_skull"},
-    "title": {"text": "Cruel by Nature"},
+    "title": {"text": "(Anti): Cruel by Nature"},
     "description": {"text": "You're worse than Hilter."},
     "frame": "task",
     "show_toast": true,

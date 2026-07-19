@@ -6,6 +6,9 @@ execute at @s if entity @e[type=#virtues:hostile_mobs,distance=..20] run scorebo
 execute if score @s virtues.hit_hostile matches 1 run return 0
 
 advancement grant @s only virtues:compassion/root
+scoreboard players add @s virtues.announced_compassion 0
+execute if score @s virtues.announced_compassion matches 0 run tellraw @a ["",{"selector":"@s","color":"white"},{"text":" has uncovered the advancements of Compassion.","color":"yellow"}]
+execute if score @s virtues.announced_compassion matches 0 run scoreboard players set @s virtues.announced_compassion 1
 scoreboard players add @s virtues.animal_punches 1
 
 execute if score @s virtues.animal_punches matches 1 run advancement grant @s only virtues:compassion/xc1

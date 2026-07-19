@@ -5,6 +5,7 @@ scoreboard players set @s virtues.announced_compassion 0
 scoreboard players set @s virtues.announced_valor 0
 scoreboard players set @s virtues.announced_humility 0
 scoreboard players set @s virtues.announced_vegan 0
+scoreboard players set @s virtues.animal_punches 0
 scoreboard players operation @s virtues.dirt_baseline = @s virtues.mined_dirt
 scoreboard players operation @s virtues.grass_baseline = @s virtues.mined_grass
 scoreboard players operation @s virtues.oak_baseline = @s virtues.mined_oak
@@ -33,6 +34,6 @@ scoreboard players operation @s virtues.beetroot_baseline = @s virtues.used_beet
 scoreboard players operation @s virtues.pumpkin_baseline = @s virtues.used_pumpkin_seeds
 scoreboard players operation @s virtues.melon_baseline = @s virtues.used_melon_seeds
 recipe give @s *
-advancement grant @s only virtues:compassion/root
-scoreboard players set @s virtues.announced_compassion 1
-tellraw @s {"text":"Progress reset. Dig dirt for Humility, punch a tree for Valor.","color":"yellow"}
+advancement revoke @s only virtues:compassion/xc_detector
+execute at @s as @e[type=minecraft:marker,tag=virtues.owner,distance=..500,limit=1,sort=nearest] run scoreboard players operation @s virtues.player_id = @p[distance=..500,limit=1,sort=nearest] virtues.player_id
+tellraw @s {"text":"Progress reset. Pick up a mushroom or punch an animal for Compassion, dig dirt for Humility, punch an evil mob for Valor.","color":"yellow"}

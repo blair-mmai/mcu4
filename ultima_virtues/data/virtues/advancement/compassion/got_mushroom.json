@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:rabbit"},
+    "icon": {"id": "minecraft:brown_mushroom"},
     "title": {"text": ""},
     "description": {"text": ""},
     "background": "minecraft:textures/block/dirt.png",
@@ -9,11 +9,14 @@
     "hidden": true
   },
   "criteria": {
-    "hit_animal": {
-      "trigger": "minecraft:player_hurt_entity"
+    "picked_up_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": ["minecraft:brown_mushroom"]}]
+      }
     }
   },
   "rewards": {
-    "function": "virtues:player/punched_animal"
+    "function": "virtues:player/got_mushroom"
   }
 }

@@ -1,7 +1,7 @@
-{
+﻿{
   "display": {
     "icon": {"id": "minecraft:skeleton_skull"},
-    "title": {"text": "Puncher of Animals"},
+    "title": {"text": "(Anti): Puncher of Animals"},
     "description": {"text": "It wasn't going to hurt you."},
     "frame": "task",
     "show_toast": true,

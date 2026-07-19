@@ -1,7 +1,7 @@
-{
+﻿{
   "display": {
     "icon": {"id": "minecraft:oak_log"},
-    "title": {"text": "Tree Bruiser"},
+    "title": {"text": "(Anti): Tree Bruiser"},
     "description": {"text": "You punched a tree. It hurt a little."},
     "frame": "task",
     "show_toast": true,
