@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:chest" },
+    "title": { "text": "(Anti): That's Not Yours" },
+    "description": { "text": "Peeking at other's chests isn't great." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "virtues:compassion/root",
+  "criteria": {
+    "never": { "trigger": "minecraft:impossible" }
+  }
+}

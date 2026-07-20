@@ -1,0 +1,5 @@
+execute store result score $world virtues.daytime run time query daytime
+execute unless advancement @s granted virtues:compassion/take_a_stand at @s if entity @e[type=minecraft:marker,tag=virtues.pillar_compassion,distance=..2] run advancement grant @s only virtues:compassion/take_a_stand
+execute unless advancement @s granted virtues:compassion/assume_position at @s if entity @s[nbt={Sneaking:1b}] if entity @e[type=minecraft:marker,tag=virtues.pillar_compassion,distance=..2] run advancement grant @s only virtues:compassion/assume_position
+execute unless advancement @s granted virtues:compassion/aim at @s if entity @s[nbt={Sneaking:1b},y_rotation=-135..-45] if entity @e[type=minecraft:marker,tag=virtues.pillar_compassion,distance=..2] run advancement grant @s only virtues:compassion/aim
+execute unless advancement @s granted virtues:compassion/fire at @s if score $world virtues.daytime matches 23000.. if entity @s[nbt={Sneaking:1b},y_rotation=-135..-45] if entity @e[type=minecraft:marker,tag=virtues.pillar_compassion,distance=..2] run advancement grant @s only virtues:compassion/fire

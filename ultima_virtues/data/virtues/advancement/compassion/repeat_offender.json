@@ -7,7 +7,7 @@
     "show_toast": true,
     "announce_to_chat": false
   },
-  "parent": "virtues:compassion/xc1",
+  "parent": "virtues:compassion/puncher_of_animals",
   "criteria": {
     "never": {"trigger": "minecraft:impossible"}
   }

@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "mcfunction",
+      "request": "launch",
+      "name": "Debug Ultima Virtues",
+      "minecraftWorldDir": "C:\\Users\\Boreal\\AppData\\Roaming\\PrismLauncher\\instances\\26.2(1)\\minecraft\\saves\\ult4-new-jul18-test"
+    }
+  ]
+}

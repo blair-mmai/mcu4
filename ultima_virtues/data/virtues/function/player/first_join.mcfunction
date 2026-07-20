@@ -12,6 +12,7 @@ attribute @s minecraft:max_health base set 20
 function virtues:player/spawn_starting_chest
 effect give @s minecraft:blindness 22 1
 stopsound @s music
+title @s times 10 70 20
 title @s title {"text":"","color":"white"}
 title @s subtitle {"text":"You open your eyes.","color":"gray","italic":true}
 tellraw @s {"text":"You open your eyes.","color":"gray","italic":true}

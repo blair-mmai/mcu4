@@ -1,3 +1,3 @@
-advancement revoke @s only virtues:compassion/xc3
+advancement revoke @s only virtues:compassion/cruel_by_nature
 scoreboard players remove @s virtues.animal_punches 1
 tellraw @s {"text":"The soup warms your conscience.","color":"yellow"}

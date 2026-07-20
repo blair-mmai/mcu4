@@ -5,3 +5,5 @@ execute as @a if score @s virtues.player_id = $temp virtues.circle_owner_id run 
 execute if score @s virtues.in_circle matches 2 if entity @a[tag=virtues.temp_owner] run tellraw @s ["",{"text":"You gave ","color":"yellow"},{"translate":"item.minecraft.baked_potato","color":"white"},{"text":" to ","color":"yellow"},{"selector":"@a[tag=virtues.temp_owner]","color":"white"},{"text":".","color":"yellow"}]
 execute if score @s virtues.in_circle matches 2 unless entity @a[tag=virtues.temp_owner] run tellraw @s ["",{"text":"You gave ","color":"yellow"},{"translate":"item.minecraft.baked_potato","color":"white"},{"text":" to someone else.","color":"yellow"}]
 tag @a remove virtues.temp_owner
+execute if score @s virtues.in_circle matches 2 run advancement grant @s only virtues:vegan/g2_baked_potato
+execute if score @s virtues.in_circle matches 2 run advancement revoke @s only virtues:core/thats_not_yours

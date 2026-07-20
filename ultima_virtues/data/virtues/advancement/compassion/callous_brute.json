@@ -7,7 +7,7 @@
     "show_toast": true,
     "announce_to_chat": false
   },
-  "parent": "virtues:compassion/xc3",
+  "parent": "virtues:compassion/cruel_by_nature",
   "criteria": {
     "never": {"trigger": "minecraft:impossible"}
   }

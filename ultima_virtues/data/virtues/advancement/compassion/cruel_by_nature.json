@@ -7,7 +7,7 @@
     "show_toast": true,
     "announce_to_chat": false
   },
-  "parent": "virtues:compassion/xc2",
+  "parent": "virtues:compassion/repeat_offender",
   "criteria": {
     "never": {"trigger": "minecraft:impossible"}
   }

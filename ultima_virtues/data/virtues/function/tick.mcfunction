@@ -46,6 +46,11 @@ scoreboard players add $world virtues.trade_timer 1
 execute if score $world virtues.trade_timer matches 40.. run function virtues:player/run_trade_setup
 execute if score $world virtues.trade_timer matches 40.. run scoreboard players set $world virtues.trade_timer 0
 
+# Detect /trigger MANTRA
+scoreboard players enable @a MANTRA
+execute as @a[scores={MANTRA=1..}] run function virtues:player/said_mantra
+scoreboard players set @a[scores={MANTRA=1..}] MANTRA 0
+
 # Detect /trigger SHOWDEBUG
 scoreboard players enable @a SHOWDEBUG
 execute as @a[scores={SHOWDEBUG=1..}] run function virtues:dev/show_debug
@@ -101,6 +106,10 @@ execute as @a run function virtues:player/check_stone_damage
 execute as @a run function virtues:player/check_iron_ingots
 execute as @a run function virtues:player/check_vegan_planting
 execute as @a run function virtues:player/check_compassion_acts
+execute as @a run function virtues:player/check_pillar
+
+# Sample food counts for gifting detection (runs every tick so prev is accurate on circle entry)
+execute as @a run function virtues:player/update_food_counts
 
 # Circle entry detection — fires "This is X's circle" on the tick they cross from 6 to 5 blocks away
 scoreboard players add @a virtues.in_circle 0

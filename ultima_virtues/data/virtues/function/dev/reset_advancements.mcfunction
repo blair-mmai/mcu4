@@ -8,10 +8,11 @@ advancement revoke @s only virtues:compassion/root
 advancement revoke @s only virtues:compassion/first_mushroom
 advancement revoke @s only virtues:compassion/xc_detector
 advancement revoke @s only virtues:compassion/hay_thief_detector
-advancement revoke @s only virtues:compassion/thief
-advancement revoke @s only virtues:compassion/xc1
-advancement revoke @s only virtues:compassion/xc2
-advancement revoke @s only virtues:compassion/xc3
+advancement revoke @s only virtues:core/thats_not_yours
+advancement revoke @s only virtues:core/stealing_is_bad
+advancement revoke @s only virtues:compassion/puncher_of_animals
+advancement revoke @s only virtues:compassion/repeat_offender
+advancement revoke @s only virtues:compassion/cruel_by_nature
 advancement revoke @s only virtues:compassion/callous_brute
 advancement revoke @s only virtues:compassion/fungal_exchange
 advancement revoke @s only virtues:compassion/plea_for_help
@@ -48,6 +49,6 @@ scoreboard players operation @s virtues.jungle_baseline = @s virtues.mined_jungl
 scoreboard players operation @s virtues.acacia_baseline = @s virtues.mined_acacia
 scoreboard players operation @s virtues.dark_oak_baseline = @s virtues.mined_dark_oak
 scoreboard players set @s virtues.animal_punches 0
-scoreboard players set @s virtues.hay_stolen 0
+scoreboard players set @s virtues.chests_opened 0
 scoreboard players set @s virtues.bowls_traded 0
 tellraw @s {"text":"Advancements reset. Use virtues:dev/trigger_dirt, trigger_tree, or trigger_animal to test each.","color":"yellow"}

@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:brown_glazed_terracotta"},
+    "title": {"text": "...Fire!"},
+    "description": {"text": "Crouch facing East on the Pillar of Compassion at dawn."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "virtues:compassion/aim",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:brown_glazed_terracotta"},
+    "title": {"text": "Say the Word in the Circle"},
+    "description": {"text": "Speak the mantra within your stone circle."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "virtues:compassion/say_mantra",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}
