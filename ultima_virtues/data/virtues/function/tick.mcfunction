@@ -111,6 +111,9 @@ execute as @a run function virtues:player/check_pillar
 # Sample food counts for gifting detection (runs every tick so prev is accurate on circle entry)
 execute as @a run function virtues:player/update_food_counts
 
+# Theft watch countdown — set when chest opens in another's circle, detector ignores tick-0
+execute as @a[scores={virtues.theft_watch=1..}] run scoreboard players remove @s virtues.theft_watch 1
+
 # Circle entry detection — fires "This is X's circle" on the tick they cross from 6 to 5 blocks away
 scoreboard players add @a virtues.in_circle 0
 execute as @a[scores={virtues.in_circle=0}] at @s if entity @e[type=minecraft:marker,tag=virtues.owner,distance=..5] run function virtues:player/check_circle_ownership

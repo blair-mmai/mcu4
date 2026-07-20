@@ -6,4 +6,6 @@ execute if score @s virtues.in_circle matches 2 if entity @a[tag=virtues.temp_ow
 execute if score @s virtues.in_circle matches 2 unless entity @a[tag=virtues.temp_owner] run tellraw @s ["",{"text":"You gave ","color":"yellow"},{"translate":"item.minecraft.golden_carrot","color":"white"},{"text":" to someone else.","color":"yellow"}]
 tag @a remove virtues.temp_owner
 execute if score @s virtues.in_circle matches 2 run advancement grant @s only virtues:vegan/g5_golden_carrot
+execute if score @s virtues.in_circle matches 2 run playsound minecraft:ui.toast.challenge_complete ui @s ~ ~ ~ 1 1
 execute if score @s virtues.in_circle matches 2 run advancement revoke @s only virtues:core/stealing_is_bad
+execute if score @s virtues.in_circle matches 2 run title @s actionbar {"text":"Forgiven: Thief","color":"green"}

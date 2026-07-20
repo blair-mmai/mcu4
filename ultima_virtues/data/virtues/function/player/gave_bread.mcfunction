@@ -7,3 +7,4 @@ execute if score @s virtues.in_circle matches 2 unless entity @a[tag=virtues.tem
 tag @a remove virtues.temp_owner
 execute if score @s virtues.in_circle matches 2 run advancement grant @s only virtues:vegan/g1_bread
 execute if score @s virtues.in_circle matches 2 run advancement revoke @s only virtues:core/thats_not_yours
+execute if score @s virtues.in_circle matches 2 run title @s actionbar {"text":"Forgiven: Peeking at Chests","color":"green"}

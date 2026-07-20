@@ -3,15 +3,12 @@
     "icon": {"id": "minecraft:brown_glazed_terracotta"},
     "title": {"text": "Rune of Compassion"},
     "description": {"text": "The farmer offers you something in return. Accept it."},
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true
   },
   "parent": "virtues:compassion/soup_kitchen",
   "criteria": {
-    "got_rune": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {"items": [{"items": ["minecraft:brown_glazed_terracotta"]}]}
-    }
+    "never": {"trigger": "minecraft:impossible"}
   }
 }

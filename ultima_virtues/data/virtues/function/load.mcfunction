@@ -39,6 +39,9 @@ scoreboard objectives add virtues.bowls_traded dummy
 scoreboard objectives add virtues.chests_opened minecraft.custom:minecraft.open_chest
 scoreboard objectives add virtues.chests_opened_baseline dummy
 scoreboard objectives add virtues.chests_opened_delta dummy
+scoreboard objectives add virtues.inv_slots_curr dummy
+scoreboard objectives add virtues.inv_slots_baseline dummy
+scoreboard objectives add virtues.inv_slots_delta dummy
 scoreboard objectives add virtues.bread_prev dummy
 scoreboard objectives add virtues.potato_prev dummy
 scoreboard objectives add virtues.beetroot_prev dummy

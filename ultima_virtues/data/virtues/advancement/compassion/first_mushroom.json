@@ -9,12 +9,6 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "pickup_mushroom": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {"items": [{"items": ["minecraft:brown_mushroom"]}]}
-    }
-  },
-  "rewards": {
-    "function": "virtues:player/picked_up_mushroom"
+    "never": {"trigger": "minecraft:impossible"}
   }
 }
