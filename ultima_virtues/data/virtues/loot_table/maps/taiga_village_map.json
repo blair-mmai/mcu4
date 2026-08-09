@@ -12,8 +12,8 @@
               "function": "minecraft:exploration_map",
               "destination": "virtues:taiga_village_target",
               "decoration": "minecraft:village_taiga",
-              "zoom": 2,
-              "search_radius": 100,
+              "zoom": 4,
+              "search_radius": 500,
               "skip_existing_chunks": false
             }
           ]
