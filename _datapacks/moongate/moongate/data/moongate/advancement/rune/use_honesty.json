@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:white_glazed_terracotta"},
+    "title": {"text": ""},
+    "description": {"text": ""},
+    "background": "minecraft:textures/block/stone.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "use_rune": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {"items": ["minecraft:white_glazed_terracotta"]},
+        "location": {"block": {"blocks": ["minecraft:mossy_cobblestone"]}}
+      }
+    }
+  },
+  "rewards": {"function": "moongate:rune/use_honesty"}
+}
