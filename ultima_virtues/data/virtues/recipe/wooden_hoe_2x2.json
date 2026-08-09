@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "# ",
+    "S#"
+  ],
+  "key": {
+    "#": "#minecraft:wooden_tool_materials",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:wooden_hoe",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 53
+    }
+  }
+}
