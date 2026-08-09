@@ -5,6 +5,11 @@ tag @e[type=minecraft:marker,distance=..4,limit=1,sort=nearest] add virtues.area
 tag @e[type=minecraft:marker,distance=..4,limit=1,sort=nearest,tag=virtues.area] add virtues.owner
 execute as @e[type=minecraft:marker,distance=..4,limit=1,sort=nearest,tag=virtues.owner] run scoreboard players operation @s virtues.player_id = @p[distance=..5,limit=1] virtues.player_id
 scoreboard players set @s virtues.chest_spawned 1
+
+# Force-load the chest's chunk permanently so the owner marker stays
+# queryable by @e selectors even when no player is nearby (needed for
+# things like returning a far-away player to their chest).
+forceload add ~2 ~
 # Marker on top of compassion pillar (South) for ritual detection
 summon minecraft:marker ~2 ~2 ~4
 tag @e[type=minecraft:marker,distance=..7,limit=1,sort=nearest,tag=!virtues.owner] add virtues.pillar_compassion

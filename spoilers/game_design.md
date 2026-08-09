@@ -72,10 +72,10 @@ So, the 3 virtues in mcu4 will be:
 - **Triggers**: implemented by datapack and mcfunction within Minecraft framework.
 - **Custom trades**: custom trades with villagers and traders specific to this non-vanilla version of minecraft.
 - **Starting chest**: spawns when player punches their first tree or digs dirt. The chest is named and tagged to the receiving player (e.g. *"Blair's Pack"*). The chest contains:
-    - a brown mushroom (and reveals a hint for early game.)
-    - a soul lantern           (a mystery, at this point - used in middle game)
-    - a tag with no name yet.  (a mystery, at this point - used in endgame)
-    - a lore book with some early game clues (TBD)
+    - a brown mushroom (reveals a hint for early game)
+    - a map to the nearest village
+    - a book of lore (details TBD, but explains the virtues)
+    - a book and quill — the player's own "book of potions." Writable, so the player can record what they discover. Could be seeded with the recipe for a **Potion of Return** (returns the player to 2 blocks above their starting circle's chest).
 - **Chest ownership (multiplayer)**: each starting chest belongs to the player it was spawned for. In multiplayer:
     - Adding items to *another player's* chest is **allowed** (a gift — scores Sacrifice or Compassion)
     - Removing items from *another player's* chest is **not allowed** — triggers a negative effect and score penalty, even if you put the item there yourself
@@ -140,9 +140,15 @@ All crafted tools start with **low durability**. Professions offer two forms of 
 
 ## Starting Circle
 
-A crafting table spawns in the home circle at world init alongside the offering fire. Free crafting access from the start — but with the tool durability and metallurgy restrictions above, what you can make is still limited.
+The offering fire is placed here at world init (see **Offering Fire** above). No crafting table spawns here — see **Crafting Access** below for how, and when, the player gets 3x3 crafting.
 
 One pillar has a ladder going up it.
+
+## Crafting Access
+
+The player has no 3x3 crafting table for most of the game — only the vanilla 2x2 personal-inventory grid, plus whatever villagers sell. Early tools and gear are either crafted 2x2 (necessarily low-durability/pre-damaged, see **Tool System**) or bought outright.
+
+A crafting table becomes obtainable only near end-game, via a villager trade (likely the Wandering Trader) rather than by crafting one directly. Reaching a crafting table is meant to feel earned, not given. (Supersedes the earlier idea of a free crafting table spawning at world init — see `idea_junk_heap.md`.)
 
 
 ## Punch-Tree Drops
