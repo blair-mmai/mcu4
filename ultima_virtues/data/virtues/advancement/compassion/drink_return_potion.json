@@ -17,12 +17,12 @@
           "items": ["minecraft:potion"],
           "components": {
             "minecraft:potion_contents": {
-              "custom_effects": [{"id": "minecraft:nausea", "duration": 200, "amplifier": 0}]
+              "custom_effects": [{"id": "minecraft:speed", "duration": 20, "amplifier": 0}]
             }
           }
         }
       }
     }
   },
-  "rewards": {"function": "virtues:player/reveal_compassion_clue"}
+  "rewards": {"function": "virtues:player/drank_return_potion"}
 }

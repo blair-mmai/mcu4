@@ -10,6 +10,18 @@
     {
       "rolls": 1,
       "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone",
+          "functions": [
+            {"function": "minecraft:set_count", "count": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
         { "type": "minecraft:item", "name": "minecraft:writable_book" }
       ]
     },
@@ -43,6 +55,36 @@
       "rolls": 1,
       "entries": [
         { "type": "minecraft:loot_table", "value": "virtues:chests/village_map" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "virtues:maps/plains_village_map" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "virtues:maps/desert_village_map" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "virtues:maps/savanna_village_map" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "virtues:maps/taiga_village_map" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "virtues:maps/snowy_village_map" }
       ]
     }
   ]

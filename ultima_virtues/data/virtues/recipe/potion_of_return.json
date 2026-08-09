@@ -3,9 +3,9 @@
   "category": "misc",
   "ingredients": [
     "minecraft:glass_bottle",
-    "minecraft:brown_mushroom",
     "minecraft:redstone",
-    "minecraft:redstone"
+    "minecraft:wheat_seeds",
+    "minecraft:dirt"
   ],
   "result": {
     "id": "minecraft:potion",
@@ -13,10 +13,10 @@
     "components": {
       "minecraft:potion_contents": {
         "custom_effects": [
-          {"id": "minecraft:nausea", "duration": 200, "amplifier": 0}
+          {"id": "minecraft:speed", "duration": 20, "amplifier": 0}
         ]
       },
-      "minecraft:custom_name": {"text": "Potion of Compassion", "italic": false}
+      "minecraft:custom_name": {"text": "Potion of Return", "italic": false}
     }
   }
 }

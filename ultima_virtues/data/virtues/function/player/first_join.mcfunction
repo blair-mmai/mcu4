@@ -7,6 +7,7 @@ scoreboard players add $world virtues.next_player_id 1
 scoreboard players operation @s virtues.player_id = $world virtues.next_player_id
 
 recipe give @s *
+recipe take @s virtues:potion_of_compassion
 effect clear @s
 attribute @s minecraft:max_health base set 20
 function virtues:player/spawn_starting_chest
