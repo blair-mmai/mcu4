@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"y or n? "},{"text":"[Y]","color":"green","click_event":{"action":"run_command","command":"/trigger yn set 1"}},{"text":" "},{"text":"[N]","color":"red","click_event":{"action":"run_command","command":"/trigger yn set 2"}}]
