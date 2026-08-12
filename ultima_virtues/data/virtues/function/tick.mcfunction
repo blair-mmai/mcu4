@@ -63,7 +63,7 @@ scoreboard players set @a[scores={RELAXABIT=1..}] RELAXABIT 0
 
 # Detect compassion_yes prompt answer (dev test — Pepper-style yes/no dialogue)
 scoreboard players enable @a compassion_yes
-execute as @a[scores={compassion_yes=1..}] run function virtues:dev/test_compassion_check
+execute as @a[scores={compassion_yes=1..}] at @s run function virtues:dev/test_compassion_check
 
 # Detect /trigger GIVECHEST set <1-5> (1=bread 2=baked_potato 3=beetroot_soup 4=cookie 5=golden_carrot)
 scoreboard players enable @a GIVECHEST
