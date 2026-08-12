@@ -18,5 +18,10 @@
     "sounds": [
       {"name": "virtues:music/shrines", "stream": true}
     ]
+  },
+  "npc.wah_wah": {
+    "sounds": [
+      {"name": "virtues:npc/wah_wah", "stream": true}
+    ]
   }
 }
