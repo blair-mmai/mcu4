@@ -65,6 +65,72 @@ scoreboard players set @a[scores={RELAXABIT=1..}] RELAXABIT 0
 scoreboard players enable @a compassion_yes
 execute as @a[scores={compassion_yes=1..}] at @s run function virtues:dev/test_compassion_check
 
+# Detect Celest's yes/no answer (Britain NPC roster)
+scoreboard players enable @a CELESTYN
+execute as @a[scores={CELESTYN=1..}] at @s run function virtues:npc/celest_check
+
+# Detect Welcomer's potions yes/no answer (part of his roll table)
+scoreboard players enable @a WELCOMERYN
+execute as @a[scores={WELCOMERYN=1..}] at @s run function virtues:npc/welcomer_potions_check
+
+# Welcomer proximity greeting (Britain NPC roster) — repeatable: fires once per fresh
+# approach (not every tick while standing still), state machine via virtues.near_welcomer
+scoreboard players add @a virtues.near_welcomer 0
+execute as @a[scores={virtues.near_welcomer=0}] at @s if entity @e[type=minecraft:villager,name="Welcomer",distance=..3] run function virtues:npc/welcomer_greet
+execute as @a[scores={virtues.near_welcomer=0}] at @s if entity @e[type=minecraft:villager,name="Welcomer",distance=..3] run scoreboard players set @s virtues.near_welcomer 1
+execute as @a[scores={virtues.near_welcomer=1}] at @s unless entity @e[type=minecraft:villager,name="Welcomer",distance=..3] run scoreboard players set @s virtues.near_welcomer 0
+
+# Britain proximity NPCs — same repeatable state-machine pattern as Welcomer
+scoreboard players add @a virtues.near_shapero 0
+execute as @a[scores={virtues.near_shapero=0}] at @s if entity @e[type=minecraft:villager,name="Shapero",distance=..1] run function virtues:npc/shapero_greet
+execute as @a[scores={virtues.near_shapero=0}] at @s if entity @e[type=minecraft:villager,name="Shapero",distance=..1] run scoreboard players set @s virtues.near_shapero 1
+execute as @a[scores={virtues.near_shapero=1}] at @s unless entity @e[type=minecraft:villager,name="Shapero",distance=..1] run scoreboard players set @s virtues.near_shapero 0
+
+scoreboard players add @a virtues.near_sprite 0
+execute as @a[scores={virtues.near_sprite=0}] at @s if entity @e[type=minecraft:villager,name="Sprite",distance=..1] run function virtues:npc/sprite_greet
+execute as @a[scores={virtues.near_sprite=0}] at @s if entity @e[type=minecraft:villager,name="Sprite",distance=..1] run scoreboard players set @s virtues.near_sprite 1
+execute as @a[scores={virtues.near_sprite=1}] at @s unless entity @e[type=minecraft:villager,name="Sprite",distance=..1] run scoreboard players set @s virtues.near_sprite 0
+
+scoreboard players add @a virtues.near_sebastian 0
+execute as @a[scores={virtues.near_sebastian=0}] at @s if entity @e[type=minecraft:villager,name="Sebastian",distance=..1] run function virtues:npc/sebastian_greet
+execute as @a[scores={virtues.near_sebastian=0}] at @s if entity @e[type=minecraft:villager,name="Sebastian",distance=..1] run scoreboard players set @s virtues.near_sebastian 1
+execute as @a[scores={virtues.near_sebastian=1}] at @s unless entity @e[type=minecraft:villager,name="Sebastian",distance=..1] run scoreboard players set @s virtues.near_sebastian 0
+
+scoreboard players add @a virtues.near_iolo 0
+execute as @a[scores={virtues.near_iolo=0}] at @s if entity @e[type=minecraft:villager,name="Iolo",distance=..1] run function virtues:npc/iolo_greet
+execute as @a[scores={virtues.near_iolo=0}] at @s if entity @e[type=minecraft:villager,name="Iolo",distance=..1] run scoreboard players set @s virtues.near_iolo 1
+execute as @a[scores={virtues.near_iolo=1}] at @s unless entity @e[type=minecraft:villager,name="Iolo",distance=..1] run scoreboard players set @s virtues.near_iolo 0
+
+scoreboard players add @a virtues.near_cricket 0
+execute as @a[scores={virtues.near_cricket=0}] at @s if entity @e[type=minecraft:villager,name="Cricket",distance=..1] run function virtues:npc/cricket_greet
+execute as @a[scores={virtues.near_cricket=0}] at @s if entity @e[type=minecraft:villager,name="Cricket",distance=..1] run scoreboard players set @s virtues.near_cricket 1
+execute as @a[scores={virtues.near_cricket=1}] at @s unless entity @e[type=minecraft:villager,name="Cricket",distance=..1] run scoreboard players set @s virtues.near_cricket 0
+
+scoreboard players add @a virtues.near_child 0
+execute as @a[scores={virtues.near_child=0}] at @s if entity @e[type=minecraft:villager,name="Child",distance=..1] run function virtues:npc/child_greet
+execute as @a[scores={virtues.near_child=0}] at @s if entity @e[type=minecraft:villager,name="Child",distance=..1] run scoreboard players set @s virtues.near_child 1
+execute as @a[scores={virtues.near_child=1}] at @s unless entity @e[type=minecraft:villager,name="Child",distance=..1] run scoreboard players set @s virtues.near_child 0
+
+scoreboard players add @a virtues.near_tween 0
+execute as @a[scores={virtues.near_tween=0}] at @s if entity @e[type=minecraft:villager,name="Tween",distance=..1] run function virtues:npc/tween_greet
+execute as @a[scores={virtues.near_tween=0}] at @s if entity @e[type=minecraft:villager,name="Tween",distance=..1] run scoreboard players set @s virtues.near_tween 1
+execute as @a[scores={virtues.near_tween=1}] at @s unless entity @e[type=minecraft:villager,name="Tween",distance=..1] run scoreboard players set @s virtues.near_tween 0
+
+scoreboard players add @a virtues.near_shalimar 0
+execute as @a[scores={virtues.near_shalimar=0}] at @s if entity @e[type=minecraft:villager,name="Shalimar",distance=..1] run function virtues:npc/shalimar_greet
+execute as @a[scores={virtues.near_shalimar=0}] at @s if entity @e[type=minecraft:villager,name="Shalimar",distance=..1] run scoreboard players set @s virtues.near_shalimar 1
+execute as @a[scores={virtues.near_shalimar=1}] at @s unless entity @e[type=minecraft:villager,name="Shalimar",distance=..1] run scoreboard players set @s virtues.near_shalimar 0
+
+scoreboard players add @a virtues.near_jason 0
+execute as @a[scores={virtues.near_jason=0}] at @s if entity @e[type=minecraft:villager,name="Jason",distance=..2] run function virtues:npc/jason_greet
+execute as @a[scores={virtues.near_jason=0}] at @s if entity @e[type=minecraft:villager,name="Jason",distance=..2] run scoreboard players set @s virtues.near_jason 1
+execute as @a[scores={virtues.near_jason=1}] at @s unless entity @e[type=minecraft:villager,name="Jason",distance=..2] run scoreboard players set @s virtues.near_jason 0
+
+scoreboard players add @a virtues.near_pepper 0
+execute as @a[scores={virtues.near_pepper=0}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run function virtues:npc/pepper_greet
+execute as @a[scores={virtues.near_pepper=0}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players set @s virtues.near_pepper 1
+execute as @a[scores={virtues.near_pepper=1}] at @s unless entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players set @s virtues.near_pepper 0
+
 # Detect /trigger GIVECHEST set <1-5> (1=bread 2=baked_potato 3=beetroot_soup 4=cookie 5=golden_carrot)
 scoreboard players enable @a GIVECHEST
 execute as @a[scores={GIVECHEST=1..}] run function virtues:player/give_chest_resolve
