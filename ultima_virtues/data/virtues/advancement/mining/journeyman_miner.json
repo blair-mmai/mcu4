@@ -2,12 +2,12 @@
   "display": {
     "icon": {"id": "minecraft:iron_pickaxe"},
     "title": {"text": "Journeyman Miner"},
-    "description": {"text": "Receive an iron pickaxe from Winston M."},
+    "description": {"text": "60% cobble drop rate!"},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
-  "parent": "virtues:mining/apprentice_miner",
+  "parent": "virtues:mining/first_copper_pickaxe",
   "criteria": {
     "never": {"trigger": "minecraft:impossible"}
   }

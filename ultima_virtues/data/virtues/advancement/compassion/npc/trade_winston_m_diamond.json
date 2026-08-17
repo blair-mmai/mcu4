@@ -10,12 +10,9 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_winston_m_diamond": {
-      "trigger": "minecraft:villager_trade",
-      "conditions": {
-        "villager": {"nbt": "{Tags:[\"npc_winston_m\"]}"},
-        "item": {"items": ["minecraft:diamond_pickaxe"]}
-      }
+    "got_diamond_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:diamond_pickaxe"]}]}
     }
   },
   "rewards": {"function": "virtues:npc/winston_m_expert_reveal"}

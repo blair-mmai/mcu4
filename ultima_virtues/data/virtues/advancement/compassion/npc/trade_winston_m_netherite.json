@@ -10,12 +10,9 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_winston_m_netherite": {
-      "trigger": "minecraft:villager_trade",
-      "conditions": {
-        "villager": {"nbt": "{Tags:[\"npc_winston_m\"]}"},
-        "item": {"items": ["minecraft:netherite_pickaxe"]}
-      }
+    "got_netherite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:netherite_pickaxe"]}]}
     }
   },
   "rewards": {"function": "virtues:npc/winston_m_master_reveal"}

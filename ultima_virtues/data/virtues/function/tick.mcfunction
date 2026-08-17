@@ -152,11 +152,11 @@ execute as @a[scores={TAKECHEST=1..}] run function virtues:player/take_chest_res
 scoreboard players set @a[scores={TAKECHEST=1..}] TAKECHEST 0
 
 # Clear vanilla advancement tabs every tick — they reappear faster than a 40-tick window catches
-advancement revoke @a from minecraft:story
-advancement revoke @a from minecraft:nether
-advancement revoke @a from minecraft:end
-advancement revoke @a from minecraft:adventure
-advancement revoke @a from minecraft:husbandry
+advancement revoke @a from minecraft:story/root
+advancement revoke @a from minecraft:nether/root
+advancement revoke @a from minecraft:end/root
+advancement revoke @a from minecraft:adventure/root
+advancement revoke @a from minecraft:husbandry/root
 
 # Run world init exactly once
 scoreboard players add $world virtues.world_init 0

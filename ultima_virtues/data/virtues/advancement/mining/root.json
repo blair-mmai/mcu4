@@ -1,13 +1,16 @@
 {
   "display": {
-    "icon": {"id": "minecraft:iron_pickaxe"},
+    "icon": {"id": "minecraft:cobblestone"},
     "title": {"text": "Mining"},
-    "description": {"text": "The path from cobblestone to netherite."},
+    "description": {"text": "Mined your first cobblestone, (finally)."},
     "background": "minecraft:block/stone",
-    "show_toast": false,
-    "announce_to_chat": false
+    "show_toast": true,
+    "announce_to_chat": true
   },
   "criteria": {
-    "never": {"trigger": "minecraft:impossible"}
+    "got_cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["minecraft:cobblestone"]}]}
+    }
   }
 }

@@ -12,4 +12,6 @@ Minoc will have three Armorer NPCs, each a specialist in one branch of metallurg
 - Until a flag is set, that metal's ingots are auto-downgraded every tick into blocks (groups of 9) and nuggets (remainder), so a non-metallurgist can never hold a real ingot of that metal.
 - Winston A. in Britain only ever grants `iron_metallurgist`. Minoc's three specialists are the natural place to grant `gold_metallurgist` and `copper_metallurgist` (and presumably re-teach/deepen iron, if that fits the town's role).
 
+**CONFIRMED (2026-08-16, Blair):** wiring up Gold/Copper Metallurgist is explicitly deferred until Minoc exists — there's no NPC anywhere yet to trigger either flag, and Blair can't test the mechanic (already built and working for iron in Britain, same pattern) until Minoc gives him someone to trade with. Don't build a temporary/placeholder trigger for these elsewhere; wait for Minoc.
+
 Not yet designed: names, individual dialogue/trade chains, which specialist teaches which metal, and whether all three tie into a shared Sacrifice-virtue mechanic or operate independently.
