@@ -1,6 +1,6 @@
-title @s title {"text":"About this Potion...","color":"white"}
-title @s subtitle {"text":"This potion will teleport you back to our portal!","color":"white"}
-tellraw @s ["",{"text":"Welcomer: This potion will teleport you back to our portal!","color":"yellow"}]
+title @s title {"text":"About this bottle...","color":"white"}
+title @s subtitle {"text":"Fill it with water and trade with Celest!","color":"white"}
+tellraw @s ["",{"text":"Welcomer: Fill it with water and trade with Celest!","color":"yellow"}]
 xp add @s 4 points
 execute store result score $welcomer_xp_temp virtues.xp_temp run data get entity @e[type=minecraft:villager,name="Welcomer",limit=1] Xp
 scoreboard players add $welcomer_xp_temp virtues.xp_temp 1
