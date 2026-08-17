@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:diamond_pickaxe"},
+    "title": {"text": "Expert Miner"},
+    "description": {"text": "Receive a diamond pickaxe from Winston M."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:mining/journeyman_miner",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

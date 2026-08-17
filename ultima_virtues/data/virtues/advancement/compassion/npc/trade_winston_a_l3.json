@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_ingot"},
+    "title": {"text": ""},
+    "description": {"text": ""},
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "virtues:compassion/root",
+  "criteria": {
+    "traded_winston_a_l3": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"npc_winston_a\"]}"},
+        "item": {"items": ["minecraft:written_book", "minecraft:iron_ingot", "minecraft:iron_helmet", "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots"]}
+      }
+    }
+  },
+  "rewards": {"function": "virtues:npc/winston_a_l3_reveal"}
+}

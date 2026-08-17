@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:brown_wool"},
+    "icon": {"id": "minecraft:iron_sword"},
     "title": {"text": ""},
     "description": {"text": ""},
     "frame": "task",
@@ -10,14 +10,12 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_pepper": {
+    "traded_winston_w": {
       "trigger": "minecraft:villager_trade",
       "conditions": {
-        "villager": {
-          "nbt": "{Tags:[\"npc_pepper\"]}"
-        }
+        "villager": {"nbt": "{Tags:[\"npc_winston_w\"]}"}
       }
     }
   },
-  "rewards": {"function": "virtues:npc/pepper_reveal"}
+  "rewards": {"function": "virtues:npc/winston_w_reveal"}
 }

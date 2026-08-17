@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:brown_wool"},
+    "icon": {"id": "minecraft:book"},
     "title": {"text": ""},
     "description": {"text": ""},
     "frame": "task",
@@ -10,14 +10,13 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_pepper": {
+    "traded_welcomer_l1": {
       "trigger": "minecraft:villager_trade",
       "conditions": {
-        "villager": {
-          "nbt": "{Tags:[\"npc_pepper\"]}"
-        }
+        "villager": {"nbt": "{Tags:[\"npc_welcomer\"]}"},
+        "item": {"items": ["minecraft:book"]}
       }
     }
   },
-  "rewards": {"function": "virtues:npc/pepper_reveal"}
+  "rewards": {"function": "virtues:npc/welcomer_trade_l1"}
 }

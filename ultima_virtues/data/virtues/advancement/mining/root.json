@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_pickaxe"},
+    "title": {"text": "Mining"},
+    "description": {"text": "The path from cobblestone to netherite."},
+    "background": "minecraft:block/stone",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

@@ -23,3 +23,4 @@ tag @e[type=minecraft:villager,name="Winston A.",limit=1] add npc_winston_a
 tag @e[type=minecraft:villager,name="Winston T.",limit=1] add npc_winston_t
 tag @e[type=minecraft:villager,name="Winston L.",limit=1] add npc_winston_l
 tag @e[type=minecraft:villager,name="Winston W.",limit=1] add npc_winston_w
+tag @e[type=minecraft:villager,name="Winston M.",limit=1] add npc_winston_m

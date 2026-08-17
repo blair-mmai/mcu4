@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_ingot"},
+    "title": {"text": "Metallurgy"},
+    "description": {"text": "To hold what novices only glimpse."},
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

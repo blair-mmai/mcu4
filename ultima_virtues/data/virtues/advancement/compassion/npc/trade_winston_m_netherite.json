@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:brown_wool"},
+    "icon": {"id": "minecraft:netherite_pickaxe"},
     "title": {"text": ""},
     "description": {"text": ""},
     "frame": "task",
@@ -10,14 +10,13 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_pepper": {
+    "traded_winston_m_netherite": {
       "trigger": "minecraft:villager_trade",
       "conditions": {
-        "villager": {
-          "nbt": "{Tags:[\"npc_pepper\"]}"
-        }
+        "villager": {"nbt": "{Tags:[\"npc_winston_m\"]}"},
+        "item": {"items": ["minecraft:netherite_pickaxe"]}
       }
     }
   },
-  "rewards": {"function": "virtues:npc/pepper_reveal"}
+  "rewards": {"function": "virtues:npc/winston_m_master_reveal"}
 }

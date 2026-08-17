@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:gold_ingot"},
+    "title": {"text": "Gold Metallurgist"},
+    "description": {"text": "Learn the true nature of gold."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:metallurgy/root",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

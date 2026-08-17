@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:netherite_pickaxe"},
+    "title": {"text": "Master Miner"},
+    "description": {"text": "Receive a netherite pickaxe from Winston M."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:mining/expert_miner",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

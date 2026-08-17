@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_ingot"},
+    "title": {"text": "Iron Metallurgist"},
+    "description": {"text": "Learn the true nature of iron from Winston A."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:metallurgy/root",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

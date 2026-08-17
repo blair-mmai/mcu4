@@ -126,9 +126,19 @@ execute as @a[scores={virtues.near_jason=0}] at @s if entity @e[type=minecraft:v
 execute as @a[scores={virtues.near_jason=0}] at @s if entity @e[type=minecraft:villager,name="Jason",distance=..2] run scoreboard players set @s virtues.near_jason 1
 execute as @a[scores={virtues.near_jason=1}] at @s unless entity @e[type=minecraft:villager,name="Jason",distance=..2] run scoreboard players set @s virtues.near_jason 0
 
+scoreboard players add @a virtues.miner_tier 0
+scoreboard players add @a virtues.near_winston_m 0
+scoreboard players add @a virtues.winston_m_greet_count 0
+execute as @a[scores={virtues.near_winston_m=0,virtues.winston_m_greet_count=..2}] at @s if entity @e[type=minecraft:villager,name="Winston M.",distance=..2] run function virtues:npc/winston_m_greet
+execute as @a[scores={virtues.near_winston_m=0,virtues.winston_m_greet_count=..2}] at @s if entity @e[type=minecraft:villager,name="Winston M.",distance=..2] run scoreboard players add @s virtues.winston_m_greet_count 1
+execute as @a[scores={virtues.near_winston_m=0,virtues.winston_m_greet_count=..2}] at @s if entity @e[type=minecraft:villager,name="Winston M.",distance=..2] run scoreboard players set @s virtues.near_winston_m 1
+execute as @a[scores={virtues.near_winston_m=1}] at @s unless entity @e[type=minecraft:villager,name="Winston M.",distance=..2] run scoreboard players set @s virtues.near_winston_m 0
+
 scoreboard players add @a virtues.near_pepper 0
-execute as @a[scores={virtues.near_pepper=0}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run function virtues:npc/pepper_greet
-execute as @a[scores={virtues.near_pepper=0}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players set @s virtues.near_pepper 1
+scoreboard players add @a virtues.pepper_greet_count 0
+execute as @a[scores={virtues.near_pepper=0,virtues.pepper_greet_count=..2}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run function virtues:npc/pepper_greet
+execute as @a[scores={virtues.near_pepper=0,virtues.pepper_greet_count=..2}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players add @s virtues.pepper_greet_count 1
+execute as @a[scores={virtues.near_pepper=0,virtues.pepper_greet_count=..2}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players set @s virtues.near_pepper 1
 execute as @a[scores={virtues.near_pepper=1}] at @s unless entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players set @s virtues.near_pepper 0
 
 # Detect /trigger GIVECHEST set <1-5> (1=bread 2=baked_potato 3=beetroot_soup 4=cookie 5=golden_carrot)
@@ -174,6 +184,8 @@ execute as @a run function virtues:player/check_first_actions
 execute as @a run function virtues:player/check_tree_damage
 execute as @a run function virtues:player/check_stone_damage
 execute as @a run function virtues:player/check_iron_ingots
+execute as @a run function virtues:player/check_gold_ingots
+execute as @a run function virtues:player/check_copper_ingots
 execute as @a run function virtues:player/check_vegan_planting
 execute as @a run function virtues:player/check_compassion_acts
 execute as @a run function virtues:player/check_pillar

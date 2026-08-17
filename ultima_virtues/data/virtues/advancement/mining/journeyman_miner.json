@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_pickaxe"},
+    "title": {"text": "Journeyman Miner"},
+    "description": {"text": "Receive an iron pickaxe from Winston M."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:mining/apprentice_miner",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

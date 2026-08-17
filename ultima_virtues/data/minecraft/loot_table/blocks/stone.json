@@ -13,9 +13,9 @@
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
-                  "predicate": {"tag": "virtues:wood_pickaxes"}
+                  "predicate": {"items": ["minecraft:wooden_pickaxe"]}
                 },
-                {"condition": "minecraft:random_chance", "chance": 0.167}
+                {"condition": "minecraft:random_chance", "chance": 0.1}
               ]
             },
             {
@@ -24,7 +24,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
-                  "predicate": {"tag": "virtues:wood_pickaxes"}
+                  "predicate": {"items": ["minecraft:wooden_pickaxe"]}
                 }
               ]
             },
@@ -34,9 +34,9 @@
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
-                  "predicate": {"tag": "virtues:stone_pickaxes"}
+                  "predicate": {"items": ["minecraft:stone_pickaxe"]}
                 },
-                {"condition": "minecraft:random_chance", "chance": 0.333}
+                {"condition": "minecraft:random_chance", "chance": 0.2}
               ]
             },
             {
@@ -45,7 +45,91 @@
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
-                  "predicate": {"tag": "virtues:stone_pickaxes"}
+                  "predicate": {"items": ["minecraft:stone_pickaxe"]}
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cobblestone",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:copper_pickaxe"]}
+                },
+                {"condition": "minecraft:random_chance", "chance": 0.4}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gravel",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:copper_pickaxe"]}
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cobblestone",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:golden_pickaxe"]}
+                },
+                {"condition": "minecraft:random_chance", "chance": 0.5}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gravel",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:golden_pickaxe"]}
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cobblestone",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:iron_pickaxe"]}
+                },
+                {"condition": "minecraft:random_chance", "chance": 0.6}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gravel",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:iron_pickaxe"]}
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cobblestone",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:diamond_pickaxe"]}
+                },
+                {"condition": "minecraft:random_chance", "chance": 0.8}
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gravel",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {"items": ["minecraft:diamond_pickaxe"]}
                 }
               ]
             },

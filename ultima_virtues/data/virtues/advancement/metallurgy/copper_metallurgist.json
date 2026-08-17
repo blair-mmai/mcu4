@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:copper_ingot"},
+    "title": {"text": "Copper Metallurgist"},
+    "description": {"text": "Learn the true nature of copper."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "virtues:metallurgy/root",
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}
