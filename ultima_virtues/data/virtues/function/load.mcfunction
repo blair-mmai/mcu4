@@ -139,6 +139,7 @@ scoreboard objectives add virtues.animals_bred minecraft.custom:minecraft.animal
 scoreboard objectives add virtues.animals_bred_baseline dummy
 scoreboard objectives add virtues.animals_bred_delta dummy
 scoreboard objectives add virtues.const dummy
+scoreboard objectives add virtues.puzzle_temp dummy
 scoreboard players set $nine virtues.const 9
 
 # Wipe all vanilla advancement tabs so they never show

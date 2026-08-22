@@ -4,6 +4,12 @@
 
 scoreboard players add $world virtues.tick_count 1
 
+# Redstone/physical puzzle mechanics — independent module, see puzzles/tick.mcfunction
+function virtues:puzzles/tick
+
+# Persistent world fixtures (auto-refill containers, etc.) — independent module
+function virtues:fixtures/tick
+
 # Assign player ID to any player who hasn't been assigned one yet
 execute as @a[scores={virtues.player_id=0}] run function virtues:player/assign_player_id
 
