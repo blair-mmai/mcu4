@@ -5,3 +5,4 @@
 # Called once per tick from the main tick.mcfunction via a single hook line.
 
 function virtues:puzzles/jhelom_sword_check
+function virtues:puzzles/jhelom_helmet_check
