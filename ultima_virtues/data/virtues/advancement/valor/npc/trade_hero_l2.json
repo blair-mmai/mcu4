@@ -46,5 +46,6 @@
       }
     }
   },
+  "requirements": [["traded_hero_l2_totem","traded_hero_l3_leggings","traded_hero_l3_shield","traded_hero_l3_boots","traded_hero_l3_axe"]],
   "rewards": {"function": "virtues:npc/hero_l2_reveal"}
 }
