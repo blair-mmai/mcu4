@@ -10,6 +10,9 @@ function virtues:puzzles/tick
 # Persistent world fixtures (auto-refill containers, etc.) — independent module
 function virtues:fixtures/tick
 
+# Haunted-inn-room mechanics (Skara Brae) — independent module, see rooms/tick.mcfunction
+function virtues:rooms/tick
+
 # Assign player ID to any player who hasn't been assigned one yet
 execute as @a[scores={virtues.player_id=0}] run function virtues:player/assign_player_id
 
@@ -78,6 +81,12 @@ execute as @a[scores={CELESTYN=1..}] at @s run function virtues:npc/celest_check
 # Detect Welcomer's potions yes/no answer (part of his roll table)
 scoreboard players enable @a WELCOMERYN
 execute as @a[scores={WELCOMERYN=1..}] at @s run function virtues:npc/welcomer_potions_check
+
+# Detect Isaac's rune yes/no answer (Skara Brae ghost encounter). Only
+# re-enabled while unresolved — otherwise old [Yes]/[No] chat text stays
+# clickable forever and lets a player see (and farm) both answers.
+execute if score $skara_ghost_resolved virtues.room_state matches 0 run scoreboard players enable @a[tag=skara_ghost_target] GHOSTYN
+execute as @a[scores={GHOSTYN=1..}] at @s run function virtues:rooms/ghost_isaac_check
 
 # Detect Hero's valor yes/no answer (part of his roll table)
 # Only re-enabled under the 3-answer cap (virtues.hero_answered) — otherwise

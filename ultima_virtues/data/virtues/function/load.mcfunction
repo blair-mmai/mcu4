@@ -77,6 +77,16 @@ scoreboard objectives add virtues.near_swen dummy
 scoreboard objectives add virtues.near_hero dummy
 scoreboard objectives add virtues.hero_answered dummy
 scoreboard objectives add virtues.near_smith dummy
+scoreboard objectives add virtues.room_state dummy
+scoreboard objectives add GHOSTYN trigger
+
+# Ensure Skara Brae room-state fake players exist without resetting on reload
+scoreboard players add $skara_room_rented virtues.room_state 0
+scoreboard players add $skara_ghost_armed virtues.room_state 0
+scoreboard players add $skara_ghost_resolved virtues.room_state 0
+scoreboard players add $skara_ghost_encounter_active virtues.room_state 0
+scoreboard players add $skara_ghost_triggered virtues.room_state 0
+scoreboard players set $skara_amb_period virtues.room_state 60
 scoreboard objectives add virtues.winston_m_greet_count dummy
 scoreboard objectives add virtues.miner_tier dummy
 scoreboard objectives add virtues.pepper_greet_count dummy
