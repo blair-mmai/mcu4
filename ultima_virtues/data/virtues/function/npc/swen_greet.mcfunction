@@ -1,0 +1,12 @@
+execute store result score @s virtues.roll_temp run random value 1..100
+execute if score @s virtues.roll_temp matches 1..8 run function virtues:npc/swen_greet_1
+execute if score @s virtues.roll_temp matches 9..24 run function virtues:npc/swen_greet_2
+execute if score @s virtues.roll_temp matches 25..32 run function virtues:npc/swen_greet_3
+execute if score @s virtues.roll_temp matches 33..40 run function virtues:npc/swen_greet_4
+execute if score @s virtues.roll_temp matches 41..52 run function virtues:npc/swen_greet_5
+execute if score @s virtues.roll_temp matches 53..60 run function virtues:npc/swen_greet_6
+execute if score @s virtues.roll_temp matches 61..68 run function virtues:npc/swen_greet_7
+execute if score @s virtues.roll_temp matches 69..76 run function virtues:npc/swen_greet_8
+execute if score @s virtues.roll_temp matches 77..84 run function virtues:npc/swen_greet_9
+execute if score @s virtues.roll_temp matches 85..92 run function virtues:npc/swen_greet_10
+execute if score @s virtues.roll_temp matches 93..100 run function virtues:npc/swen_greet_11

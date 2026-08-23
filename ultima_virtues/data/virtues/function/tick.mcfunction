@@ -147,6 +147,12 @@ execute as @a[scores={virtues.near_pepper=0,virtues.pepper_greet_count=..2}] at 
 execute as @a[scores={virtues.near_pepper=0,virtues.pepper_greet_count=..2}] at @s if entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players set @s virtues.near_pepper 1
 execute as @a[scores={virtues.near_pepper=1}] at @s unless entity @e[type=minecraft:villager,name="Pepper",distance=..2] run scoreboard players set @s virtues.near_pepper 0
 
+# Jhelom proximity NPCs
+scoreboard players add @a virtues.near_swen 0
+execute as @a[scores={virtues.near_swen=0}] at @s if entity @e[type=minecraft:villager,name="Swen",distance=..2] run function virtues:npc/swen_greet
+execute as @a[scores={virtues.near_swen=0}] at @s if entity @e[type=minecraft:villager,name="Swen",distance=..2] run scoreboard players set @s virtues.near_swen 1
+execute as @a[scores={virtues.near_swen=1}] at @s unless entity @e[type=minecraft:villager,name="Swen",distance=..2] run scoreboard players set @s virtues.near_swen 0
+
 # Detect /trigger GIVECHEST set <1-5> (1=bread 2=baked_potato 3=beetroot_soup 4=cookie 5=golden_carrot)
 scoreboard players enable @a GIVECHEST
 execute as @a[scores={GIVECHEST=1..}] run function virtues:player/give_chest_resolve

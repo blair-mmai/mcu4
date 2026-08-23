@@ -72,6 +72,7 @@ scoreboard objectives add virtues.near_shalimar dummy
 scoreboard objectives add virtues.near_jason dummy
 scoreboard objectives add virtues.near_pepper dummy
 scoreboard objectives add virtues.near_winston_m dummy
+scoreboard objectives add virtues.near_swen dummy
 scoreboard objectives add virtues.winston_m_greet_count dummy
 scoreboard objectives add virtues.miner_tier dummy
 scoreboard objectives add virtues.pepper_greet_count dummy
