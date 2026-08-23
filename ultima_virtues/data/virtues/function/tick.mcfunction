@@ -166,6 +166,11 @@ execute as @a[scores={virtues.near_hero=0}] at @s if entity @e[type=minecraft:vi
 execute as @a[scores={virtues.near_hero=0}] at @s if entity @e[type=minecraft:villager,name="Hero",distance=..2] run scoreboard players set @s virtues.near_hero 1
 execute as @a[scores={virtues.near_hero=1}] at @s unless entity @e[type=minecraft:villager,name="Hero",distance=..2] run scoreboard players set @s virtues.near_hero 0
 
+scoreboard players add @a virtues.near_smith 0
+execute as @a[scores={virtues.near_smith=0}] at @s if entity @e[type=minecraft:horse,name="Smith",distance=..1] run function virtues:npc/smith_greet
+execute as @a[scores={virtues.near_smith=0}] at @s if entity @e[type=minecraft:horse,name="Smith",distance=..1] run scoreboard players set @s virtues.near_smith 1
+execute as @a[scores={virtues.near_smith=1}] at @s unless entity @e[type=minecraft:horse,name="Smith",distance=..1] run scoreboard players set @s virtues.near_smith 0
+
 # Detect /trigger GIVECHEST set <1-5> (1=bread 2=baked_potato 3=beetroot_soup 4=cookie 5=golden_carrot)
 scoreboard players enable @a GIVECHEST
 execute as @a[scores={GIVECHEST=1..}] run function virtues:player/give_chest_resolve

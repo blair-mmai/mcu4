@@ -5,3 +5,4 @@
 
 tag @e[type=minecraft:villager,name="Swen",limit=1] add npc_swen
 tag @e[type=minecraft:villager,name="Hero",limit=1] add npc_hero
+tag @e[type=minecraft:horse,name="Smith",limit=1] add npc_smith
