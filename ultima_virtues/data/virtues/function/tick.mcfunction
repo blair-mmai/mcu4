@@ -79,6 +79,14 @@ execute as @a[scores={CELESTYN=1..}] at @s run function virtues:npc/celest_check
 scoreboard players enable @a WELCOMERYN
 execute as @a[scores={WELCOMERYN=1..}] at @s run function virtues:npc/welcomer_potions_check
 
+# Detect Hero's valor yes/no answer (part of his roll table)
+# Only re-enabled under the 3-answer cap (virtues.hero_answered) — otherwise
+# the old clickable [Yes]/[No] text stays live in chat scrollback forever and
+# could be re-clicked to farm XP indefinitely.
+scoreboard players add @a virtues.hero_answered 0
+execute as @a[scores={virtues.hero_answered=0..2}] run scoreboard players enable @s HEROYN
+execute as @a[scores={HEROYN=1..}] at @s run function virtues:npc/hero_valor_check
+
 # Welcomer proximity greeting (Britain NPC roster) — repeatable: fires once per fresh
 # approach (not every tick while standing still), state machine via virtues.near_welcomer
 scoreboard players add @a virtues.near_welcomer 0
@@ -152,6 +160,11 @@ scoreboard players add @a virtues.near_swen 0
 execute as @a[scores={virtues.near_swen=0}] at @s if entity @e[type=minecraft:villager,name="Swen",distance=..2] run function virtues:npc/swen_greet
 execute as @a[scores={virtues.near_swen=0}] at @s if entity @e[type=minecraft:villager,name="Swen",distance=..2] run scoreboard players set @s virtues.near_swen 1
 execute as @a[scores={virtues.near_swen=1}] at @s unless entity @e[type=minecraft:villager,name="Swen",distance=..2] run scoreboard players set @s virtues.near_swen 0
+
+scoreboard players add @a virtues.near_hero 0
+execute as @a[scores={virtues.near_hero=0}] at @s if entity @e[type=minecraft:villager,name="Hero",distance=..2] run function virtues:npc/hero_greet
+execute as @a[scores={virtues.near_hero=0}] at @s if entity @e[type=minecraft:villager,name="Hero",distance=..2] run scoreboard players set @s virtues.near_hero 1
+execute as @a[scores={virtues.near_hero=1}] at @s unless entity @e[type=minecraft:villager,name="Hero",distance=..2] run scoreboard players set @s virtues.near_hero 0
 
 # Detect /trigger GIVECHEST set <1-5> (1=bread 2=baked_potato 3=beetroot_soup 4=cookie 5=golden_carrot)
 scoreboard players enable @a GIVECHEST

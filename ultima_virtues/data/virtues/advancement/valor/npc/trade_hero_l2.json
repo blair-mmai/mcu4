@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:totem_of_undying"},
+    "title": {"text": ""},
+    "description": {"text": ""},
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "virtues:valor/root",
+  "criteria": {
+    "traded_hero_l2_totem": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"npc_hero\"]}"},
+        "item": {"items": ["minecraft:totem_of_undying"]}
+      }
+    },
+    "traded_hero_l3_leggings": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"npc_hero\"]}"},
+        "item": {"items": ["minecraft:netherite_leggings"]}
+      }
+    },
+    "traded_hero_l3_shield": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"npc_hero\"]}"},
+        "item": {"items": ["minecraft:shield"]}
+      }
+    },
+    "traded_hero_l3_boots": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"npc_hero\"]}"},
+        "item": {"items": ["minecraft:netherite_boots"]}
+      }
+    },
+    "traded_hero_l3_axe": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"npc_hero\"]}"},
+        "item": {"items": ["minecraft:netherite_axe"]}
+      }
+    }
+  },
+  "rewards": {"function": "virtues:npc/hero_l2_reveal"}
+}

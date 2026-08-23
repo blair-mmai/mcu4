@@ -4,3 +4,4 @@
 # and general re-identification if the town has to be rebuilt from scratch.
 
 tag @e[type=minecraft:villager,name="Swen",limit=1] add npc_swen
+tag @e[type=minecraft:villager,name="Hero",limit=1] add npc_hero

@@ -59,6 +59,7 @@ scoreboard objectives add CELESTYN trigger
 scoreboard objectives add virtues.xp_temp dummy
 scoreboard objectives add virtues.roll_temp dummy
 scoreboard objectives add WELCOMERYN trigger
+scoreboard objectives add HEROYN trigger
 scoreboard objectives add virtues.greeted_welcomer dummy
 scoreboard objectives add virtues.near_welcomer dummy
 scoreboard objectives add virtues.near_shapero dummy
@@ -73,6 +74,8 @@ scoreboard objectives add virtues.near_jason dummy
 scoreboard objectives add virtues.near_pepper dummy
 scoreboard objectives add virtues.near_winston_m dummy
 scoreboard objectives add virtues.near_swen dummy
+scoreboard objectives add virtues.near_hero dummy
+scoreboard objectives add virtues.hero_answered dummy
 scoreboard objectives add virtues.winston_m_greet_count dummy
 scoreboard objectives add virtues.miner_tier dummy
 scoreboard objectives add virtues.pepper_greet_count dummy
