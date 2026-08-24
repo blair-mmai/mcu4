@@ -96,6 +96,12 @@ scoreboard players add @a virtues.hero_answered 0
 execute as @a[scores={virtues.hero_answered=0..2}] run scoreboard players enable @s HEROYN
 execute as @a[scores={HEROYN=1..}] at @s run function virtues:npc/hero_valor_check
 
+# Detect Tyrone's rental yes/no answer. No blanket re-enable here on purpose —
+# tyrone_ask_rental.mcfunction enables the trigger itself, once, right when the
+# prompt shows. Re-enabling it every tick (like other NPCs' Y/N do) would let an
+# old chat click work again after walking away and coming back later.
+execute as @a[scores={TYRONEYN=1..}] at @s run function virtues:npc/tyrone_rental_check
+
 # Welcomer proximity greeting (Britain NPC roster) — repeatable: fires once per fresh
 # approach (not every tick while standing still), state machine via virtues.near_welcomer
 scoreboard players add @a virtues.near_welcomer 0
@@ -174,6 +180,11 @@ scoreboard players add @a virtues.near_hero 0
 execute as @a[scores={virtues.near_hero=0}] at @s if entity @e[type=minecraft:villager,name="Hero",distance=..2] run function virtues:npc/hero_greet
 execute as @a[scores={virtues.near_hero=0}] at @s if entity @e[type=minecraft:villager,name="Hero",distance=..2] run scoreboard players set @s virtues.near_hero 1
 execute as @a[scores={virtues.near_hero=1}] at @s unless entity @e[type=minecraft:villager,name="Hero",distance=..2] run scoreboard players set @s virtues.near_hero 0
+
+scoreboard players add @a virtues.near_tyrone 0
+execute as @a[scores={virtues.near_tyrone=0}] at @s if entity @e[type=minecraft:villager,name="Tyrone",distance=..2] run function virtues:npc/tyrone_greet
+execute as @a[scores={virtues.near_tyrone=0}] at @s if entity @e[type=minecraft:villager,name="Tyrone",distance=..2] run scoreboard players set @s virtues.near_tyrone 1
+execute as @a[scores={virtues.near_tyrone=1}] at @s unless entity @e[type=minecraft:villager,name="Tyrone",distance=..2] run scoreboard players set @s virtues.near_tyrone 0
 
 scoreboard players add @a virtues.near_smith 0
 execute as @a[scores={virtues.near_smith=0}] at @s if entity @e[type=minecraft:horse,name="Smith",distance=..1] run function virtues:npc/smith_greet
