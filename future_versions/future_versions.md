@@ -93,3 +93,12 @@ Uncle Wandering Matt (see `spoilers/villagers/antos_family.md`) embodies this me
 Different biome village types reflect the virtue-oriented towns from *Ultima IV*. Each village type (plains, savanna, desert, taiga, snowy, jungle, etc.) is aligned to a specific virtue — architecture, NPC trades, and ambient details all themed accordingly. Librarians and other key NPCs in those villages are guaranteed to carry that village's aligned virtue identity rather than random assignment.
 
 Connects physical world geography to the virtue map: finding a village biome becomes meaningful — you know what kind of town it is, what it values, and what it can offer you on your virtue path.
+
+---
+
+## Possible Other Potions
+
+Looser and less solid — captured so they don't get lost, not decided designs.
+
+- **A potion that temporarily reveals a player's own virtue score(s)** — paired with a nausea effect so the readout is deliberately blurry/unclear, not a clean number. Unclear whether this fits the design principle that a player shouldn't be able to cleanly check their own score by virtue — flagged as a tension to think through before building, not resolved.
+- **Potions as a travel/exploration tool in general** — e.g. a flight potion (fly for some duration) paired with feather falling for the landing, as a way to cover ground or see further across these lands, where villages are spread far apart. General direction ("potions could be a lot of fun") more than a specific design yet.

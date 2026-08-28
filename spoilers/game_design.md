@@ -249,5 +249,15 @@ The Spirituality mantra is *"O"* (the circle, the stone ring). Its clue: a journ
 
 The Butcher villager (virtue TBD) hints at his mantra via trade dialogue: *"Simply mutter 'paneer' as mantra of [virtue]..."* — Rogan Josh easter egg.
 
+## 16-Segment Boss Bar (ankh-themed, stone-circle-only)
+
+Committed for v1. Originally discussed in a different session that never got saved to memory — re-confirmed 2026-08-23.
+
+- Tracks overall game progress in 16ths: 8 virtues × 2 milestones each (obtaining the virtue's rune, achieving that virtue's enlightenment).
+- Themed after the Ultima IV ankh — 8 horizontal lines that slowly reveal as the player becomes enlightened in each virtue. The boss bar is the modern-engine equivalent of that reveal.
+- **Deliberately NOT always visible** — only shows while the player is standing in their own stone circle. A permanent HUD element would be too in-your-face/naggy for something meant to feel like a special, personal milestone-tracker.
+- **Rune-obtained milestone:** the moment a rune first enters the player's inventory, a permanent, non-revocable `goal`-frame advancement fires (can't be un-granted even if the rune is later dropped). The advancement firing is what fills that virtue's "rune" 1/16 segment on the boss bar — dropping the rune afterward doesn't un-fill the segment, it only prevents the player from *using* the rune functionally (two separate concerns: advancement-tracked permanent progress vs. current inventory-based usability).
+- Not yet built — no advancements, boss bar objective, or stone-circle detection hook exist for this yet.
+
 
 
