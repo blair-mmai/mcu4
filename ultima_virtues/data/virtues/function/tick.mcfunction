@@ -186,6 +186,77 @@ execute as @a[scores={virtues.near_tyrone=0}] at @s if entity @e[type=minecraft:
 execute as @a[scores={virtues.near_tyrone=0}] at @s if entity @e[type=minecraft:villager,name="Tyrone",distance=..2] run scoreboard players set @s virtues.near_tyrone 1
 execute as @a[scores={virtues.near_tyrone=1}] at @s unless entity @e[type=minecraft:villager,name="Tyrone",distance=..2] run scoreboard players set @s virtues.near_tyrone 0
 
+# Moonglow proximity NPCs (all "1 Block" trigger detail per Blair's table)
+scoreboard players add @a virtues.near_browning 0
+execute as @a[scores={virtues.near_browning=0}] at @s if entity @e[type=minecraft:villager,name="Browning",distance=..1] run function virtues:npc/browning_greet
+execute as @a[scores={virtues.near_browning=0}] at @s if entity @e[type=minecraft:villager,name="Browning",distance=..1] run scoreboard players set @s virtues.near_browning 1
+execute as @a[scores={virtues.near_browning=1}] at @s unless entity @e[type=minecraft:villager,name="Browning",distance=..1] run scoreboard players set @s virtues.near_browning 0
+
+scoreboard players add @a virtues.near_calabrini 0
+execute as @a[scores={virtues.near_calabrini=0}] at @s if entity @e[type=minecraft:villager,name="Calabrini",distance=..2] run function virtues:npc/calabrini_greet
+execute as @a[scores={virtues.near_calabrini=0}] at @s if entity @e[type=minecraft:villager,name="Calabrini",distance=..2] run scoreboard players set @s virtues.near_calabrini 1
+execute as @a[scores={virtues.near_calabrini=1}] at @s unless entity @e[type=minecraft:villager,name="Calabrini",distance=..2] run scoreboard players set @s virtues.near_calabrini 0
+
+scoreboard players add @a virtues.near_christen 0
+execute as @a[scores={virtues.near_christen=0}] at @s if entity @e[type=minecraft:villager,name="Christen",distance=..1] run function virtues:npc/christen_greet
+execute as @a[scores={virtues.near_christen=0}] at @s if entity @e[type=minecraft:villager,name="Christen",distance=..1] run scoreboard players set @s virtues.near_christen 1
+execute as @a[scores={virtues.near_christen=1}] at @s unless entity @e[type=minecraft:villager,name="Christen",distance=..1] run scoreboard players set @s virtues.near_christen 0
+
+scoreboard players add @a virtues.near_cromwell 0
+execute as @a[scores={virtues.near_cromwell=0}] at @s if entity @e[type=minecraft:villager,name="Cromwell",distance=..1] run function virtues:npc/cromwell_greet
+execute as @a[scores={virtues.near_cromwell=0}] at @s if entity @e[type=minecraft:villager,name="Cromwell",distance=..1] run scoreboard players set @s virtues.near_cromwell 1
+execute as @a[scores={virtues.near_cromwell=1}] at @s unless entity @e[type=minecraft:villager,name="Cromwell",distance=..1] run scoreboard players set @s virtues.near_cromwell 0
+
+scoreboard players add @a virtues.near_mariah 0
+execute as @a[scores={virtues.near_mariah=0}] at @s if entity @e[type=minecraft:villager,name="Mariah",distance=..2] run function virtues:npc/mariah_greet
+execute as @a[scores={virtues.near_mariah=0}] at @s if entity @e[type=minecraft:villager,name="Mariah",distance=..2] run scoreboard players set @s virtues.near_mariah 1
+execute as @a[scores={virtues.near_mariah=1}] at @s unless entity @e[type=minecraft:villager,name="Mariah",distance=..2] run scoreboard players set @s virtues.near_mariah 0
+
+scoreboard players add @a virtues.near_patric 0
+execute as @a[scores={virtues.near_patric=0}] at @s if entity @e[type=minecraft:villager,name="Patric the Humble Shepherd",distance=..2] run function virtues:npc/patric_greet
+execute as @a[scores={virtues.near_patric=0}] at @s if entity @e[type=minecraft:villager,name="Patric the Humble Shepherd",distance=..2] run scoreboard players set @s virtues.near_patric 1
+execute as @a[scores={virtues.near_patric=1}] at @s unless entity @e[type=minecraft:villager,name="Patric the Humble Shepherd",distance=..2] run scoreboard players set @s virtues.near_patric 0
+
+scoreboard players add @a virtues.near_rebelias 0
+execute as @a[scores={virtues.near_rebelias=0}] at @s if entity @e[type=minecraft:villager,name="Rebelias",distance=..1] run function virtues:npc/rebelias_greet
+execute as @a[scores={virtues.near_rebelias=0}] at @s if entity @e[type=minecraft:villager,name="Rebelias",distance=..1] run scoreboard players set @s virtues.near_rebelias 1
+execute as @a[scores={virtues.near_rebelias=1}] at @s unless entity @e[type=minecraft:villager,name="Rebelias",distance=..1] run scoreboard players set @s virtues.near_rebelias 0
+
+scoreboard players add @a virtues.near_scatu 0
+execute as @a[scores={virtues.near_scatu=0}] at @s if entity @e[type=minecraft:villager,name="Scatu",distance=..2] run function virtues:npc/scatu_greet
+execute as @a[scores={virtues.near_scatu=0}] at @s if entity @e[type=minecraft:villager,name="Scatu",distance=..2] run scoreboard players set @s virtues.near_scatu 1
+execute as @a[scores={virtues.near_scatu=1}] at @s unless entity @e[type=minecraft:villager,name="Scatu",distance=..2] run scoreboard players set @s virtues.near_scatu 0
+
+scoreboard players add @a virtues.near_shakespeare 0
+execute as @a[scores={virtues.near_shakespeare=0}] at @s if entity @e[type=minecraft:villager,name="Shakespeare",distance=..1] run function virtues:npc/shakespeare_greet
+execute as @a[scores={virtues.near_shakespeare=0}] at @s if entity @e[type=minecraft:villager,name="Shakespeare",distance=..1] run scoreboard players set @s virtues.near_shakespeare 1
+execute as @a[scores={virtues.near_shakespeare=1}] at @s unless entity @e[type=minecraft:villager,name="Shakespeare",distance=..1] run scoreboard players set @s virtues.near_shakespeare 0
+
+scoreboard players add @a virtues.near_shazom 0
+execute as @a[scores={virtues.near_shazom=0}] at @s if entity @e[type=minecraft:villager,name="Shazom",distance=..2] run function virtues:npc/shazom_greet
+execute as @a[scores={virtues.near_shazom=0}] at @s if entity @e[type=minecraft:villager,name="Shazom",distance=..2] run scoreboard players set @s virtues.near_shazom 1
+execute as @a[scores={virtues.near_shazom=1}] at @s unless entity @e[type=minecraft:villager,name="Shazom",distance=..2] run scoreboard players set @s virtues.near_shazom 0
+
+scoreboard players add @a virtues.near_william 0
+execute as @a[scores={virtues.near_william=0}] at @s if entity @e[type=minecraft:villager,name="William",distance=..2] run function virtues:npc/william_greet
+execute as @a[scores={virtues.near_william=0}] at @s if entity @e[type=minecraft:villager,name="William",distance=..2] run scoreboard players set @s virtues.near_william 1
+execute as @a[scores={virtues.near_william=1}] at @s unless entity @e[type=minecraft:villager,name="William",distance=..2] run scoreboard players set @s virtues.near_william 0
+
+scoreboard players add @a virtues.near_shaman 0
+execute as @a[scores={virtues.near_shaman=0}] at @s if entity @e[type=minecraft:villager,name="Shaman",distance=..2] run function virtues:npc/shaman_greet
+execute as @a[scores={virtues.near_shaman=0}] at @s if entity @e[type=minecraft:villager,name="Shaman",distance=..2] run scoreboard players set @s virtues.near_shaman 1
+execute as @a[scores={virtues.near_shaman=1}] at @s unless entity @e[type=minecraft:villager,name="Shaman",distance=..2] run scoreboard players set @s virtues.near_shaman 0
+
+scoreboard players add @a virtues.near_harmony 0
+execute as @a[scores={virtues.near_harmony=0}] at @s if entity @e[type=minecraft:villager,name="Harmony",distance=..2] run function virtues:npc/harmony_greet
+execute as @a[scores={virtues.near_harmony=0}] at @s if entity @e[type=minecraft:villager,name="Harmony",distance=..2] run scoreboard players set @s virtues.near_harmony 1
+execute as @a[scores={virtues.near_harmony=1}] at @s unless entity @e[type=minecraft:villager,name="Harmony",distance=..2] run scoreboard players set @s virtues.near_harmony 0
+
+scoreboard players add @a virtues.near_margot 0
+execute as @a[scores={virtues.near_margot=0}] at @s if entity @e[type=minecraft:villager,name="Margot",distance=..2] run function virtues:npc/margot_greet
+execute as @a[scores={virtues.near_margot=0}] at @s if entity @e[type=minecraft:villager,name="Margot",distance=..2] run scoreboard players set @s virtues.near_margot 1
+execute as @a[scores={virtues.near_margot=1}] at @s unless entity @e[type=minecraft:villager,name="Margot",distance=..2] run scoreboard players set @s virtues.near_margot 0
+
 scoreboard players add @a virtues.near_smith 0
 execute as @a[scores={virtues.near_smith=0}] at @s if entity @e[type=minecraft:horse,name="Smith",distance=..1] run function virtues:npc/smith_greet
 execute as @a[scores={virtues.near_smith=0}] at @s if entity @e[type=minecraft:horse,name="Smith",distance=..1] run scoreboard players set @s virtues.near_smith 1
