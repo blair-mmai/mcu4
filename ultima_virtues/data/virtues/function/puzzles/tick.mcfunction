@@ -6,3 +6,4 @@
 
 function virtues:puzzles/jhelom_sword_check
 function virtues:puzzles/jhelom_helmet_check
+function virtues:puzzles/trinsic_maze_spawn_check
