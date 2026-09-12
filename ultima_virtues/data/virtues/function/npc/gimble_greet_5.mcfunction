@@ -1,4 +1,4 @@
-title @s title {"text":"Fading","color":"white"}
+title @s title {"text":"I'm fading…","color":"white"}
 title @s subtitle {"text":"I will soon sleep forever.","color":"white"}
 tellraw @s ["",{"text":"Gimble: I will soon sleep forever.","color":"yellow"}]
 scoreboard players enable @s GIMBLEYN

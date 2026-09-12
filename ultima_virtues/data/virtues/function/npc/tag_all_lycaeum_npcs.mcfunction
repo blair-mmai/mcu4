@@ -7,7 +7,7 @@
 
 tag @e[type=minecraft:villager,name="Nearly A Corpse",limit=1] add npc_nearly_a_corpse
 tag @e[type=minecraft:villager,name="Beth Frasier",limit=1] add npc_beth_frasier
-tag @e[type=minecraft:villager,name="Estro",limit=1] add npc_estro
+tag @e[type=minecraft:villager,name="Estrol",limit=1] add npc_estrol
 tag @e[type=minecraft:villager,name="Father Antos",limit=1] add npc_father_antos
 tag @e[type=minecraft:villager,name="Lord Terence",limit=1] add npc_lord_terence
 tag @e[type=minecraft:villager,name="Nigel",limit=1] add npc_nigel

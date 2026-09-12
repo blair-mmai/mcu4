@@ -5,6 +5,7 @@
 scoreboard objectives add virtues.tick_count dummy
 scoreboard objectives add virtues.firstjoin dummy
 scoreboard objectives add virtues.chest dummy
+scoreboard objectives add virtues.mystic_roll dummy
 
 # Tracks logs mined (any common log type) so we can detect "first tree punched"
 scoreboard objectives add virtues.mined_oak minecraft.mined:minecraft.oak_log
@@ -110,7 +111,7 @@ scoreboard objectives add virtues.near_zajac dummy
 scoreboard objectives add virtues.hero_answered dummy
 scoreboard objectives add virtues.near_smith dummy
 scoreboard objectives add BETHYN trigger
-scoreboard objectives add ESTROYN trigger
+scoreboard objectives add ESTROLYN trigger
 scoreboard objectives add ANTOSYN trigger
 scoreboard objectives add TERENCEYN trigger
 scoreboard objectives add NIGELYN trigger
@@ -119,7 +120,7 @@ scoreboard objectives add SCATUUYN trigger
 scoreboard objectives add SHYLOCKYN trigger
 scoreboard objectives add TYMUSYN trigger
 scoreboard objectives add virtues.near_beth dummy
-scoreboard objectives add virtues.near_estro dummy
+scoreboard objectives add virtues.near_estrol dummy
 scoreboard objectives add virtues.near_antos dummy
 scoreboard objectives add virtues.near_terence dummy
 scoreboard objectives add virtues.near_nigel dummy
@@ -148,6 +149,12 @@ scoreboard objectives add MIKEYN trigger
 scoreboard objectives add MISCHIEFYN trigger
 scoreboard objectives add SHENTISYN trigger
 scoreboard objectives add ZIRCONYN trigger
+scoreboard objectives add ZIRCONBOWSYN trigger
+scoreboard objectives add ZIRCONARMORYN trigger
+scoreboard objectives add ALEXYN trigger
+scoreboard objectives add virtues.unlocked_mystic_weapons dummy
+scoreboard objectives add virtues.unlocked_mystic_bows dummy
+scoreboard objectives add virtues.unlocked_mystic_armor dummy
 scoreboard objectives add virtues.near_azure dummy
 scoreboard objectives add virtues.near_bob dummy
 scoreboard objectives add virtues.near_damon dummy
@@ -160,6 +167,7 @@ scoreboard objectives add virtues.near_mischief dummy
 scoreboard objectives add virtues.near_shentis dummy
 scoreboard objectives add virtues.near_singsong dummy
 scoreboard objectives add virtues.near_zircon dummy
+scoreboard objectives add virtues.near_alex dummy
 scoreboard objectives add AMBULEYN trigger
 scoreboard objectives add EMERSONYN trigger
 scoreboard objectives add GRANTEDYN trigger

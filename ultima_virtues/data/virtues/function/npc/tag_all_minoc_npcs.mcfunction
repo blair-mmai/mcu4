@@ -5,6 +5,7 @@
 # town has to be rebuilt from scratch.
 
 tag @e[type=minecraft:villager,name="Azure",limit=1] add npc_azure
+tag @e[type=minecraft:villager,name="Alex",limit=1] add npc_alex
 tag @e[type=minecraft:villager,name="Bob the Beggar",limit=1] add npc_bob_the_beggar
 tag @e[type=minecraft:villager,name="Damon",limit=1] add npc_damon
 tag @e[type=minecraft:villager,name="Gimble",limit=1] add npc_gimble

@@ -1,6 +1,11 @@
-execute store result score @s virtues.roll_temp run random value 1..100
-execute if score @s virtues.roll_temp matches 1..20 run function virtues:npc/zircon_greet_1
-execute if score @s virtues.roll_temp matches 21..40 run function virtues:npc/zircon_greet_2
-execute if score @s virtues.roll_temp matches 41..60 run function virtues:npc/zircon_greet_3
-execute if score @s virtues.roll_temp matches 61..80 run function virtues:npc/zircon_greet_4
-execute if score @s virtues.roll_temp matches 81..100 run function virtues:npc/zircon_greet_5
+execute store result score @s virtues.roll_temp run random value 1..120
+execute if score @s virtues.roll_temp matches 1..10 run function virtues:npc/zircon_greet_1
+execute if score @s virtues.roll_temp matches 11..25 run function virtues:npc/zircon_greet_2
+execute if score @s virtues.roll_temp matches 26..35 run function virtues:npc/zircon_greet_3
+execute if score @s virtues.roll_temp matches 36..55 run function virtues:npc/zircon_greet_4
+execute if score @s virtues.roll_temp matches 56..75 run function virtues:npc/zircon_greet_5
+execute if score @s virtues.roll_temp matches 76..95 run function virtues:npc/zircon_greet_6
+execute if score @s virtues.roll_temp matches 96..105 run function virtues:npc/zircon_greet_7
+execute if score @s virtues.roll_temp matches 106..110 run function virtues:npc/zircon_greet_8
+execute if score @s virtues.roll_temp matches 111..115 run function virtues:npc/zircon_greet_9
+execute if score @s virtues.roll_temp matches 116..120 run function virtues:npc/zircon_greet_10

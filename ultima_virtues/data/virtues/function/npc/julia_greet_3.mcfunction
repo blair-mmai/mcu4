@@ -1,3 +1,3 @@
-title @s title {"text":"Duty","color":"white"}
-title @s subtitle {"text":"I care for the poor.","color":"white"}
-tellraw @s ["",{"text":"Julia: I care for the poor.","color":"yellow"}]
+title @s title {"text":"My Duty?","color":"white"}
+title @s subtitle {"text":"I care for the poor, here.","color":"white"}
+tellraw @s ["",{"text":"Julia: I care for the poor, here.","color":"yellow"}]

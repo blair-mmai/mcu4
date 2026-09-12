@@ -399,10 +399,10 @@ execute as @a[scores={virtues.near_beth=0}] at @s if entity @e[type=minecraft:vi
 execute as @a[scores={virtues.near_beth=0}] at @s if entity @e[type=minecraft:villager,name="Beth Frasier",distance=..2] run scoreboard players set @s virtues.near_beth 1
 execute as @a[scores={virtues.near_beth=1}] at @s unless entity @e[type=minecraft:villager,name="Beth Frasier",distance=..2] run scoreboard players set @s virtues.near_beth 0
 
-scoreboard players add @a virtues.near_estro 0
-execute as @a[scores={virtues.near_estro=0}] at @s if entity @e[type=minecraft:villager,name="Estro",distance=..2] run function virtues:npc/estro_greet
-execute as @a[scores={virtues.near_estro=0}] at @s if entity @e[type=minecraft:villager,name="Estro",distance=..2] run scoreboard players set @s virtues.near_estro 1
-execute as @a[scores={virtues.near_estro=1}] at @s unless entity @e[type=minecraft:villager,name="Estro",distance=..2] run scoreboard players set @s virtues.near_estro 0
+scoreboard players add @a virtues.near_estrol 0
+execute as @a[scores={virtues.near_estrol=0}] at @s if entity @e[type=minecraft:villager,name="Estrol",distance=..2] run function virtues:npc/estrol_greet
+execute as @a[scores={virtues.near_estrol=0}] at @s if entity @e[type=minecraft:villager,name="Estrol",distance=..2] run scoreboard players set @s virtues.near_estrol 1
+execute as @a[scores={virtues.near_estrol=1}] at @s unless entity @e[type=minecraft:villager,name="Estrol",distance=..2] run scoreboard players set @s virtues.near_estrol 0
 
 scoreboard players add @a virtues.near_antos 0
 execute as @a[scores={virtues.near_antos=0}] at @s if entity @e[type=minecraft:villager,name="Father Antos",distance=..2] run function virtues:npc/antos_greet
@@ -447,8 +447,8 @@ execute as @a[scores={virtues.near_starfire=1}] at @s unless entity @e[type=mine
 # Lycaeum Y/N answer detection
 scoreboard players enable @a BETHYN
 execute as @a[scores={BETHYN=1..}] at @s run function virtues:npc/beth_frasier_check
-scoreboard players enable @a ESTROYN
-execute as @a[scores={ESTROYN=1..}] at @s run function virtues:npc/estro_check
+scoreboard players enable @a ESTROLYN
+execute as @a[scores={ESTROLYN=1..}] at @s run function virtues:npc/estrol_check
 scoreboard players enable @a ANTOSYN
 execute as @a[scores={ANTOSYN=1..}] at @s run function virtues:npc/antos_check
 scoreboard players enable @a TERENCEYN
@@ -584,6 +584,17 @@ scoreboard players enable @a SHENTISYN
 execute as @a[scores={SHENTISYN=1..}] at @s run function virtues:npc/shentis_check
 scoreboard players enable @a ZIRCONYN
 execute as @a[scores={ZIRCONYN=1..}] at @s run function virtues:npc/zircon_check
+scoreboard players enable @a ZIRCONBOWSYN
+execute as @a[scores={ZIRCONBOWSYN=1..}] at @s run function virtues:npc/zircon_bows_check
+scoreboard players enable @a ZIRCONARMORYN
+execute as @a[scores={ZIRCONARMORYN=1..}] at @s run function virtues:npc/zircon_armor_check
+scoreboard players enable @a ALEXYN
+execute as @a[scores={ALEXYN=1..}] at @s run function virtues:npc/alex_check
+
+scoreboard players add @a virtues.near_alex 0
+execute as @a[scores={virtues.near_alex=0}] at @s if entity @e[type=minecraft:villager,name="Alex",distance=..2] run function virtues:npc/alex_greet
+execute as @a[scores={virtues.near_alex=0}] at @s if entity @e[type=minecraft:villager,name="Alex",distance=..2] run scoreboard players set @s virtues.near_alex 1
+execute as @a[scores={virtues.near_alex=1}] at @s unless entity @e[type=minecraft:villager,name="Alex",distance=..2] run scoreboard players set @s virtues.near_alex 0
 
 # Skara Brae additional NPC roster (proximity dialogue + Y/N questions)
 scoreboard players add @a virtues.near_ambule 0

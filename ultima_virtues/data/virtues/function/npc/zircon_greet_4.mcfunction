@@ -1,3 +1,3 @@
-title @s title {"text":"Craftsmanship","color":"white"}
-title @s subtitle {"text":"I make the very best!","color":"white"}
-tellraw @s ["",{"text":"Zircon: I make the very best!","color":"yellow"}]
+title @s title {"text":"Self-Sacrifice","color":"white"}
+title @s subtitle {"text":"Sacrifice is how you share the pain of others.","color":"white"}
+tellraw @s ["",{"text":"Zircon: Sacrifice is how you share the pain of others.","color":"yellow"}]

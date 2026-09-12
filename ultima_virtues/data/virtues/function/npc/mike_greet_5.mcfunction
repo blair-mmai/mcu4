@@ -1,4 +1,4 @@
-title @s title {"text":"The rune","color":"white"}
+title @s title {"text":"The rune of spirituality","color":"white"}
 title @s subtitle {"text":"The rune of our city is missing!","color":"white"}
 tellraw @s ["",{"text":"Mike Ward: The rune of our city is missing!","color":"yellow"}]
 scoreboard players enable @s MIKEYN

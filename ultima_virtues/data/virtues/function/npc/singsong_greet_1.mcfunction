@@ -1,3 +1,3 @@
-title @s title {"text":"Health","color":"white"}
-title @s subtitle {"text":"Very well indeed!","color":"white"}
-tellraw @s ["",{"text":"Singsong: Very well indeed!","color":"yellow"}]
+title @s title {"text":"I'm composing…","color":"white"}
+title @s subtitle {"text":"I'm nearly done a new song!","color":"white"}
+tellraw @s ["",{"text":"Singsong: I'm nearly done a new song!","color":"yellow"}]

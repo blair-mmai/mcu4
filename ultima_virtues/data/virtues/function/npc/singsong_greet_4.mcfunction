@@ -1,3 +1,3 @@
-title @s title {"text":"The mantra","color":"white"}
-title @s subtitle {"text":"The raven sayeth 'CAH'.","color":"white"}
-tellraw @s ["",{"text":"Singsong: Very well, the raven sings, the raven saw and in the corn he sayeth 'CAH'. Dost thou like it?","color":"yellow"}]
+title @s title {"text":"Verse 1","color":"white"}
+title @s subtitle {"text":"Carried up, the raven's word","color":"white"}
+tellraw @s ["",{"text":"Singsong: V1. Carried up, the raven's word","color":"yellow"}]
