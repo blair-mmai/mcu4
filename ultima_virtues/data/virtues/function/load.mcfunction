@@ -121,6 +121,8 @@ scoreboard objectives add SHYLOCKYN trigger
 scoreboard objectives add TYMUSYN trigger
 scoreboard objectives add virtues.near_beth dummy
 scoreboard objectives add virtues.near_estrol dummy
+scoreboard objectives add virtues.near_estro dummy
+scoreboard objectives add virtues.near_butch dummy
 scoreboard objectives add virtues.near_antos dummy
 scoreboard objectives add virtues.near_terence dummy
 scoreboard objectives add virtues.near_nigel dummy
@@ -222,6 +224,11 @@ scoreboard players add $skara_ghost_resolved virtues.room_state 0
 scoreboard players add $skara_ghost_encounter_active virtues.room_state 0
 scoreboard players add $skara_ghost_triggered virtues.room_state 0
 scoreboard players set $skara_amb_period virtues.room_state 60
+
+# Ensure Minoc (Estro) room-state fake players exist without resetting on reload
+scoreboard players add $minoc_room1_rented virtues.room_state 0
+scoreboard players add $minoc_room2_rented virtues.room_state 0
+scoreboard players add $minoc_room3_rented virtues.room_state 0
 scoreboard objectives add virtues.winston_m_greet_count dummy
 scoreboard objectives add virtues.miner_tier dummy
 scoreboard objectives add virtues.pepper_greet_count dummy

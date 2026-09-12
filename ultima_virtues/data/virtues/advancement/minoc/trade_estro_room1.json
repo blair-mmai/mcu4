@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:copper_nugget"},
+    "title": {"text": ""},
+    "description": {"text": ""},
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "virtues:valor/root",
+  "criteria": {
+    "traded_estro_room1": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"npc_estro\"]}"},
+        "item": {"items": ["minecraft:copper_nugget"], "count": {"min": 1, "max": 1}}
+      }
+    }
+  },
+  "rewards": {"function": "virtues:npc/estro_room1_reveal"}
+}

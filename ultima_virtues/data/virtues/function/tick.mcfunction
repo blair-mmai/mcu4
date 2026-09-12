@@ -404,6 +404,16 @@ execute as @a[scores={virtues.near_estrol=0}] at @s if entity @e[type=minecraft:
 execute as @a[scores={virtues.near_estrol=0}] at @s if entity @e[type=minecraft:villager,name="Estrol",distance=..2] run scoreboard players set @s virtues.near_estrol 1
 execute as @a[scores={virtues.near_estrol=1}] at @s unless entity @e[type=minecraft:villager,name="Estrol",distance=..2] run scoreboard players set @s virtues.near_estrol 0
 
+scoreboard players add @a virtues.near_estro 0
+execute as @a[scores={virtues.near_estro=0}] at @s if entity @e[type=minecraft:villager,name="Estro",distance=..2] run function virtues:npc/estro_greet
+execute as @a[scores={virtues.near_estro=0}] at @s if entity @e[type=minecraft:villager,name="Estro",distance=..2] run scoreboard players set @s virtues.near_estro 1
+execute as @a[scores={virtues.near_estro=1}] at @s unless entity @e[type=minecraft:villager,name="Estro",distance=..2] run scoreboard players set @s virtues.near_estro 0
+
+scoreboard players add @a virtues.near_butch 0
+execute as @a[scores={virtues.near_butch=0}] at @s if entity @e[type=minecraft:villager,name="Butch",distance=..2] run function virtues:npc/butch_greet
+execute as @a[scores={virtues.near_butch=0}] at @s if entity @e[type=minecraft:villager,name="Butch",distance=..2] run scoreboard players set @s virtues.near_butch 1
+execute as @a[scores={virtues.near_butch=1}] at @s unless entity @e[type=minecraft:villager,name="Butch",distance=..2] run scoreboard players set @s virtues.near_butch 0
+
 scoreboard players add @a virtues.near_antos 0
 execute as @a[scores={virtues.near_antos=0}] at @s if entity @e[type=minecraft:villager,name="Father Antos",distance=..2] run function virtues:npc/antos_greet
 execute as @a[scores={virtues.near_antos=0}] at @s if entity @e[type=minecraft:villager,name="Father Antos",distance=..2] run scoreboard players set @s virtues.near_antos 1
