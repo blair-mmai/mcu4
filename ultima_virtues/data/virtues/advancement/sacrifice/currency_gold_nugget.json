@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:gold_nugget"},
+    "title": {"text": "Golden Charity"},
+    "description": {"text": "Gave gold nuggets to a beggar."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "virtues:sacrifice/currency_copper",
+  "criteria": {
+    "gave_gold_nugget": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"beggar_npc\"]}"},
+        "item": {"items": ["minecraft:copper_nugget"]}
+      }
+    }
+  }
+}

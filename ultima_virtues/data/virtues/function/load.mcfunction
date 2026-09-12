@@ -123,6 +123,7 @@ scoreboard objectives add virtues.near_beth dummy
 scoreboard objectives add virtues.near_estrol dummy
 scoreboard objectives add virtues.near_estro dummy
 scoreboard objectives add virtues.near_butch dummy
+scoreboard objectives add virtues.gimble_l5_granted dummy
 scoreboard objectives add virtues.near_antos dummy
 scoreboard objectives add virtues.near_terence dummy
 scoreboard objectives add virtues.near_nigel dummy

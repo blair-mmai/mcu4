@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:emerald"},
+    "title": {"text": "Money Bags"},
+    "description": {"text": "Gave an emerald to a beggar -- the top of the chain."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "virtues:sacrifice/currency_diamond",
+  "criteria": {
+    "gave_emerald": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"beggar_npc\"]}"},
+        "item": {"items": ["minecraft:diamond"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:gold_ingot"},
+    "title": {"text": "A Solid Gift"},
+    "description": {"text": "Gave a gold ingot to a beggar."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "virtues:sacrifice/currency_gold_nugget",
+  "criteria": {
+    "gave_gold_ingot": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"beggar_npc\"]}"},
+        "item": {"items": ["minecraft:gold_nugget"]}
+      }
+    }
+  }
+}

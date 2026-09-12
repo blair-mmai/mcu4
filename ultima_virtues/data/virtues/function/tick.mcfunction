@@ -414,6 +414,9 @@ execute as @a[scores={virtues.near_butch=0}] at @s if entity @e[type=minecraft:v
 execute as @a[scores={virtues.near_butch=0}] at @s if entity @e[type=minecraft:villager,name="Butch",distance=..2] run scoreboard players set @s virtues.near_butch 1
 execute as @a[scores={virtues.near_butch=1}] at @s unless entity @e[type=minecraft:villager,name="Butch",distance=..2] run scoreboard players set @s virtues.near_butch 0
 
+scoreboard players add @a virtues.gimble_l5_granted 0
+execute if data entity @e[type=minecraft:villager,name="Gimble",limit=1] VillagerData{level:5} run function virtues:npc/gimble_l5_check
+
 scoreboard players add @a virtues.near_antos 0
 execute as @a[scores={virtues.near_antos=0}] at @s if entity @e[type=minecraft:villager,name="Father Antos",distance=..2] run function virtues:npc/antos_greet
 execute as @a[scores={virtues.near_antos=0}] at @s if entity @e[type=minecraft:villager,name="Father Antos",distance=..2] run scoreboard players set @s virtues.near_antos 1

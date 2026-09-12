@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:bowl"},
+    "title": {"text": "Fed a Beggar Well"},
+    "description": {"text": "Gave both bread and beetroot soup to a beggar."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "virtues:sacrifice/root",
+  "criteria": {
+    "gave_bread": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"beggar_npc\"]}"},
+        "item": {"items": ["minecraft:wheat"]}
+      }
+    },
+    "gave_soup": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"beggar_npc\"]}"},
+        "item": {"items": ["minecraft:bowl"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:bread"},
+    "title": {"text": "A Meal for the Poor"},
+    "description": {"text": "Found a beggar willing to take food."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gave_food": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"beggar_npc\"]}"},
+        "item": {"items": ["minecraft:wheat", "minecraft:bowl"]}
+      }
+    }
+  }
+}

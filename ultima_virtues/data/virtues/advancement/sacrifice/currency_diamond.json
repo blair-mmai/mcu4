@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:diamond"},
+    "title": {"text": "Precious Sacrifice"},
+    "description": {"text": "Gave a diamond to a beggar."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "virtues:sacrifice/currency_gold_ingot",
+  "criteria": {
+    "gave_diamond": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {"nbt": "{Tags:[\"beggar_npc\"]}"},
+        "item": {"items": ["minecraft:gold_ingot"]}
+      }
+    }
+  }
+}

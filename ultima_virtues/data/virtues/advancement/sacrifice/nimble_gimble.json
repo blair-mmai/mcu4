@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:potion"},
+    "title": {"text": "Nimble Gimble"},
+    "description": {"text": "Gave Gimble the potion that saved his life."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "virtues:sacrifice/food_both",
+  "criteria": {
+    "granted": {"trigger": "minecraft:impossible"}
+  }
+}
