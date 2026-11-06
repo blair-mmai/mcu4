@@ -3,7 +3,8 @@
 # Tags each named villager npc_<name> for trade-completion advancement matching
 # and general re-identification if the town has to be rebuilt from scratch.
 # Roster synced from spoilers/conversations.xlsx MC-NPC_TAGS, 2026-11-06
-# (Fannie Mae, Freddie Mac Moo, Ginnie Mae, Winston A. removed; Sam, Windrick, Winston F. added).
+# (Winston A. replaced by Winston F.; Sam, Windrick added as new proprietors; Fannie Mae/
+# Ginnie Mae/Freddie Mac Moo kept on as background "Farmer - customer" wanderers, not shopkeepers).
 
 tag @e[type=minecraft:villager,name="Celest",limit=1] add npc_celest
 tag @e[type=minecraft:villager,name="Child",limit=1] add npc_child
@@ -25,3 +26,6 @@ tag @e[type=minecraft:villager,name="Winston T.",limit=1] add npc_winston_t
 tag @e[type=minecraft:villager,name="Winston W.",limit=1] add npc_winston_w
 tag @e[type=minecraft:villager,name="Sam",limit=1] add npc_sam
 tag @e[type=minecraft:villager,name="Windrick",limit=1] add npc_windrick
+tag @e[type=minecraft:villager,name="Fannie Mae",limit=1] add npc_fannie_mae
+tag @e[type=minecraft:villager,name="Ginnie Mae",limit=1] add npc_ginnie_mae
+tag @e[type=minecraft:villager,name="Freddie Mac Moo",limit=1] add npc_freddie_mac_moo
