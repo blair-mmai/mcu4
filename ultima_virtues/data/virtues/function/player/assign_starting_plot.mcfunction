@@ -4,7 +4,9 @@
 # player's stone circle in its own chunk near spawn so they don't stomp on each other),
 # snaps to the surface, then clears trees so the circle doesn't spawn through a trunk/canopy.
 # Chunk (0,2) is deliberately reserved — not assigned to any player_id.
-# player_id 9+ falls through with no teleport (circle builds wherever they happen to be).
+# player_id 9-30: fixed row at chunk Z=-6, zigzagging outward from chunk X=0
+# (0, 1, -1, 2, -2, 3, -3, ...) — Blair's overflow pattern, 2026-11-06.
+# player_id 31+ falls through with no teleport (circle builds wherever they happen to be).
 
 execute as @s if score @s virtues.player_id matches 1 positioned 8 0 8 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 execute as @s if score @s virtues.player_id matches 2 positioned 24 0 -8 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
@@ -14,17 +16,39 @@ execute as @s if score @s virtues.player_id matches 5 positioned -8 0 8 position
 execute as @s if score @s virtues.player_id matches 6 positioned -8 0 24 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 execute as @s if score @s virtues.player_id matches 7 positioned 8 0 24 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 execute as @s if score @s virtues.player_id matches 8 positioned 24 0 24 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 9 positioned 8 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 10 positioned 24 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 11 positioned -8 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 12 positioned 40 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 13 positioned -24 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 14 positioned 56 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 15 positioned -40 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 16 positioned 72 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 17 positioned -56 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 18 positioned 88 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 19 positioned -72 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 20 positioned 104 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 21 positioned -88 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 22 positioned 120 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 23 positioned -104 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 24 positioned 136 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 25 positioned -120 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 26 positioned 152 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 27 positioned -136 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 28 positioned 168 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 29 positioned -152 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
+execute as @s if score @s virtues.player_id matches 30 positioned 184 0 -88 positioned over motion_blocking_no_leaves run tp @s ~ ~ ~
 
 # Clear trees in the plot (logs + every vanilla leaf type) before the circle/chest get built.
 # Keeps actual terrain (dirt/grass/stone) untouched — only strips trees.
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace #minecraft:logs
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:oak_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:spruce_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:birch_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:jungle_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:acacia_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:dark_oak_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:mangrove_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:cherry_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:azalea_leaves
-execute as @s[scores={virtues.player_id=1..8}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:flowering_azalea_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace #minecraft:logs
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:oak_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:spruce_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:birch_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:jungle_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:acacia_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:dark_oak_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:mangrove_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:cherry_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:azalea_leaves
+execute as @s[scores={virtues.player_id=1..30}] at @s run fill ~-8 ~-2 ~-8 ~8 ~20 ~8 air replace minecraft:flowering_azalea_leaves
