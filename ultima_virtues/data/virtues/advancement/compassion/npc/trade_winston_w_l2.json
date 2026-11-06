@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:iron_sword"},
+    "icon": {"id": "minecraft:iron_block"},
     "title": {"text": ""},
     "description": {"text": ""},
     "frame": "task",
@@ -10,12 +10,13 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_winston_w": {
+    "traded_winston_w_l2": {
       "trigger": "minecraft:villager_trade",
       "conditions": {
-        "villager": {"nbt": "{Tags:[\"npc_winston_w\"]}"}
+        "villager": {"nbt": "{Tags:[\"npc_winston_w\"]}"},
+        "item": {"items": ["minecraft:iron_block"]}
       }
     }
   },
-  "rewards": {"function": "virtues:npc/winston_w_reveal"}
+  "rewards": {"function": "virtues:npc/winston_w_l2_reveal"}
 }

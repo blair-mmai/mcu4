@@ -10,13 +10,13 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_winston_a_l3": {
+    "traded_winston_w_l3": {
       "trigger": "minecraft:villager_trade",
       "conditions": {
-        "villager": {"nbt": "{Tags:[\"npc_winston_a\"]}"},
+        "villager": {"nbt": "{Tags:[\"npc_winston_w\"]}"},
         "item": {"items": ["minecraft:written_book", "minecraft:iron_ingot", "minecraft:iron_helmet", "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots"]}
       }
     }
   },
-  "rewards": {"function": "virtues:npc/winston_a_l3_reveal"}
+  "rewards": {"function": "virtues:npc/winston_w_l3_reveal"}
 }

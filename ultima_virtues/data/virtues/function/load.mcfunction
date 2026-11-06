@@ -75,6 +75,7 @@ scoreboard objectives add virtues.near_sebastian dummy
 scoreboard objectives add virtues.near_iolo dummy
 scoreboard objectives add virtues.near_cricket dummy
 scoreboard objectives add virtues.near_child dummy
+scoreboard objectives add virtues.child_greet_toggle dummy
 scoreboard objectives add virtues.near_tween dummy
 scoreboard objectives add virtues.near_shalimar dummy
 scoreboard objectives add virtues.near_jason dummy

@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:iron_nugget"},
+    "icon": {"id": "minecraft:arrow"},
     "title": {"text": ""},
     "description": {"text": ""},
     "frame": "task",
@@ -10,13 +10,12 @@
   },
   "parent": "virtues:compassion/root",
   "criteria": {
-    "traded_winston_a_l1": {
+    "traded_winston_f": {
       "trigger": "minecraft:villager_trade",
       "conditions": {
-        "villager": {"nbt": "{Tags:[\"npc_winston_a\"]}"},
-        "item": {"items": ["minecraft:bowl", "minecraft:iron_nugget"]}
+        "villager": {"nbt": "{Tags:[\"npc_winston_f\"]}"}
       }
     }
   },
-  "rewards": {"function": "virtues:npc/winston_a_l1_reveal"}
+  "rewards": {"function": "virtues:npc/winston_f_reveal"}
 }
