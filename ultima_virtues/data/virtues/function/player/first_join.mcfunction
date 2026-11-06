@@ -5,6 +5,7 @@ scoreboard objectives add virtues.intro_timer dummy
 scoreboard players set @s virtues.intro_timer 1
 scoreboard players add $world virtues.next_player_id 1
 scoreboard players operation @s virtues.player_id = $world virtues.next_player_id
+function virtues:player/assign_starting_plot
 
 recipe give @s *
 recipe take @s virtues:potion_of_compassion
