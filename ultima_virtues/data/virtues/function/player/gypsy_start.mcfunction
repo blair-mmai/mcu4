@@ -5,4 +5,4 @@
 # duplicate "Drink Me" potion (e.g. from creative) re-triggering it.
 
 advancement revoke @s only virtues:gypsy/drink_me_potion
-execute if score @s virtues.gypsy_stage matches 0 run function virtues:player/gypsy_round1
+execute if score @s virtues.gypsy_stage matches 0 run function virtues:player/gypsy_intro
