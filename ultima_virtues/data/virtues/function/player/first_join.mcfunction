@@ -3,8 +3,9 @@
 
 scoreboard objectives add virtues.intro_timer dummy
 scoreboard players set @s virtues.intro_timer 1
-scoreboard players add $world virtues.next_player_id 1
-scoreboard players operation @s virtues.player_id = $world virtues.next_player_id
+# virtues.player_id is already assigned by assign_player_id.mcfunction, which
+# runs earlier in the same tick (see tick.mcfunction) — do not reassign it
+# here, that would burn a second counter value per real player.
 function virtues:player/assign_starting_plot
 
 recipe give @s *
