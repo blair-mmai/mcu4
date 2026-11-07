@@ -365,7 +365,13 @@ execute as @a[scores={virtues.gypsy_stage=1..4}] run scoreboard players enable @
 execute as @a[scores={GYPSYQ=1..}] at @s run function virtues:player/gypsy_check
 
 # Drive any in-progress intro title sequences
-function virtues:player/intro_sequence
+# QUARANTINED 2026-11-06: kept colliding with the Gypsy reveal chain's own
+# paced beats (e.g. "...you feel an urge to punch a tree." firing mid-reveal,
+# between item/compass/clue lines) since its timer resumes the instant
+# gypsy_stage hits 5, which is also exactly when the reveal chain runs.
+# Blair: there's already plenty of guidance from the reveal chain itself:
+# quarantine this whole system rather than try to re-time it again.
+# function virtues:player/intro_sequence
 
 # Track whether each player has a hostile mob nearby (used to filter animal-punch detection)
 scoreboard players set @a virtues.near_hostile 0

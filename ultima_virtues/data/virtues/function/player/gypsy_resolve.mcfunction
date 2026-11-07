@@ -5,6 +5,21 @@
 # R3: 1=Wisdom 2=Sacrifice 3=Honor / R4: 1=Faith 2=Honesty 3=Honor).
 # Outcome distribution is exactly uniform: 9/81 (11.1%) per outcome, Spirituality included.
 
+# Clear any aligned_<virtue> tag from a previous run on this same character
+# (e.g. testing multiple player_ids on one account) before dispatching to
+# the new outcome - otherwise the reveal chain, which branches on whichever
+# aligned_* tags are present, fires for every virtue ever earned, not just
+# this one.
+tag @s remove aligned_honesty
+tag @s remove aligned_valor
+tag @s remove aligned_honor
+tag @s remove aligned_justice
+tag @s remove aligned_wisdom
+tag @s remove aligned_faith
+tag @s remove aligned_compassion
+tag @s remove aligned_sacrifice
+tag @s remove aligned_spirituality
+
 execute if score @s virtues.gypsy_r1 matches 1 if score @s virtues.gypsy_r2 matches 1 if score @s virtues.gypsy_r3 matches 1 if score @s virtues.gypsy_r4 matches 1 run function virtues:player/gypsy_align_honesty
 execute if score @s virtues.gypsy_r1 matches 1 if score @s virtues.gypsy_r2 matches 1 if score @s virtues.gypsy_r3 matches 1 if score @s virtues.gypsy_r4 matches 2 run function virtues:player/gypsy_align_honesty
 execute if score @s virtues.gypsy_r1 matches 1 if score @s virtues.gypsy_r2 matches 1 if score @s virtues.gypsy_r3 matches 1 if score @s virtues.gypsy_r4 matches 3 run function virtues:player/gypsy_align_valor
