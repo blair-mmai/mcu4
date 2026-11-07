@@ -1,4 +1,8 @@
 setblock ~2 ~ ~ minecraft:chest
+# Just flavor lore now (written/writable books) - the player gets teleported
+# away from this staging-plot chest once the Gypsy ritual resolves, so it's
+# not worth putting their actual reward in here anymore. gypsy_align_<virtue>
+# gives the mystery item/potion straight to the player instead.
 execute positioned ~2 ~ ~ run loot insert ~ ~ ~ loot virtues:chests/starting_chest
 summon minecraft:marker ~2 ~ ~
 tag @e[type=minecraft:marker,distance=..4,limit=1,sort=nearest] add virtues.area

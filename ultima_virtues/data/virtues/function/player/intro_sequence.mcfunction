@@ -11,8 +11,8 @@
 #   240      -> spawn chest + circle, end sequence
 
 execute as @a[scores={virtues.intro_timer=60}] run title @s times 10 70 20
-execute as @a[scores={virtues.intro_timer=60}] run title @s subtitle {"text":"You find yourself in a field.","color":"gray","italic":true}
-execute as @a[scores={virtues.intro_timer=60}] run tellraw @s {"text":"You find yourself in a field.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=60}] run title @s subtitle {"text":"You find yourself somewhere new.","color":"gray","italic":true}
+execute as @a[scores={virtues.intro_timer=60}] run tellraw @s {"text":"You find yourself somewhere new.","color":"gray","italic":true}
 execute as @a[scores={virtues.intro_timer=120}] run title @s times 10 70 20
 execute as @a[scores={virtues.intro_timer=120}] run title @s subtitle {"text":"You are a stranger here.","color":"gray","italic":true}
 execute as @a[scores={virtues.intro_timer=120}] run tellraw @s {"text":"You are a stranger here.","color":"gray","italic":true}
@@ -22,5 +22,11 @@ execute as @a[scores={virtues.intro_timer=180}] run tellraw @s {"text":"...you f
 execute as @a[scores={virtues.intro_timer=240,virtues.chest_spawned=0}] at @s run function virtues:player/spawn_starting_chest
 execute as @a[scores={virtues.intro_timer=240}] run scoreboard players set @s virtues.intro_timer 0
 
-# Advance the timer for anyone currently mid-sequence (1 through 239)
-execute as @a[scores={virtues.intro_timer=1..239}] run scoreboard players add @s virtues.intro_timer 1
+# Advance the timer for anyone currently mid-sequence (1 through 239) -
+# except while blind/frozen and still working through the Gypsy ritual
+# (stage 0-4: 0 = hasn't drunk "Drink Me" yet, 1-4 = mid-ritual), since its
+# own title/subtitle would otherwise collide with this scripted narrative,
+# or fire "urge to punch a tree" while the player is still frozen and can't
+# act on it. It resumes from wherever it paused once the ritual resolves
+# (stage 5) and the player is standing at their real starting location.
+execute as @a[scores={virtues.intro_timer=1..239}] unless score @s virtues.gypsy_stage matches 0..4 run scoreboard players add @s virtues.intro_timer 1

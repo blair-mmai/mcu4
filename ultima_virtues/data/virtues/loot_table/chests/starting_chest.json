@@ -4,24 +4,6 @@
     {
       "rolls": 1,
       "entries": [
-        { "type": "minecraft:item", "name": "minecraft:brown_mushroom" }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:redstone",
-          "functions": [
-            {"function": "minecraft:set_count", "count": 1}
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
         { "type": "minecraft:item", "name": "minecraft:writable_book" }
       ]
     },
@@ -54,37 +36,19 @@
     {
       "rolls": 1,
       "entries": [
-        { "type": "minecraft:loot_table", "value": "virtues:chests/village_map" }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        { "type": "minecraft:loot_table", "value": "virtues:maps/plains_village_map" }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        { "type": "minecraft:loot_table", "value": "virtues:maps/desert_village_map" }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        { "type": "minecraft:loot_table", "value": "virtues:maps/savanna_village_map" }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        { "type": "minecraft:loot_table", "value": "virtues:maps/taiga_village_map" }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        { "type": "minecraft:loot_table", "value": "virtues:maps/snowy_village_map" }
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {"potion": "minecraft:mundane"},
+                "minecraft:custom_name": {"text": "Drink Me", "italic": true, "color": "light_purple"}
+              }
+            }
+          ]
+        }
       ]
     }
   ]

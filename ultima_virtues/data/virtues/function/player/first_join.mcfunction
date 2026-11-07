@@ -13,14 +13,18 @@ recipe take @s virtues:potion_of_compassion
 effect clear @s
 attribute @s minecraft:max_health base set 20
 function virtues:player/spawn_starting_chest
-effect give @s minecraft:blindness 600 1
 stopsound @s music
 title @s times 10 70 20
 title @s title {"text":"","color":"white"}
 title @s subtitle {"text":"You open your eyes.","color":"gray","italic":true}
 tellraw @s {"text":"You open your eyes.","color":"gray","italic":true}
 
-# Gypsy-style virtue-alignment Q&A — 4 rounds while still blinded in the
-# circle. Blindness is re-upped each round so it can't run out mid-answer;
-# gypsy_align_<virtue> clears it for good once the ritual resolves.
-function virtues:player/gypsy_round1
+# Blind and frozen from the moment they wake, indefinitely - no time
+# pressure. They can still open the chest and read the lore books; nothing
+# else happens until they work out they need to drink the "Drink Me" potion
+# in there, which fires gypsy_start -> gypsy_round1 (see
+# advancement/gypsy/drink_me_potion.json).
+scoreboard players set @s virtues.gypsy_stage 0
+effect give @s minecraft:blindness infinite 1
+attribute @s minecraft:movement_speed base set 0
+attribute @s minecraft:jump_strength base set 0
