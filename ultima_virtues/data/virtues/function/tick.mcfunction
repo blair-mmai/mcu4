@@ -359,6 +359,11 @@ scoreboard players add @a virtues.firstjoin 0
 execute as @a[scores={virtues.firstjoin=0}] at @s run function virtues:player/first_join
 scoreboard players set @a[scores={virtues.firstjoin=0}] virtues.firstjoin 1
 
+# Gypsy-style virtue-alignment Q&A — first_join kicks off round 1 directly;
+# this drives rounds 2-4 and the final resolver as answers come in.
+execute as @a[scores={virtues.gypsy_stage=1..4}] run scoreboard players enable @s GYPSYQ
+execute as @a[scores={GYPSYQ=1..}] at @s run function virtues:player/gypsy_check
+
 # Drive any in-progress intro title sequences
 function virtues:player/intro_sequence
 

@@ -301,6 +301,14 @@ scoreboard objectives add virtues.const dummy
 scoreboard objectives add virtues.puzzle_temp dummy
 scoreboard players set $nine virtues.const 9
 
+# Gypsy-style virtue-alignment Q&A (4 rounds, fired once from first_join)
+scoreboard objectives add GYPSYQ trigger
+scoreboard objectives add virtues.gypsy_stage dummy
+scoreboard objectives add virtues.gypsy_r1 dummy
+scoreboard objectives add virtues.gypsy_r2 dummy
+scoreboard objectives add virtues.gypsy_r3 dummy
+scoreboard objectives add virtues.gypsy_r4 dummy
+
 # Wipe all vanilla advancement tabs so they never show
 advancement revoke @a from minecraft:story
 advancement revoke @a from minecraft:nether

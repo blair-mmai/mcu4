@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:beetroot_seeds" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {"id": "minecraft:instant_damage", "duration": 1, "amplifier": 0}
+                  ]
+                },
+                "minecraft:custom_name": {"text": "Potion of Sacrifice", "italic": false}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

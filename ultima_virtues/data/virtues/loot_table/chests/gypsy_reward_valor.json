@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:goat_horn",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:instrument": "minecraft:call_goat_horn"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_effects": [
+                    {"id": "minecraft:weakness", "duration": 100, "amplifier": 0}
+                  ]
+                },
+                "minecraft:custom_name": {"text": "Potion of Valor", "italic": false}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
