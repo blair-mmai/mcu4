@@ -12,7 +12,12 @@ recipe give @s *
 recipe take @s virtues:potion_of_compassion
 effect clear @s
 attribute @s minecraft:max_health base set 20
-function virtues:player/spawn_starting_chest
+# Must re-anchor position here: assign_starting_plot teleported the player
+# entity, but a bare `function` call inherits the STALE pre-teleport position
+# from tick.mcfunction's original "at @s" - without this, spawn_starting_chest
+# builds the chest/pillars back where the player was standing before the
+# teleport, not where they actually landed.
+execute at @s run function virtues:player/spawn_starting_chest
 stopsound @s music
 title @s times 10 70 20
 title @s title {"text":"","color":"white"}
