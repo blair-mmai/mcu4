@@ -13,7 +13,11 @@ function virtues:fixtures/tick
 # Haunted-inn-room mechanics (Skara Brae) — independent module, see rooms/tick.mcfunction
 function virtues:rooms/tick
 
-# Assign player ID to any player who hasn't been assigned one yet
+# Assign player ID to any player who hasn't been assigned one yet. The
+# "add 0" ensures a brand-new player (who has NO score at all yet, not 0)
+# gets one created first - scores={virtues.player_id=0} would never match
+# an absent score otherwise, silently skipping assign_player_id for them.
+scoreboard players add @a virtues.player_id 0
 execute as @a[scores={virtues.player_id=0}] run function virtues:player/assign_player_id
 
 # Ambient farmer name-roll retired (2026-08-29) — it applied to ANY untagged

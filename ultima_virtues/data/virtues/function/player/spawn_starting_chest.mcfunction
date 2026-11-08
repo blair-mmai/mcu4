@@ -1,4 +1,15 @@
+# Retire any previous circle this player already owned (e.g. re-initiating
+# via a firstjoin reset) before creating a new owner marker below - see
+# clear_old_circle_ownership.mcfunction.
+function virtues:player/clear_old_circle_ownership
+
 setblock ~2 ~ ~ minecraft:chest
+# setblock placing the SAME block type that's already there (e.g. this
+# chest already existed from a previous circle at this plot) does NOT reset
+# its inventory - it's a no-op at the block-entity level. Force it empty
+# explicitly so re-initiating a circle doesn't accumulate/duplicate items
+# left over from before.
+execute positioned ~2 ~ ~ run data merge block ~ ~ ~ {Items:[]}
 # Just flavor lore now (written/writable books) - the player gets teleported
 # away from this staging-plot chest once the Gypsy ritual resolves, so it's
 # not worth putting their actual reward in here anymore. gypsy_align_<virtue>
