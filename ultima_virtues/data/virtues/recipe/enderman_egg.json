@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "1N2",
+    "W3E",
+    "4S5"
+  ],
+  "key": {
+    "1": "minecraft:lime_glazed_terracotta",
+    "N": "minecraft:cyan_glazed_terracotta",
+    "2": "minecraft:blue_glazed_terracotta",
+    "W": "minecraft:yellow_glazed_terracotta",
+    "3": "minecraft:egg",
+    "E": "minecraft:purple_glazed_terracotta",
+    "4": "minecraft:orange_glazed_terracotta",
+    "S": "minecraft:brown_glazed_terracotta",
+    "5": "minecraft:magenta_glazed_terracotta"
+  },
+  "result": {
+    "id": "minecraft:enderman_spawn_egg",
+    "count": 1
+  }
+}

@@ -1,3 +1,3 @@
-title @s title {"text":"Duty","color":"white"}
-title @s subtitle {"text":"I make spells.","color":"white"}
-tellraw @s ["",{"text":"Calumny: I make spells.","color":"yellow"}]
+title @s title {"text":"My passion?","color":"white"}
+title @s subtitle {"text":"I make potions.","color":"white"}
+tellraw @s ["",{"text":"Calumny: I make potions","color":"yellow"}]

@@ -1,3 +1,3 @@
-title @s title {"text":"On Jones","color":"white"}
-title @s subtitle {"text":"I think Indi's on a quest!","color":"white"}
-tellraw @s ["",{"text":"Short Round: I think Indi's on a quest!","color":"yellow"}]
+title @s title {"text":"My passion..?","color":"white"}
+title @s subtitle {"text":"Crafting!","color":"white"}
+tellraw @s ["",{"text":"Short Round: Crafting table is my passion!","color":"yellow"}]

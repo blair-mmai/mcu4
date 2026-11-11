@@ -16,3 +16,7 @@ function virtues:rooms/skara_room_button_check
 # to the door, no script needed (unlike Skara Brae, there's no other state to
 # coordinate here, so genuine redstone is simpler and more reliable than a
 # scripted toggle).
+
+# Faith waiting-room — bell resets a shared timer, clock_door cycles open every 1000 ticks
+execute as @a run function virtues:rooms/faith_bell_check
+function virtues:rooms/faith_timer_tick

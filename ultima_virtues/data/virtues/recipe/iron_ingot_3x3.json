@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "GGG",
-    "GGG",
-    "GGG"
+    "III",
+    "III",
+    "III"
   ],
   "key": {
-    "G": "minecraft:gold_nugget"
+    "I": "minecraft:iron_nugget"
   },
   "result": {
-    "id": "minecraft:gold_block",
+    "id": "minecraft:iron_ingot",
     "count": 1
   }
 }

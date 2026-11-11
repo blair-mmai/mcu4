@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "III",
-    "III",
-    "III"
+    "CCC",
+    "CCC",
+    "CCC"
   ],
   "key": {
-    "I": "minecraft:iron_nugget"
+    "C": "minecraft:copper_nugget"
   },
   "result": {
-    "id": "minecraft:iron_block",
+    "id": "minecraft:copper_ingot",
     "count": 1
   }
 }

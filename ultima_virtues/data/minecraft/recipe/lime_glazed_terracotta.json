@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0,
+  "ingredient": "minecraft:lime_terracotta",
+  "result": {
+    "id": "minecraft:lime_terracotta"
+  }
+}
