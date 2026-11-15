@@ -14,7 +14,8 @@
       "minecraft:potion_contents": {
         "custom_effects": [
           {"id": "minecraft:resistance", "duration": 100, "amplifier": 0}
-        ]
+        ],
+        "custom_color": 13061821
       },
       "minecraft:custom_name": {"text": "Potion of Honor", "italic": false}
     }

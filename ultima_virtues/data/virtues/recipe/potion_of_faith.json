@@ -14,7 +14,8 @@
       "minecraft:potion_contents": {
         "custom_effects": [
           {"id": "minecraft:blindness", "duration": 100, "amplifier": 0}
-        ]
+        ],
+        "custom_color": 16701501
       },
       "minecraft:custom_name": {"text": "Potion of Faith", "italic": false}
     }
