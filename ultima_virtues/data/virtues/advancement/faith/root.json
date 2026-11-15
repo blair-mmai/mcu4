@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:bell"},
+    "title": {"text": "Faith"},
+    "description": {"text": "Trust in what cannot be seen."},
+    "background": "minecraft:block/yellow_glazed_terracotta",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}

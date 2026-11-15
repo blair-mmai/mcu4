@@ -19,10 +19,10 @@ execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_honor] run title @s t
 execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_honor] run title @s subtitle {"text":"You are given chorus fruit.","color":"yellow","italic":true}
 execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_honor] run tellraw @s ["",{"text":"You are given chorus fruit.","color":"yellow","italic":true}]
 
-execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_justice] run give @s minecraft:oak_leaves
+execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_justice] run give @s minecraft:dark_oak_leaves
 execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_justice] run title @s title {"text":"","color":"white"}
-execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_justice] run title @s subtitle {"text":"You are given oak leaves.","color":"yellow","italic":true}
-execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_justice] run tellraw @s ["",{"text":"You are given oak leaves.","color":"yellow","italic":true}]
+execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_justice] run title @s subtitle {"text":"You are given dark oak leaves.","color":"yellow","italic":true}
+execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_justice] run tellraw @s ["",{"text":"You are given dark oak leaves.","color":"yellow","italic":true}]
 
 execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_wisdom] run give @s minecraft:ink_sac
 execute as @a[tag=virtues.pending_gypsy_reveal,tag=aligned_wisdom] run title @s title {"text":"","color":"white"}

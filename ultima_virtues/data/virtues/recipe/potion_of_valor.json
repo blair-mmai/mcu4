@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:gunpowder",
+    "minecraft:spider_eye",
+    "minecraft:rotten_flesh"
+  ],
+  "result": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "custom_effects": [
+          {"id": "minecraft:strength", "duration": 100, "amplifier": 0}
+        ]
+      },
+      "minecraft:custom_name": {"text": "Potion of Valor", "italic": false}
+    }
+  }
+}

@@ -21,12 +21,13 @@ function virtues:rooms/skara_room_button_check
 execute as @a run function virtues:rooms/faith_bell_check
 function virtues:rooms/faith_timer_tick
 
-# Compassion Rune shulker (Britain hotel room) — auto-refill slot 0 when taken
-function virtues:rooms/compassion_rune_shulker_refill
-
-# Justice Rune shulker (Yew) — auto-refill slot 0 when taken
-function virtues:rooms/justice_rune_shulker_refill
+# Rune shulkers — auto-refill slot 0 when taken
+function virtues:rooms/britain_shulker_refill
+function virtues:rooms/yew_shulker_refill
+function virtues:rooms/faith_shulker_refill
+function virtues:rooms/faith_blaze_shulker_refill
 
 # Protected town fixtures — unstealable utility blocks (composter, etc.), one
 # small function per fixture, same restore+anti-pickup pattern each time
-function virtues:rooms/protect_composter_britain
+function virtues:rooms/protect_britain_composter
+function virtues:rooms/protect_yew_blast_furnace

@@ -703,9 +703,9 @@ execute as @a[scores={virtues.near_adruid=0}] at @s if entity @e[type=minecraft:
 execute as @a[scores={virtues.near_adruid=1}] at @s unless entity @e[type=minecraft:villager,name="A.Druid",distance=..2] run scoreboard players set @s virtues.near_adruid 0
 
 scoreboard players add @a virtues.near_dwp 0
-execute as @a[scores={virtues.near_dwp=0}] at @s if entity @e[type=minecraft:villager,name="Dwp",distance=..2] run function virtues:npc/dwp_greet
-execute as @a[scores={virtues.near_dwp=0}] at @s if entity @e[type=minecraft:villager,name="Dwp",distance=..2] run scoreboard players set @s virtues.near_dwp 1
-execute as @a[scores={virtues.near_dwp=1}] at @s unless entity @e[type=minecraft:villager,name="Dwp",distance=..2] run scoreboard players set @s virtues.near_dwp 0
+execute as @a[scores={virtues.near_dwp=0}] at @s if entity @e[type=minecraft:villager,name="DWP",distance=..2] run function virtues:npc/dwp_greet
+execute as @a[scores={virtues.near_dwp=0}] at @s if entity @e[type=minecraft:villager,name="DWP",distance=..2] run scoreboard players set @s virtues.near_dwp 1
+execute as @a[scores={virtues.near_dwp=1}] at @s unless entity @e[type=minecraft:villager,name="DWP",distance=..2] run scoreboard players set @s virtues.near_dwp 0
 
 scoreboard players add @a virtues.near_frida 0
 execute as @a[scores={virtues.near_frida=0}] at @s if entity @e[type=minecraft:villager,name="Frida",distance=..2] run function virtues:npc/frida_greet

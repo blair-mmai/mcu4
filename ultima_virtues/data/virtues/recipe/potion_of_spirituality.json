@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:honey_bottle",
+    "minecraft:redstone",
+    "minecraft:wildflowers",
+    "minecraft:kelp"
+  ],
+  "result": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "custom_effects": [
+          {"id": "minecraft:water_breathing", "duration": 100, "amplifier": 0}
+        ]
+      },
+      "minecraft:custom_name": {"text": "Potion of Spirituality", "italic": false}
+    }
+  }
+}

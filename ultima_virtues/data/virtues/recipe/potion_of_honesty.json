@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"item": "minecraft:potion", "components": {"minecraft:potion_contents": {"potion": "minecraft:water"}}},
+    "minecraft:redstone",
+    "minecraft:blue_dye",
+    "minecraft:milk_bucket"
+  ],
+  "result": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "custom_effects": [
+          {"id": "minecraft:glowing", "duration": 100, "amplifier": 0}
+        ]
+      },
+      "minecraft:custom_name": {"text": "Potion of Honesty", "italic": false}
+    }
+  }
+}

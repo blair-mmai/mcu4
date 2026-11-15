@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"item": "minecraft:potion", "components": {"minecraft:potion_contents": {"potion": "minecraft:water"}}},
+    "minecraft:blaze_powder",
+    "minecraft:egg",
+    "minecraft:milk_bucket"
+  ],
+  "result": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "custom_effects": [
+          {"id": "minecraft:blindness", "duration": 100, "amplifier": 0}
+        ]
+      },
+      "minecraft:custom_name": {"text": "Potion of Faith", "italic": false}
+    }
+  }
+}
