@@ -5,4 +5,4 @@
 # always get one — having 2+ does nothing special, free duplication is fine.
 
 execute at @e[tag=shulker_compassion,limit=1] unless block ~ ~ ~ minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:red_glazed_terracotta"}]} run data remove block ~ ~ ~ Items[{Slot:0b}]
-execute at @e[tag=shulker_compassion,limit=1] unless block ~ ~ ~ minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:red_glazed_terracotta"}]} run data modify block ~ ~ ~ Items append value {Slot:0b,id:"minecraft:red_glazed_terracotta",Count:1b}
+execute at @e[tag=shulker_compassion,limit=1] unless block ~ ~ ~ minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:red_glazed_terracotta"}]} run data modify block ~ ~ ~ Items append value {Slot:0b,id:"minecraft:red_glazed_terracotta",Count:1b,components:{"minecraft:custom_name":{text:"Rune of Compassion",italic:false}}}
