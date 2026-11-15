@@ -23,3 +23,7 @@ function virtues:rooms/faith_timer_tick
 
 # Compassion Rune shulker (Britain hotel room) — auto-refill slot 0 when taken
 function virtues:rooms/compassion_rune_shulker_refill
+
+# Protected town fixtures — unstealable utility blocks (composter, etc.), one
+# small function per fixture, same restore+anti-pickup pattern each time
+function virtues:rooms/protect_composter_britain

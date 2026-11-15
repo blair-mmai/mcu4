@@ -30,58 +30,58 @@ summon minecraft:marker ~2 ~2 ~4
 tag @e[type=minecraft:marker,distance=..7,limit=1,sort=nearest,tag=!virtues.owner] add virtues.pillar_compassion
 execute as @e[type=minecraft:marker,tag=virtues.pillar_compassion,distance=..7,limit=1,sort=nearest] run scoreboard players operation @s virtues.player_id = @p[distance=..10,limit=1] virtues.player_id
 
-# North — Humility — White terracotta
+# North — Rune of Wisdom — Cyan terracotta
 setblock ~2 ~1 ~-4 minecraft:mossy_cobblestone
 setblock ~2 ~ ~-4 minecraft:mossy_cobblestone
 setblock ~2 ~-1 ~-4 minecraft:mossy_cobblestone
 setblock ~2 ~-2 ~-4 minecraft:mossy_cobblestone
-setblock ~2 ~-3 ~-4 minecraft:white_glazed_terracotta
+setblock ~2 ~-3 ~-4 minecraft:cyan_glazed_terracotta
 
-# NE — Insight — Yellow terracotta
+# NE — Rune of Honesty — Blue terracotta
 setblock ~5 ~1 ~-3 minecraft:mossy_cobblestone
 setblock ~5 ~ ~-3 minecraft:mossy_cobblestone
 setblock ~5 ~-1 ~-3 minecraft:mossy_cobblestone
 setblock ~5 ~-2 ~-3 minecraft:mossy_cobblestone
-setblock ~5 ~-3 ~-3 minecraft:yellow_glazed_terracotta
+setblock ~5 ~-3 ~-3 minecraft:blue_glazed_terracotta
 
-# East — Valor — Orange terracotta
+# East — Rune of Valor — Purple terracotta
 setblock ~6 ~1 ~ minecraft:mossy_cobblestone
 setblock ~6 ~ ~ minecraft:mossy_cobblestone
 setblock ~6 ~-1 ~ minecraft:mossy_cobblestone
 setblock ~6 ~-2 ~ minecraft:mossy_cobblestone
-setblock ~6 ~-3 ~ minecraft:orange_glazed_terracotta
+setblock ~6 ~-3 ~ minecraft:purple_glazed_terracotta
 
-# SE — Sacrifice — Red terracotta
+# SE — Rune of Honor — Magenta terracotta
 setblock ~5 ~1 ~3 minecraft:mossy_cobblestone
 setblock ~5 ~ ~3 minecraft:mossy_cobblestone
 setblock ~5 ~-1 ~3 minecraft:mossy_cobblestone
 setblock ~5 ~-2 ~3 minecraft:mossy_cobblestone
-setblock ~5 ~-3 ~3 minecraft:red_glazed_terracotta
+setblock ~5 ~-3 ~3 minecraft:magenta_glazed_terracotta
 
-# South — Compassion — Brown terracotta
+# South — Rune of Compassion — Red terracotta
 setblock ~2 ~1 ~4 minecraft:mossy_cobblestone
 setblock ~2 ~ ~4 minecraft:mossy_cobblestone
 setblock ~2 ~-1 ~4 minecraft:mossy_cobblestone
 setblock ~2 ~-2 ~4 minecraft:mossy_cobblestone
-setblock ~2 ~-3 ~4 minecraft:brown_glazed_terracotta
+setblock ~2 ~-3 ~4 minecraft:red_glazed_terracotta
 
-# SW — Guidance — Blue terracotta
+# SW — Rune of Sacrifice — Orange terracotta
 setblock ~-1 ~1 ~3 minecraft:mossy_cobblestone
 setblock ~-1 ~ ~3 minecraft:mossy_cobblestone
 setblock ~-1 ~-1 ~3 minecraft:mossy_cobblestone
 setblock ~-1 ~-2 ~3 minecraft:mossy_cobblestone
-setblock ~-1 ~-3 ~3 minecraft:blue_glazed_terracotta
+setblock ~-1 ~-3 ~3 minecraft:orange_glazed_terracotta
 
-# West — Fortitude — Cyan terracotta
+# West — Rune of Faith — Yellow terracotta
 setblock ~-2 ~1 ~ minecraft:mossy_cobblestone
 setblock ~-2 ~ ~ minecraft:mossy_cobblestone
 setblock ~-2 ~-1 ~ minecraft:mossy_cobblestone
 setblock ~-2 ~-2 ~ minecraft:mossy_cobblestone
-setblock ~-2 ~-3 ~ minecraft:cyan_glazed_terracotta
+setblock ~-2 ~-3 ~ minecraft:yellow_glazed_terracotta
 
-# NW — Spirituality — Green terracotta
+# NW — Rune of Justice — Lime Green terracotta
 setblock ~-1 ~1 ~-3 minecraft:mossy_cobblestone
 setblock ~-1 ~ ~-3 minecraft:mossy_cobblestone
 setblock ~-1 ~-1 ~-3 minecraft:mossy_cobblestone
 setblock ~-1 ~-2 ~-3 minecraft:mossy_cobblestone
-setblock ~-1 ~-3 ~-3 minecraft:green_glazed_terracotta
+setblock ~-1 ~-3 ~-3 minecraft:lime_glazed_terracotta
