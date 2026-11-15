@@ -1,0 +1,13 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:comparator"},
+    "title": {"text": "Justice"},
+    "description": {"text": "Truth and Love in balance."},
+    "background": "minecraft:block/lime_glazed_terracotta",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {"trigger": "minecraft:impossible"}
+  }
+}
