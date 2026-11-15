@@ -20,3 +20,6 @@ function virtues:rooms/skara_room_button_check
 # Faith waiting-room — bell resets a shared timer, clock_door cycles open every 1000 ticks
 execute as @a run function virtues:rooms/faith_bell_check
 function virtues:rooms/faith_timer_tick
+
+# Compassion Rune shulker (Britain hotel room) — auto-refill slot 0 when taken
+function virtues:rooms/compassion_rune_shulker_refill
