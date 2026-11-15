@@ -1,6 +1,6 @@
 {
   "display": {
-    "icon": {"id": "minecraft:brown_glazed_terracotta"},
+    "icon": {"id": "minecraft:red_glazed_terracotta"},
     "title": {"text": "Say the Word in the Circle"},
     "description": {"text": "Speak the mantra within your stone circle."},
     "frame": "task",
