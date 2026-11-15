@@ -152,9 +152,9 @@ execute as @a[scores={virtues.near_cricket=0}] at @s if entity @e[type=minecraft
 execute as @a[scores={virtues.near_cricket=1}] at @s unless entity @e[type=minecraft:villager,name="Cricket",distance=..1] run scoreboard players set @s virtues.near_cricket 0
 
 scoreboard players add @a virtues.near_child 0
-execute as @a[scores={virtues.near_child=0}] at @s if entity @e[type=minecraft:villager,name="Child",distance=..1] run function virtues:npc/child_greet
-execute as @a[scores={virtues.near_child=0}] at @s if entity @e[type=minecraft:villager,name="Child",distance=..1] run scoreboard players set @s virtues.near_child 1
-execute as @a[scores={virtues.near_child=1}] at @s unless entity @e[type=minecraft:villager,name="Child",distance=..1] run scoreboard players set @s virtues.near_child 0
+execute as @a[scores={virtues.near_child=0}] at @s if entity @e[type=minecraft:villager,name="Child",distance=..2] run function virtues:npc/child_greet
+execute as @a[scores={virtues.near_child=0}] at @s if entity @e[type=minecraft:villager,name="Child",distance=..2] run scoreboard players set @s virtues.near_child 1
+execute as @a[scores={virtues.near_child=1}] at @s unless entity @e[type=minecraft:villager,name="Child",distance=..2] run scoreboard players set @s virtues.near_child 0
 
 scoreboard players add @a virtues.near_tween 0
 execute as @a[scores={virtues.near_tween=0}] at @s if entity @e[type=minecraft:villager,name="Tween",distance=..1] run function virtues:npc/tween_greet
